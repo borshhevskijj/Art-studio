@@ -8,6 +8,7 @@
   margin-bottom: 100px;
   padding-top: 30px;
   z-index: 2;
+  overflow-x: hidden;
 }
 .abouteUsImgWrapper {
   display: flex;
@@ -179,15 +180,6 @@
         line-height: 2.6;
         top: 0;
       }
-    }
-  }
-}
-
-.main_button {
-  .masterСlass {
-    & div {
-      line-height: 3.2;
-      top: 2px;
     }
   }
 }

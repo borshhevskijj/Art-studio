@@ -51,13 +51,15 @@
   left: -31px;
   bottom: 257px;
   z-index: 2;
-  //
-  .masterСlass {
+  // .main_button {
+  & .masterСlass {
+    // bottom: -100px;
     & div {
       line-height: 1;
       top: 4px;
     }
   }
+  // }
 }
 
 @media (max-width: 1160px) {
@@ -86,22 +88,15 @@
 
 @media (max-width: 700px) {
   .main_button {
-    .masterСlass {
+    & .masterСlass {
       & div {
         line-height: 3.2;
         top: 2px;
       }
     }
-    // .masterСlass {
-    //   & div {
-    //     & span {
-    //       top: 3px;
-    //       line-height: 0;
-    //     }
-    //   }
-    // }
   }
 }
+
 @media (max-width: 655px) {
   .main {
     padding-top: 60px;
