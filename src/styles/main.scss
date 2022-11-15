@@ -1,0 +1,139 @@
+@import "/src/styles/variables.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $mainTextColor;
+}
+h1,
+h2 {
+  font: $titleFont;
+  // color: $mainTextColor;
+}
+body {
+  font-family: $fontMainTextDesctop;
+  background-color: $black;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+html {
+  width: 100%;
+  font-size: 15px;
+  // height: 100%;
+  // overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: inherit;
+  display: block;
+  padding-left: $mobileContainerPadding + px;
+  padding-right: $mobileContainerPadding + px;
+}
+
+@media (max-width: 340px) {
+  .container {
+    padding-left: $SmallMobileContainerPadding + px;
+    padding-right: $SmallMobileContainerPadding + px;
+  }
+}
+@media (min-width: 800px) {
+  .container {
+    padding-left: $tabletContainerPadding + px;
+    padding-right: $tabletContainerPadding + px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    padding-left: $desctopContainerPadding + px;
+    padding-right: $desctopContainerPadding + px;
+  }
+}
+
+// .blur {
+//   position: absolute;
+//   border-radius: 50%;
+//   display: block;
+//   width: 800px;
+//   height: 800px;
+// }
+
+.button {
+  position: absolute;
+  width: 247px;
+  height: 247px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $fontMainTextDesctop;
+  font-weight: 700;
+  font-size: 15px;
+  & .imgWrapper {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  // & .buttonText {
+  //   position: relative;
+  //   left: -50%;
+  //   right: 0;
+  // }
+  & .buttonText {
+    position: absolute;
+    font-size: 15px;
+    user-select: none;
+    color: white;
+    font-weight: 700;
+    bottom: -96px;
+  }
+}
+
+.circleText {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -50%;
+  top: 12px;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 12.2px;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 7px;
+  }
+  .button {
+    width: 192px;
+    height: 192px;
+  }
+  .circleText {
+    & .buttonText {
+      font-size: 14px;
+      bottom: -90px;
+    }
+  }
+}
+
+.elipse::after,
+.elipse::before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
