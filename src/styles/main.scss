@@ -9,7 +9,8 @@
   color: $mainTextColor;
 }
 h1,
-h2 {
+h2,
+h3 {
   font: $titleFont;
   // color: $mainTextColor;
 }
@@ -25,6 +26,22 @@ html {
   font-size: 15px;
   // height: 100%;
   // overflow-x: hidden;
+}
+section {
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+  section {
+    padding-bottom: 90px;
+    margin-bottom: 90px;
+  }
+}
+@media (max-width: 425px) {
+  section {
+    padding-bottom: 55px;
+    margin-bottom: 55px;
+  }
 }
 .container {
   width: 100%;
@@ -96,6 +113,25 @@ html {
     color: white;
     font-weight: 700;
     bottom: -96px;
+  }
+}
+.subTitle {
+  text-align: center;
+  line-height: calc(1.7rem + 4vw);
+  font-size: calc(0.88rem + 4vw);
+  padding: 0 10px 50px 10px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+@media (max-width: 1160px) {
+  .subTitle {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 625px) {
+  .subTitle {
+    font-size: 33px;
+    line-height: 36.3px;
   }
 }
 

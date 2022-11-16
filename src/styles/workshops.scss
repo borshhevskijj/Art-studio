@@ -1,6 +1,84 @@
+@import "/src/styles/variables.scss";
+
 .workshops {
+  overflow-x: hidden;
+  //   overflow-y: visible;
+  //   width: 100%;
+  position: relative;
 }
 .workshops_subTitle_elipse {
 }
+
 .workshops_button {
+  background-color: $pink;
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  z-index: 2;
+}
+
+.workshops_button {
+  // background-color: $blue;
+  // position: static;
+  // left: -31px;
+  // bottom: -52px;
+  // z-index: 2;
+  // margin-bottom: 146px;
+
+  & .buy_workshops {
+    & div {
+      line-height: 2;
+      top: 11px;
+    }
+  }
+}
+.swiper-container {
+  overflow-x: hidden;
+  position: relative;
+  left: 27%;
+  max-height: 700px;
+  height: 600px;
+}
+.swiper-slide {
+  max-width: 380px;
+  max-height: 364px;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  & img {
+    border-radius: 25px;
+  }
+  & *:not(:last-child) {
+    margin-bottom: 7px;
+    line-height: 25px;
+  }
+  & h3 {
+    // font-family: Playfair Display;
+    font-size: 30px;
+    font-size: calc(5rem - 3.2vw);
+  }
+}
+.swiper-slide-pictureTitle {
+  display: flex;
+  justify-content: space-between;
+  & span {
+    margin-right: 20px;
+  }
+}
+.swiper-button-container {
+  position: absolute;
+  left: 50%;
+}
+.swiper-pagination {
+  position: relative;
+  background-color: inherit;
+  left: 27% !important;
+  height: 3px !important;
+  & .swiper-pagination-progressbar-fill {
+    background-color: $pink;
+  }
 }
