@@ -1,6 +1,6 @@
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  // spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar",
@@ -9,4 +9,15 @@ var swiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  // breakpoints: {
+  //   310: {
+  //     slidesPerView: 1,
+  //   },
+  //   625: {
+  //     slidesPerView: 3,
+  //   },
+  //   833: {
+  //     slidesPerView: 3,
+  //   },
+  // },
 })

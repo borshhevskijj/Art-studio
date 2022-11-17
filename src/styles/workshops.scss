@@ -33,38 +33,42 @@
   }
 }
 .swiper-container {
-  overflow-x: hidden;
   position: relative;
   left: 27%;
   max-height: 700px;
-  height: 600px;
+  // height: 800px;
+  // margin-bottom: 50px;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
 }
 .swiper-slide {
-  max-width: 380px;
-  max-height: 364px;
-  height: 100%;
-  width: 100%;
-
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
   text-align: left;
-
+  & p {
+    font-size: 15px;
+  }
   & img {
+    max-width: 380px;
+    // height: 100%;
+    height: 364px;
+    width: 100%;
     border-radius: 25px;
   }
-  & *:not(:last-child) {
+  & * {
     margin-bottom: 7px;
     line-height: 25px;
   }
   & h3 {
-    // font-family: Playfair Display;
-    font-size: 30px;
     font-size: calc(5rem - 3.2vw);
+    font-size: 30px;
   }
 }
 .swiper-slide-pictureTitle {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   & span {
     margin-right: 20px;
   }
@@ -72,13 +76,81 @@
 .swiper-button-container {
   position: absolute;
   left: 50%;
+  // bottom: 50px;
+  & .swiper-button-prev {
+    position: relative;
+    right: 150px;
+    top: 50px;
+  }
+  & .swiper-button-next {
+    position: relative;
+    left: 150px;
+    top: 50px;
+  }
 }
 .swiper-pagination {
   position: relative;
-  background-color: inherit;
+  background-color: #ffffff;
   left: 27% !important;
+  width: 73% !important;
   height: 3px !important;
   & .swiper-pagination-progressbar-fill {
     background-color: $pink;
+  }
+  &::before {
+    content: "";
+    width: 29%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    right: -27%;
+  }
+}
+
+@media (max-width: 833px) {
+  .swiper-container {
+    position: static;
+    left: 0;
+    // margin-right: -167px;
+    margin-right: -299px;
+  }
+  .swiper-slide {
+    // min-width: 335px;
+    // min-width: 335px;
+    max-height: 347px;
+
+    margin-right: 10px;
+    & p {
+      font-size: 14px;
+    }
+
+    & *:not(:last-child) {
+      margin-bottom: 7px;
+      line-height: 25px;
+    }
+    & h3 {
+      font-size: calc(3rem - 1.8vw);
+      font-size: 24px;
+    }
+  }
+  .workshops_button {
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 135px);
+  }
+  .workshops {
+    position: static;
+  }
+
+  .swiper-pagination {
+    position: static;
+    background-color: #ffffff;
+    margin-top: 25px;
+    left: 0;
+    width: 100% !important;
+    height: 3px !important;
+    &::before {
+      display: none;
+    }
   }
 }
