@@ -9,15 +9,12 @@ var swiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // breakpoints: {
-  //   310: {
-  //     slidesPerView: 1,
-  //   },
-  //   625: {
-  //     slidesPerView: 3,
-  //   },
-  //   833: {
-  //     slidesPerView: 3,
-  //   },
-  // },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    625: {
+      slidesPerView: 3,
+    },
+  },
 })
