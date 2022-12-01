@@ -12,7 +12,7 @@ h1,
 h2,
 h3 {
   font: $titleFont;
-  // color: $mainTextColor;
+  color: $mainTextColor;
 }
 body {
   font-family: $fontMainTextDesctop;
@@ -25,7 +25,7 @@ html {
   width: 100%;
   font-size: 15px;
   // height: 100%;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 section {
   padding-bottom: 100px;
@@ -82,6 +82,7 @@ section {
 //   height: 800px;
 // }
 
+
 .button {
   position: absolute;
   width: 247px;
@@ -91,7 +92,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: $fontMainTextDesctop;
+  // font-family: $fontMainTextDesctop;
   font-weight: 700;
   font-size: 15px;
   & .imgWrapper {
@@ -120,7 +121,7 @@ section {
   line-height: calc(1.7rem + 4vw);
   font-size: calc(0.88rem + 4vw);
   padding: 0 10px 50px 10px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   text-transform: uppercase;
 }
 @media (max-width: 1160px) {
@@ -148,6 +149,9 @@ section {
   html {
     font-size: 12.2px;
   }
+  .subTitle {
+    margin-bottom: 80px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -164,6 +168,9 @@ section {
       bottom: -90px;
     }
   }
+  .subTitle {
+    margin-bottom: 55px;
+  }
 }
 
 .elipse::after,
@@ -172,4 +179,11 @@ section {
   border-radius: 50%;
   position: absolute;
   z-index: -1;
+}
+@media (max-width: 625px) {
+  .elipse::after,
+  .elipse::before {
+    border-width: 2px!important;
+  }
+  
 }

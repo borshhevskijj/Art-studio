@@ -2,6 +2,10 @@
 .blank {
   width: 950px;
 }
+.workshops_subTitle_elipse{
+  position: relative;
+}
+
 .workshops_subTitle_elipse::before {
   left: 26.53%;
   right: 27.83%;
@@ -178,9 +182,12 @@
     }
   }
   .workshops_button {
-    top: auto;
-    left: 50%;
-    transform: translate(-50%, 135px);
+    // top: auto;
+    // left: 50%;
+    // transform: translate(-50%, 135px);
+    position: static;
+    margin:0 auto;
+    margin-top: 50px;
   }
   .workshops {
     position: static;
@@ -247,26 +254,22 @@
     }
   }
   .workshops_subTitle_elipse::after {
-    left: 32.47%;
-    left: 25vw;
-    right: 11.13%;
-    top: 5.84%;
-    bottom: 90.83%;
-    transform: matrix(0.99, -0.03, 0.14, 1, 0, 0);
-    border-width: 2px;
-    width: calc(49% + 8vw);
-    height: 9vw;
+    left: 20.43%;
+    right: 20.88%;
+    top: -27.49%;
+    bottom: 63.6%;
+    width: 344.64px;
+    height: 85px;
+transform: matrix(0.99, -0.13, 0.17, 0.99, 0, 0);
   }
   .workshops_subTitle_elipse::before {
-    left: 32.5%;
-    left: 26vw;
-    right: 12.69%;
-    top: 5.75%;
-    bottom: 90.73%;
-    transform: matrix(0.98, -0.1, 0.22, 0.99, 0, 0);
-    width: calc(50% + 8vw);
-    height: 9vw;
-    border-width: 2px;
+    left: 23.13%;
+    right: 7.62%;
+    top: 18.68%;
+    bottom: 80.62%;
+    width: 323.42px;
+    height: 73.62px;
+    transform: matrix(0.99, -0.03, 0.12, 1, 0, 0);
   }
 }
 @media (max-width: 450px) {
