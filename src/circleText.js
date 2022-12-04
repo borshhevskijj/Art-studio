@@ -8,6 +8,8 @@
 const masterСlass = document.querySelector(".masterСlass")
 const watchVideo = document.querySelector(".watchVideo")
 const buyWorkshops = document.querySelector(".buy_workshops")
+const timetable = document.querySelector('.timetableMasterClass')
+
 
 const setTextContent = (selector, repeat) => {
   selector.textContent = selector.textContent.toUpperCase().repeat(repeat)
@@ -17,3 +19,5 @@ const setTextContent = (selector, repeat) => {
 setTextContent(masterСlass, 3)
 setTextContent(watchVideo, 4)
 setTextContent(buyWorkshops, 4)
+setTextContent(timetable, 6)
+// setTextContent(timetable, 4)

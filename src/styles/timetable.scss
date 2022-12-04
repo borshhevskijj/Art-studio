@@ -1,10 +1,31 @@
 @import "/src/styles/variables.scss";
 
-.timetable{
-    padding-top: 30px;
-}
-.timetableSubTitle{
-    margin: 0;
-    padding: 0;
+.timetable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
 }
 
+.timetable_button {
+  background-color: $pink;
+  z-index: 2;
+  position: static;
+  & .timetableMasterClass {
+    & div {
+      line-height: 3;
+      top: 17px;
+    }
+  }
+}
+
+// @media (max-width: 700px) {
+//   .timetableButton {
+//     .timetableSingUp {
+//       & div {
+//         line-height: 2.6;
+//         top: 0;
+//       }
+//     }
+//   }
+// }

@@ -8,12 +8,17 @@
   box-sizing: border-box;
   color: $mainTextColor;
 }
+img{
+  user-select: none
+}
 h1,
 h2,
 h3 {
   font: $titleFont;
   color: $mainTextColor;
 }
+
+
 body {
   font-family: $fontMainTextDesctop;
   background-color: $black;
