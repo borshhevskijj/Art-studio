@@ -19,13 +19,13 @@
   }
 }
 
-// @media (max-width: 700px) {
-//   .timetableButton {
-//     .timetableSingUp {
-//       & div {
-//         line-height: 2.6;
-//         top: 0;
-//       }
-//     }
-//   }
-// }
+@media (max-width: 700px) {
+  .timetable_button {
+    .timetableMasterClass {
+      & div {
+        line-height: 5;
+        top: 13px;
+      }
+    }
+  }
+}

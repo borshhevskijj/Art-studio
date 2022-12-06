@@ -5,19 +5,20 @@
 // // const reserve  = document.querySelector(".text")
 // // const certificate    = document.querySelector(".text")
 
-const masterСlass = document.querySelector(".masterСlass")
-const watchVideo = document.querySelector(".watchVideo")
-const buyWorkshops = document.querySelector(".buy_workshops")
-const timetable = document.querySelector('.timetableMasterClass')
-
+const masterСlass = document.querySelector(".masterСlass");
+const watchVideo = document.querySelector(".watchVideo");
+const buyWorkshops = document.querySelector(".buy_workshops");
+const timetable = document.querySelector(".timetableMasterClass");
+// const form = document.querySelector(".timetable_button");
 
 const setTextContent = (selector, repeat) => {
-  selector.textContent = selector.textContent.toUpperCase().repeat(repeat)
-  return new CircleType(selector)
-}
+  selector.textContent = selector.textContent.toUpperCase().repeat(repeat);
+  return new CircleType(selector);
+};
 
-setTextContent(masterСlass, 3)
-setTextContent(watchVideo, 4)
-setTextContent(buyWorkshops, 4)
-setTextContent(timetable, 6)
+setTextContent(masterСlass, 3);
+setTextContent(watchVideo, 4);
+setTextContent(buyWorkshops, 4);
+setTextContent(timetable, 6);
+// setTextContent(form, 6);
 // setTextContent(timetable, 4)

@@ -6,10 +6,15 @@
   padding-bottom: 25px;
   margin-bottom: 25px;
 }
-.accordionWrapper:not(:first-child){
- & .accordionConteiner{
-   border-bottom: 1px solid $mainTextColor;
- }
+
+.accordionWrapper:not(:first-child) {
+  & .accordionConteiner {
+    border-bottom: 1px solid $mainTextColor;
+  }
+}
+.timetableDate {
+  font-size: 15px;
+  font-weight: 400;
 }
 .accordion {
   background-color: transparent;
@@ -22,31 +27,35 @@
   display: flex;
   align-items: center;
   border: none;
-  // transition: max-height 1s ease;
 }
+
 .panel {
   width: 100%;
   position: relative;
+  bottom: 35px;
   background-color: transparent;
   max-height: 0;
   overflow: hidden;
-  transition: max-height .65s ease-in-out;
+  transition: max-height 0.65s ease-in-out;
+
   & .workshopTitle {
-    padding: 30px 27px 34px 0;
+    width: 100%;
+    padding: 10px 27px 10px 0;
   }
+
   & p {
     font-size: 16px;
     color: $mainTextColor;
   }
 }
 
-
 .panelImg {
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   transform: rotate(15.23deg);
+  transform-origin: 71% -130%;
   & img {
     width: 215px;
     height: 215px;
@@ -56,7 +65,7 @@
 }
 
 .accordion:after {
-  content: '\02795';
+  content: "\02795";
   /* Символ юникода знак (+) */
   position: absolute;
   right: 0;
@@ -66,15 +75,17 @@
   margin-left: 5px;
 }
 
-.active{
+.active {
   &:after {
-    content: "\2796"; 
+    content: "\2796";
   }
 }
+
 .workshopTitleContainer {
   display: flex;
   flex-direction: column;
   width: 50%;
+  padding-bottom: 66px;
 }
 
 .accordionVisiblePart,
@@ -84,31 +95,26 @@
 }
 
 .accordionVisiblePart {
-  // justify-content: space-between;
   width: 100%;
-  // column-gap: 35px;
 }
 
 .accordionVisiblePartWrapper {
   width: 50%;
+  justify-content: space-between;
   padding-right: 3rem;
-
-  // justify-content: space-between;
-  & .timetableDate {
-    min-width: 30%;
-    }
 }
 
 .workshopTitle {
   display: flex;
   padding-right: 27px;
-
-  // justify-content: space-between;
+  line-height: 25px;
+  align-items: center;
+  width: 50%;
   & span {
-    margin-right: 30px;
+    margin-right: 10px;
+    min-width: 58.16px;
   }
 }
-
 
 .panelWrapper {
   display: flex;
@@ -118,15 +124,24 @@
 .timetableDayOfTheWeek {
   text-transform: uppercase;
   font-size: 30px;
+  min-width: 250px;
+  text-align: start;
 }
-
 
 @media (max-width: 833px) {
   .timetableDayOfTheWeek {
     font-size: 24px;
+    min-width: 199px;
+  }
+  .accordion {
+    padding-top: 15px;
+  }
+  .timetableDate {
+    font-size: 14px;
   }
 
   .panelImg {
+    transform-origin: 48% 0%;
     & img {
       width: 200px;
       height: 200px;
@@ -143,15 +158,50 @@
 }
 
 @media (max-width: 625px) {
+  .accordion {
+    padding: 15px 0;
+  }
+  .workshopTitleContainer {
+    width: 100%;
+    padding-bottom: 0;
+    & .workshopTitle {
+      justify-content: space-between;
+    }
+  }
+  .panel {
+    position: static;
+  }
   .timetableDayOfTheWeek {
     font-size: 18px;
   }
-
+  .accordionVisiblePartWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .timetableDate {
+    font-size: 12px;
+  }
+  .accordionVisiblePart {
+    & .workshopTitle {
+      display: none;
+    }
+  }
+  .panelWrapper {
+    position: relative;
+  }
   .panelImg {
+    transform-origin: 0 0;
+    position: absolute;
+    /* top: 86px; */
+    right: 0;
+    bottom: 0;
+    bottom: 34%;
+    left: 3vw;
     & img {
       width: 115px;
       height: 115px;
     }
+    // position: absolute;
   }
 
   .workshopTitle {
@@ -162,4 +212,19 @@
     }
   }
 
+  .workshopTitle {
+    & span {
+      min-width: 50%;
+    }
+    & .workshopTitleText {
+      margin: 0;
+      padding-right: 15px;
+    }
+  }
+}
+
+@media (max-width: 455px) {
+  .panelImg {
+    left: calc(3vw + 3%);
+  }
 }

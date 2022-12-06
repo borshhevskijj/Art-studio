@@ -1,0 +1,215 @@
+@import "/src/styles/variables.scss";
+.form_wrapper {
+  display: flex;
+  background-color: $blue;
+  border-radius: 30px;
+}
+.form_elements {
+  display: flex;
+  flex-direction: column;
+  padding-top: 102px;
+}
+
+.form_elements_inputs {
+  display: flex;
+  flex-direction: column;
+  & * {
+    margin-bottom: 30px;
+  }
+  & input[type="text"] {
+    padding: 15px 2px;
+    border: none;
+    border-bottom: 1px solid $mainTextColor;
+    background-color: inherit;
+    outline: none;
+    &::placeholder {
+      color: $mainTextColor;
+    }
+  }
+}
+.input_checkbox {
+  & label {
+    & span {
+      text-decoration: underline;
+    }
+  }
+}
+.form_subTitle {
+  padding: 100px 5px 100px 73px;
+  max-width: 50%;
+  text-align: left;
+  margin: 0;
+  position: relative;
+  z-index: 3;
+  & span {
+    white-space: nowrap;
+  }
+}
+
+// --------------------------------------------
+.agreement {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  //   font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.agreement {
+  & input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+  }
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: $mainTextColor;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.agreement input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.agreement .checkmark:after {
+  background: url("../images/checkbox.svg");
+  width: 17px;
+  height: 13px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form_subTitle_elipse::before {
+  position: absolute;
+  border: 4px solid #ff1e98;
+  left: 9.49%;
+  right: 56.73%;
+  top: 47.31%;
+  bottom: 58.85%;
+  transform: matrix(0.98, -0.11, 0.2, 0.99, 0, 0);
+  // width: 486.39px;
+  // height: 107.63px;
+  width: 33vw;
+  height: 7.5vw;
+}
+
+.form_subTitle_elipse::after {
+  border: 4px solid $pink;
+  position: absolute;
+  left: 9.03%;
+  right: 56.07%;
+  top: 47.14%;
+  bottom: 59.02%;
+  transform: matrix(0.99, -0.03, 0.13, 1, 0, 0);
+  width: 502.64px;
+  height: 107.85px;
+  width: 35.3vw;
+  height: 7.6vw;
+}
+
+@media (max-width: 1160px) {
+  .form_wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 190px;
+  }
+  .form_subTitle {
+    padding: 70px 76px 60px 76px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: none;
+  }
+  .form_elements {
+    padding: 0 221px;
+  }
+  .form_subTitle_elipse::after {
+    left: 39.09%;
+    right: 13.57%;
+    top: 36.57%;
+    bottom: 58.65%;
+    width: 352.17px;
+    height: 99.5px;
+    transform: matrix(0.99, -0.15, 0.15, 0.99, 0, 0);
+    width: 42vw;
+    height: 11.2vw;
+  }
+  .form_subTitle_elipse::before {
+    left: 38.44%;
+    right: 12.84%;
+    top: 38.41%;
+    bottom: 58.8%;
+    transform: matrix(1, -0.04, 0.1, 1, 0, 0);
+    width: 362.48px;
+    height: 100.29px;
+    width: 44vw;
+    height: 11.4vw;
+  }
+}
+// @media (max-width: 833px) {
+//   .form_subTitle_elipse::after {
+//     left: 20.43%;
+//     right: 20.88%;
+//     top: 19.51%;
+//     bottom: 79.6%;
+
+//     transform: matrix(0.99, -0.13, 0.17, 0.99, 0, 0);
+//     width: 436.64px;
+//     height: 113.68px;
+//   }
+//   .form_subTitle_elipse::before {
+//     left: 19.62%;
+//     right: 19.88%;
+//     top: 19.33%;
+//     bottom: 79.78%;
+
+//     transform: matrix(0.99, -0.04, 0.11, 1, 0, 0);
+//     width: 450.12px;
+//     height: 114.29px;
+//   }
+// }
+
+@media (max-width: 625px) {
+  .form_subTitle_elipse::after {
+    left: 20.43%;
+    right: 20.88%;
+    top: -27.49%;
+    bottom: 63.6%;
+    width: 344.64px;
+    height: 85px;
+    transform: matrix(0.99, -0.13, 0.17, 0.99, 0, 0);
+  }
+  .form_subTitle_elipse::before {
+    left: 23.13%;
+    right: 7.62%;
+    top: 18.68%;
+    bottom: 80.62%;
+    width: 323.42px;
+    height: 73.62px;
+    transform: matrix(0.99, -0.03, 0.12, 1, 0, 0);
+  }
+}
