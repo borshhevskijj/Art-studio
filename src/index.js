@@ -8,6 +8,7 @@ import "./styles/aboutUs.scss";
 import "./styles/workshops.scss";
 import "./styles/timetable.scss";
 import "./styles/form.scss";
+import "./styles/aboutCourse.scss";
 //circleText
 import "./circleText";
 //slider

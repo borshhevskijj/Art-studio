@@ -9,7 +9,8 @@ const masterСlass = document.querySelector(".masterСlass");
 const watchVideo = document.querySelector(".watchVideo");
 const buyWorkshops = document.querySelector(".buy_workshops");
 const timetable = document.querySelector(".timetableMasterClass");
-// const form = document.querySelector(".timetable_button");
+const form = document.querySelector(".form_send");
+const aboutCourse = document.querySelector(".aboutCourse_leaveARequest");
 
 const setTextContent = (selector, repeat) => {
   selector.textContent = selector.textContent.toUpperCase().repeat(repeat);
@@ -20,5 +21,6 @@ setTextContent(masterСlass, 3);
 setTextContent(watchVideo, 4);
 setTextContent(buyWorkshops, 4);
 setTextContent(timetable, 6);
-// setTextContent(form, 6);
+setTextContent(form, 6);
+setTextContent(aboutCourse, 4);
 // setTextContent(timetable, 4)
