@@ -8,8 +8,8 @@
   box-sizing: border-box;
   color: $mainTextColor;
 }
-img{
-  user-select: none
+img {
+  user-select: none;
 }
 h1,
 h2,
@@ -17,7 +17,6 @@ h3 {
   font: $titleFont;
   color: $mainTextColor;
 }
-
 
 body {
   font-family: $fontMainTextDesctop;
@@ -87,7 +86,6 @@ section {
 //   height: 800px;
 // }
 
-
 .button {
   position: absolute;
   width: 247px;
@@ -134,6 +132,12 @@ section {
     padding-bottom: 30px;
   }
 }
+@media (max-width: 833px) {
+  .subTitle {
+    font-size: calc(1.68rem + 4vw);
+  }
+}
+
 @media (max-width: 625px) {
   .subTitle {
     font-size: 33px;
@@ -188,7 +192,6 @@ section {
 @media (max-width: 625px) {
   .elipse::after,
   .elipse::before {
-    border-width: 2px!important;
+    border-width: 2px !important;
   }
-  
 }

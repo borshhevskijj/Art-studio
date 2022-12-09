@@ -3,7 +3,7 @@
 .aboutCourse_button {
   position: static;
   background-color: $pink;
-  min-width: 247px;
+  min-width: 250px;
   & .aboutCourse_leaveARequest {
     & div {
       line-height: 0.7;
@@ -35,5 +35,77 @@
     text-transform: uppercase;
     min-width: 270px;
     margin-right: 40px;
+  }
+}
+.aboutCourseSubTitle {
+  position: relative;
+  white-space: nowrap;
+}
+
+.aboutCourseSubTitle_elipse::before {
+  position: absolute;
+  left: 21.89%;
+  right: 23.49%;
+  top: 30.09%;
+  bottom: 53.96%;
+
+  border: 4px solid #ff1e98;
+  transform: matrix(0.99, -0.02, 0.17, 1, 0, 0);
+  width: 54vw;
+  height: 9vw;
+}
+
+.aboutCourseSubTitle_elipse::after {
+  position: absolute;
+  left: 22.59%;
+  right: 24.63%;
+  top: 31.28%;
+  bottom: 53.77%;
+
+  border: 4px solid #ff1e98;
+  transform: matrix(0.97, -0.08, 0.27, 1, 0, 0);
+  width: 52vw;
+  height: 9vw;
+}
+
+@media (max-width: 1160px) {
+  .aboutCourseWrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutCourseWrapperContentWrapper {
+    & h3 {
+      min-width: 50%;
+      margin-right: 0;
+      padding-right: 20px;
+    }
+    & p {
+      padding: 0 7px;
+    }
+  }
+}
+
+@media (max-width: 833px) {
+  .aboutCourseSubTitle_elipse::after {
+    left: 16.39%;
+    right: 16.04%;
+    top: 30.01%;
+    bottom: 51.2%;
+    transform: matrix(0.98, -0.1, 0.22, 0.99, 0, 0);
+    width: 68vw;
+    height: 13.5vw;
+  }
+  .aboutCourseSubTitle_elipse::before {
+    left: 15.46%;
+    right: 14.63%;
+    top: 25.85%;
+    bottom: 51.36%;
+    transform: matrix(0.99, -0.03, 0.14, 1, 0, 0);
+    width: 70vw;
+    height: 13.5vw;
+  }
+  .aboutCourseSubTitle {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

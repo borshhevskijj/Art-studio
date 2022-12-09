@@ -18,14 +18,9 @@
   width: 100%;
 }
 
-// .aboutUs_subTitle {
-//   text-align: center;
-//   line-height: calc(1.7rem + 4vw);
-//   font-size: calc(0.88rem + 4vw);
-//   padding: 0 10px 50px 10px;
-//   margin-bottom: 50px;
-//   text-transform: uppercase;
-// }
+.aboutUs_subTitle {
+  white-space: nowrap;
+}
 
 .aboutUs_text_description {
   display: flex;
@@ -193,10 +188,6 @@
   .abouteUsImgWrapper {
     display: none;
   }
-  // .aboutUs_subTitle {
-  //   font-size: 33px;
-  //   line-height: 36.3px;
-  // }
   .aboutUs {
     flex-direction: column;
     padding-left: 22px;
