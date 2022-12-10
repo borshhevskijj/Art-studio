@@ -9,6 +9,7 @@ import "./styles/workshops.scss";
 import "./styles/timetable.scss";
 import "./styles/form.scss";
 import "./styles/aboutCourse.scss";
+import "./styles/ourStudios.scss";
 //circleText
 import "./circleText";
 //slider

@@ -20,6 +20,7 @@
   align-items: center;
   padding: 0px 5px 30px 0;
   text-align: left;
+
   &:not(:first-child) {
     padding-top: 30px;
   }
@@ -83,8 +84,19 @@
       padding: 0 7px;
     }
   }
+  .aboutCourse_button {
+    min-width: 0;
+  }
 }
 
+@media (max-width: 1025px) {
+  .aboutCourseWrapperContentWrapper {
+    align-items: self-start;
+    & p {
+      font-size: 14px;
+    }
+  }
+}
 @media (max-width: 833px) {
   .aboutCourseSubTitle_elipse::after {
     left: 16.39%;
@@ -108,4 +120,75 @@
     padding-left: 0;
     padding-right: 0;
   }
+  .aboutCourseWrapperContentWrapper {
+    padding-bottom: 15px;
+    & p {
+      font-size: 12px;
+    }
+  }
 }
+@media (max-width: 700px) {
+  .aboutCourse_button {
+    & .aboutCourse_leaveARequest {
+      & div {
+        line-height: 2.9;
+      }
+    }
+  }
+}
+@media (max-width: 625px) {
+  .aboutCourseWrapperContentWrapper {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-right: 0;
+    padding-bottom: 30px;
+    & p {
+      padding: 0 20px;
+      line-height: 16px;
+    }
+    & h3 {
+      min-width: 0;
+      padding-bottom: 15px;
+      padding-right: 0;
+      font-size: 18px;
+    }
+    &:not(:last-child) {
+      border: none;
+    }
+    &:not(:first-child) {
+      padding-top: 0;
+    }
+  }
+
+  .aboutCourseSubTitle_elipse::after {
+    left: 13.39%;
+    top: 15.01%;
+  }
+  .aboutCourseSubTitle_elipse::before {
+    left: 13.46%;
+    top: 17.85%;
+  }
+}
+
+@media (max-width: 475px) {
+  .aboutCourseSubTitle_elipse::after {
+    left: 0.39%;
+    top: 24.01%;
+    width: 86vw;
+    height: 15.5vw;
+  }
+  .aboutCourseSubTitle_elipse::before {
+    left: 3.46%;
+    top: 23.85%;
+    width: 86vw;
+    height: 16.5vw;
+  }
+}
+// left: 13.46%;
+// right: 14.63%;
+// top: 17.85%;
+// bottom: 51.36%;
+// transform: matrix(0.99, -0.03, 0.14, 1, 0, 0);
+// width: 70vw;
+// height: 13.5vw;
