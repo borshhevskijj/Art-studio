@@ -1,9 +1,35 @@
 @import "/src/styles/variables.scss";
 
 .ourStudiosSubTitle {
+  position: relative;
   & span {
     white-space: nowrap;
   }
+}
+.ourStudiosSubTitle_elipse {
+}
+.ourStudiosSubTitle_elipse::before {
+  left: 34.82%;
+  right: 25.9%;
+  top: 8%;
+  bottom: 92.18%;
+  transform: matrix(0.98, -0.1, 0.22, 0.99, 0, 0);
+  border: 4px solid $pink;
+  width: 38vw;
+  height: 7vw;
+}
+
+.ourStudiosSubTitle_elipse::after {
+  border: 4px solid $pink;
+  left: 33.33%;
+  right: 30.23%;
+  top: 7.84%;
+  bottom: 91.34%;
+  transform: matrix(0.99, -0.03, 0.14, 1, 18, 5);
+  // width: 524px;
+  // height: 103.68px;
+  width: 38vw;
+  height: 7vw;
 }
 
 .ourStudiosWrapper_topContent {
@@ -37,26 +63,21 @@
 
 .ourStudiosWrapper_bottomContent {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   & div {
-    // max-width: 467.68px;
-    max-height: 645.34px;
     & img {
-      max-width: 100%;
-      min-height: 630px;
+      width: 100%;
       height: auto;
-
       border-radius: 25px;
     }
   }
   & .ourStudiosWrapper_bottomContent_leftImg {
-    max-width: 496.33px;
     transform: matrix(0.97, -0.22, 0.22, 0.97, -30, 0);
+    margin: 0 auto;
   }
   & .ourStudiosWrapper_bottomContent_rigthImg {
-    max-width: 467.68px;
-    min-height: 645px;
-    transform: rotate(18.19deg);
+    transform: matrix(0.95, 0.31, -0.31, 0.95, 0, 0);
+    margin: 0 auto;
   }
 }
 
@@ -83,6 +104,9 @@
   .ourStudiosWrapper_topContent_leftImg {
     height: 247.93px;
   }
+  .ourStudiosWrapper_bottomContent {
+    padding-top: 55px;
+  }
 
   .ourStudiosWrapper_topContent {
     & img {
@@ -103,6 +127,10 @@
 }
 
 @media (max-width: 726px) {
+  .ourStudios {
+    height: 2000px;
+  }
+  // deelte
   .ourStudiosSubTitle {
     padding: 0 $mobileContainerPadding + px;
   }
@@ -125,6 +153,38 @@
     & .ourStudiosWrapper_topContent_rigthImg {
       right: -30px;
       top: 400%;
+    }
+  }
+
+  .ourStudiosWrapper_bottomContent {
+    position: relative;
+    & div {
+      & img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+      }
+    }
+    & .ourStudiosWrapper_bottomContent_leftImg {
+      width: 175px;
+      min-width: 105px;
+      min-height: 156px;
+      height: 256px;
+      transform: translate(0, 0);
+      position: absolute;
+      top: 1000%;
+      height: auto;
+      left: -30.96px;
+    }
+    & .ourStudiosWrapper_bottomContent_rigthImg {
+      position: absolute;
+      width: 255px;
+      min-width: 195px;
+      min-height: 156px;
+      height: 256px;
+      transform: rotate(9.86deg);
+      height: auto;
+      top: 250%;
     }
   }
 }
