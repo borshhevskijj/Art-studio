@@ -7,8 +7,6 @@
   padding: 0;
   box-sizing: border-box;
   color: $mainTextColor;
-}
-img {
   user-select: none;
 }
 h1,
@@ -124,7 +122,7 @@ section {
   line-height: calc(1.7rem + 4vw);
   font-size: calc(0.88rem + 4vw);
   padding: 0 10px 50px 10px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   text-transform: uppercase;
 }
 @media (max-width: 1160px) {
@@ -159,7 +157,7 @@ section {
     font-size: 12.2px;
   }
   .subTitle {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 }
 

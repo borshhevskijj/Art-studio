@@ -10,6 +10,7 @@ import "./styles/timetable.scss";
 import "./styles/form.scss";
 import "./styles/aboutCourse.scss";
 import "./styles/ourStudios.scss";
+import "./styles/teachers.scss";
 //circleText
 import "./circleText";
 //slider

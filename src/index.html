@@ -16,7 +16,7 @@
     />
     <title>Art Studio</title>
   </head>
-
+  <!-- !workshops сдвигает контейнер! -->
   <body>
     <!-- navbar  section -->
     <header class="header container">
@@ -143,7 +143,7 @@
         <div>эмоции</div>
       </h2>
 
-      <div class="swiper-container">
+      <div class="swiper-container swiper1">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./images/african.jpg" alt="african woman" />
@@ -242,11 +242,11 @@
         </div>
       </div>
       <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination swiper-pagination1"></div>
       <!-- Add Arrows -->
       <div class="swiper-button-container">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev swiper-button-prev1"></div>
+        <div class="swiper-button-next swiper-button-next1"></div>
       </div>
       <!-- </div> -->
 
@@ -740,7 +740,17 @@
       <div class="ourStudiosWrapper">
         <div class="ourStudiosWrapper_topContent">
           <div class="ourStudiosWrapper_topContent_leftImg">
-            <img src="./images/location3.jpg" alt="" />
+            <picture>
+              <source
+                media="(min-width:625px) and (max-width:955px)"
+                srcset="D:\Art-studio\src\images\location3_M.png"
+              />
+              <source
+                media="(min-width:280px) and (max-width:624px) "
+                srcset="D:\Art-studio\src\images\location3_S.png"
+              />
+              <img src="./images/location3.png" alt="" />
+            </picture>
           </div>
           <p>
             Мы создали реальную атмосферу настоящих мастерских художника, где
@@ -750,18 +760,148 @@
             проведете время
           </p>
           <div class="ourStudiosWrapper_topContent_rigthImg">
-            <img src="./images/location-min.jpg" alt="" />
+            <picture>
+              <source
+                media="(min-width:625px) and (max-width:955px)"
+                srcset="./images/location1_M.png"
+              />
+              <source
+                media="(min-width:280px) and (max-width:624px) "
+                srcset="./images/location1_S.png"
+              />
+              <img src="./images/location1.png" alt="" />
+            </picture>
           </div>
         </div>
         <div class="ourStudiosWrapper_bottomContent">
           <div class="ourStudiosWrapper_bottomContent_leftImg">
-            <img src="./images/location2new.jpg" alt="" />
+            <picture>
+              <source
+                media="(min-width:726px) and (max-width:955px)"
+                srcset="./images/location2_M.png"
+              />
+              <source
+                media="(min-width:280px) and (max-width:726px) "
+                srcset="./images/location2_S.png"
+              />
+              <img src="./images/location2.png" alt="" />
+            </picture>
           </div>
+
           <div class="ourStudiosWrapper_bottomContent_rigthImg">
-            <img src="./images/location4new.jpg" alt="" />
+            <picture>
+              <source
+                media="(min-width:280px) and (max-width:625px) "
+                srcset="./images/location4_S.png"
+              />
+              <source
+                media="(min-width:726px) and (max-width:955px)"
+                srcset="./images/location4_M.png"
+              />
+              <source
+                media="(min-width:625px) and (max-width:726px) "
+                srcset="./images/location4.png"
+              />
+              <img src="./images/location4.png" alt="" />
+            </picture>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="teachers container">
+      <h2 class="teachers_subTitle subTitle">
+        <span>наши</span>
+        <br />
+        <span>преподаватели —</span>
+        <br />
+        <span class="elipse teachers_subTitle_elipse">залог красоты</span>
+        <br />
+        <span>на холсте</span>
+      </h2>
+
+      <div class="swiper-container swiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/educators-min.jpg" alt="educator" />
+            <div class="swiper-slide-pictureTitle">
+              <h3>вАЛЕРИЯ</h3>
+              <p class="experience">Опыт: 5 лет</p>
+            </div>
+            <p>
+              Образование: Санкт-Петербургская императорская академия художеств
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/educators2-min.jpg" alt="educator" />
+            <div class="swiper-slide-pictureTitle">
+              <h3>аНАСТАСИЯ</h3>
+              <p class="experience">Опыт: 3 года</p>
+            </div>
+            <p>
+              Образование: Минский государственный художественный колледж имени
+              А. К. Глебова
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/educators-min.jpg" alt="educator" />
+            <div class="swiper-slide-pictureTitle">
+              <h3>вАЛЕРИЯ</h3>
+              <p class="experience">Опыт: 5 лет</p>
+            </div>
+            <p>
+              Образование: Санкт-Петербургская императорская академия художеств
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/educators2-min.jpg" alt="educator" />
+            <div class="swiper-slide-pictureTitle">
+              <h3>аНАСТАСИЯ</h3>
+              <p class="experience">Опыт: 3 года</p>
+            </div>
+            <p>
+              Образование: Минский государственный художественный колледж имени
+              А. К. Глебова
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/educators-min.jpg" alt="educator" />
+            <div class="swiper-slide-pictureTitle">
+              <h3>вАЛЕРИЯ</h3>
+              <p class="experience">Опыт: 5 лет</p>
+            </div>
+            <p>
+              Образование: Санкт-Петербургская императорская академия художеств
+            </p>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="./images/educators2-min.jpg" alt="educator" />
+            <div class="swiper-slide-pictureTitle">
+              <h3>аНАСТАСИЯ</h3>
+              <p class="experience">Опыт: 3 года</p>
+            </div>
+            <p>
+              Образование: Минский государственный художественный колледж имени
+              А. К. Глебова
+            </p>
+          </div>
+
+          <div class="swiper-slide blank"></div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination swiper-pagination2"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-container">
+        <div class="swiper-button-prev swiper-button-prev2"></div>
+        <div class="swiper-button-next swiper-button-next2"></div>
+      </div>
+      <!-- </div> -->
     </section>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>

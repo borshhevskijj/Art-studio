@@ -80,7 +80,9 @@
   }
   & img {
     max-width: 380px;
-    // height: 100%;
+    // experiment
+    min-width: 100%;
+    // experiment
     height: 364px;
     width: 100%;
     border-radius: 25px;
@@ -182,9 +184,6 @@
     }
   }
   .workshops_button {
-    // top: auto;
-    // left: 50%;
-    // transform: translate(-50%, 135px);
     position: static;
     margin: 0 auto;
     margin-top: 50px;
