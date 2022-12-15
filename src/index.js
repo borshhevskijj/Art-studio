@@ -11,6 +11,7 @@ import "./styles/form.scss";
 import "./styles/aboutCourse.scss";
 import "./styles/ourStudios.scss";
 import "./styles/teachers.scss";
+import "./styles/artParty.scss";
 //circleText
 import "./circleText";
 //slider

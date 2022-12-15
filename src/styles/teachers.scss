@@ -2,6 +2,8 @@
 
 .teachers_subTitle {
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
   & span {
     white-space: nowrap;
     // color: red;
@@ -32,4 +34,48 @@
   transform: matrix(0.99, -0.02, 0.17, 1, 0, 0);
   width: 54vw;
   height: 9vw;
+}
+
+@media (max-width: 833px) {
+  .teachers_subTitle_elipse::before {
+    left: 12.57%;
+    right: 17.83%;
+    top: 38.4%;
+    bottom: 34.92%;
+    transform: matrix(0.97, -0.09, 0.25, 1, 0, 0);
+    width: 66vw;
+    height: 10.5vw;
+  }
+
+  .teachers_subTitle_elipse::after {
+    left: 12.65%;
+    right: 16.36%;
+    top: 38.26%;
+    bottom: 35.06%;
+    transform: matrix(0.99, -0.02, 0.16, 1, 0, 0);
+    width: 68vw;
+    height: 10.5vw;
+  }
+}
+
+@media (max-width: 455px) {
+  .teachers_subTitle_elipse::before {
+    left: 2.54%;
+    right: 6.01%;
+    top: 38.24%;
+    bottom: 36.26%;
+    transform: matrix(0.97, -0.08, 0.28, 1, 0, 0);
+    width: 85vw;
+    height: 12vw;
+  }
+
+  .teachers_subTitle_elipse::after {
+    left: 3.33%;
+    right: 4.03%;
+    top: 38.14%;
+    bottom: 36.36%;
+    transform: matrix(0.99, -0.02, 0.18, 1, 0, 0);
+    width: 86vw;
+    height: 12vw;
+  }
 }

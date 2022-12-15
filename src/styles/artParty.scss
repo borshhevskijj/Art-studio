@@ -1,0 +1,97 @@
+@import "/src/styles/variables.scss";
+
+.artParty {
+  position: relative;
+  padding-top: 30px;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  & h3 {
+    font-size: 30px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+.artPartyContentWrapper_partWrapper {
+  display: flex;
+}
+.artPartyContentWrapper {
+  display: flex;
+  position: relative;
+}
+.artParty_wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.artPartyImg {
+  height: min-content;
+  & img {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 30px;
+  }
+}
+.artPartyDescription {
+  gap: 0;
+  flex-direction: column;
+  padding: 0 28px 25px 55px;
+  & li {
+    &::marker {
+      content: "- ";
+    }
+    &:not(:last-child) {
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}
+// .artPartyImgLeft {
+//   transform: translate(0, 70px);
+// }
+.artPartyImgRight {
+  transform: translate(0, -40%);
+}
+.artParty_button {
+  position: static;
+  background-color: $pink;
+  min-width: 250px;
+  & .booking {
+    & div {
+      line-height: 0;
+      top: -5px;
+    }
+  }
+}
+// @media (max-width: 833px) {
+//   .artPartyDescription {
+//     & h3 {
+//       font-size: 24px;
+//       padding-bottom: 30px;
+//     }
+//   }
+// }
+@media (max-width: 1260px) {
+  .artPartyImgRight {
+    transform: translate(0, 0);
+    display: flex;
+    height: 100%;
+    align-items: end;
+  }
+}
+@media (max-width: 900px) {
+  .artPartyImgRight {
+    transform: translate(0, -125px);
+  }
+}
+@media (max-width: 800px) {
+  .artPartyImgRight {
+    transform: translate(28px, -125px);
+  }
+  .artPartyImgLeft {
+    transform: translateX(-28px);
+  }
+}
