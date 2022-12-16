@@ -12,6 +12,7 @@ import "./styles/aboutCourse.scss";
 import "./styles/ourStudios.scss";
 import "./styles/teachers.scss";
 import "./styles/artParty.scss";
+import "./styles/aboutСertificate.scss";
 //circleText
 import "./circleText";
 //slider

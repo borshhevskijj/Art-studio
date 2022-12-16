@@ -1,7 +1,7 @@
 @import "/src/styles/variables.scss";
-.blank {
-  width: 950px;
-}
+// .blank {
+//   width: 950px;
+// }
 .workshops_subTitle_elipse {
   position: relative;
 }
@@ -80,9 +80,7 @@
   }
   & img {
     max-width: 380px;
-    // experiment
     min-width: 100%;
-    // experiment
     height: 364px;
     width: 100%;
     border-radius: 25px;
@@ -245,6 +243,7 @@
     & img {
       max-width: none;
       width: 70%;
+      min-width: 70%;
       margin-left: auto;
       margin-right: auto;
     }

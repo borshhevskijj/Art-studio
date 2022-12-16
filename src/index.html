@@ -238,7 +238,7 @@
             </p>
             <p>Преподаватель: Анастасия</p>
           </div>
-          <div class="swiper-slide blank"></div>
+          <!-- <div class="swiper-slide blank"></div> -->
         </div>
       </div>
       <!-- Add Pagination -->
@@ -894,7 +894,7 @@
             </p>
           </div>
 
-          <div class="swiper-slide blank"></div>
+          <!-- <div class="swiper-slide blank"></div> -->
         </div>
       </div>
       <!-- Add Pagination -->
@@ -913,12 +913,15 @@
         <br />
         <span>отметить</span>
         <br />
-        <div style="white-space: nowrap">
-          <span class="elipse aboutUs_subTitle_elipse">праздник</span>
+        <div style="white-space: nowrap; position: relative">
+          <span class="elipse artParty_subTitle_elipse">праздник</span>
           <span>у нас? </span>
         </div>
       </h2>
-      <h3>Что входит в арт-вечеринку ?</h3>
+      <h3 class="desctop">
+        Что входит в <span style="white-space: nowrap">арт-вечеринку ?</span>
+      </h3>
+      <!-- <div class="testWrap"> -->
       <div class="artPartyContentWrapper">
         <!-- <div class="artPartyImgWrapper"> -->
         <div class="artPartyImg artPartyImgLeft">
@@ -928,16 +931,28 @@
         <div class="artPartyContentWrapper_partWrapper">
           <div class="artParty_wrapper">
             <div class="aboutUs_text_description artPartyDescription">
+              <h3 class="mobileSubTitle">
+                Что входит в
+                <span style="white-space: nowrap">арт-вечеринку ?</span>
+              </h3>
+
               <ul class="aboutUs_text_description_leftSide">
                 <li>
-                  Сначала мастер-класс «картина на выбор» — длительность 2 часа
+                  <p>
+                    Сначала мастер-класс «картина на выбор» — длительность 2
+                    часа
+                  </p>
                 </li>
-                <li>Цена за все (мк+ свободное время) -65 руб с человека</li>
                 <li>
-                  После МК свободное время в студии для фотографий, разговоров и
-                  прочее
+                  <p>Цена за все (мк+ свободное время) -65 руб с человека</p>
                 </li>
-                <li>Общее Время мероприятия 4 часа</li>
+                <li>
+                  <p>
+                    После МК свободное время в студии для фотографий, разговоров
+                    и прочее
+                  </p>
+                </li>
+                <li><p>Общее Время мероприятия 4 часа</p></li>
               </ul>
             </div>
 
@@ -959,6 +974,60 @@
             />
           </div>
           <!-- </div> -->
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <section class="form aboutСertificate container">
+      <div class="form_wrapper">
+        <h2 class="form_subTitle subTitle">
+          <span>Идеально для</span>
+          <br />
+          <span>подарка —</span>
+          <br />
+          <span class="elipse form_subTitle_elipse">сертификат</span>
+        </h2>
+
+        <div class="form_elements">
+          <div class="form_elements_content">
+            <div>
+              <h3>Мастер-класс</h3>
+              <p>
+                тот, кому будете дарить сам выбирает любой мастер-класс и как
+                воспользоваться сертификатом
+              </p>
+            </div>
+            <div>
+              <h3>Срок действия</h3>
+              <p>
+                срок действия 2 месяца (можно «открыть» дату не с момента
+                покупки, а когда будете дарить)
+              </p>
+            </div>
+            <div>
+              <h3>Количество</h3>
+              <p>
+                по 1 сертификату можно прийти вдвоём, доплатить (если сумма
+                меньше)
+              </p>
+            </div>
+            <div>
+              <h3>Сумма</h3>
+              <p>приобрести можно на любую сумму</p>
+            </div>
+          </div>
+
+          <a type="button" class="button aboutСertificate_button" href="#">
+            <div class="imgWrapper">
+              <img src="./images/arrow.svg" alt="" />
+            </div>
+            <div class="circleText">
+              <span class="certificate buttonText"
+                >&nbsp;хочу сертификат |</span
+              >
+            </div>
+          </a>
         </div>
       </div>
     </section>

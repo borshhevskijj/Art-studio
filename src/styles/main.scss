@@ -140,6 +140,7 @@ section {
   .subTitle {
     font-size: 33px;
     line-height: 36.3px;
+    margin-bottom: 25px;
   }
 }
 
@@ -156,9 +157,9 @@ section {
   html {
     font-size: 12.2px;
   }
-  .subTitle {
-    margin-bottom: 50px;
-  }
+  // .subTitle {
+  //   margin-bottom: 50px;
+  // }
 }
 
 @media (max-width: 700px) {
@@ -175,9 +176,9 @@ section {
       bottom: -90px;
     }
   }
-  .subTitle {
-    margin-bottom: 55px;
-  }
+  // .subTitle {
+  //   margin-bottom: 55px;
+  // }
 }
 
 .elipse::after,
@@ -191,5 +192,11 @@ section {
   .elipse::after,
   .elipse::before {
     border-width: 2px !important;
+  }
+}
+@media (max-width: 625px) {
+  p,
+  li {
+    font-size: 12px !important;
   }
 }

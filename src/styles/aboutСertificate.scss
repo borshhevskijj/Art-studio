@@ -1,0 +1,79 @@
+@import "/src/styles/variables.scss";
+
+.aboutСertificate_button {
+  position: absolute;
+  background-color: $pink;
+  top: calc(100% - 123.5px);
+  & .certificate {
+    & div {
+      line-height: 1.2;
+      top: 2px;
+    }
+  }
+}
+
+.aboutСertificate {
+  & .form_subTitle {
+    max-width: none;
+  }
+  & .form_elements {
+    padding-bottom: 123.5px;
+    padding-right: 6vw;
+    padding-left: 3.4vw;
+
+    & h3 {
+      font-size: 30px;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+    }
+    & .form_elements_content {
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+      & div {
+        & p {
+          line-height: 25px;
+          font-size: 18px;
+        }
+        &:last-child {
+          display: none;
+        }
+        &:not(:nth-last-child(-n + 2)) {
+          padding-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1160px) {
+  .aboutСertificate {
+    & .form_elements {
+      padding: 0;
+      & h3 {
+        font-size: 30px;
+        padding-bottom: 20px;
+      }
+      & .form_elements_content {
+        & div {
+          //   & p {
+          //     line-height: 25px;
+          //     font-size: 18px;
+          //   }
+          &:last-child {
+            display: block;
+          }
+          &:not(:nth-last-child(-n + 2)) {
+            padding-bottom: 40px;
+
+            // background-color: red;
+          }
+          //   &:not(:nth-last-child(-n + 2)) {
+          //     padding-bottom: 40px;
+          //   }
+        }
+      }
+    }
+  }
+  .aboutСertificate_button {
+    position: static;
+  }
+}
