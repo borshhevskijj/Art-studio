@@ -14,6 +14,7 @@ import "./styles/teachers.scss";
 import "./styles/artParty.scss";
 import "./styles/aboutСertificate.scss";
 import "./styles/faq.scss";
+import "./styles/map.scss";
 //circleText
 import "./circleText";
 //slider
