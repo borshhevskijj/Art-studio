@@ -22,6 +22,8 @@ import "./swiperSlider";
 //accordion
 import "./accordion.js";
 import "./styles/accordion.scss";
+// modal map
+import "./modalMap";
 //fonts
 import "./styles/gilroy-bold.css";
 import "./styles/gilroy-regular.css";
