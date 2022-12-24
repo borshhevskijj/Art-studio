@@ -24,6 +24,9 @@
     height: 100%;
     position: fixed;
     z-index: 12312312412412;
+
+    // width: 70%;
+    // height: 70%;
     // background-color: rgba(0, 0, 0, 0.4);
     top: 0;
     left: 0;
@@ -35,13 +38,12 @@
     margin-right: -22px;
   }
   @media (max-width: 625px) {
-    width: 55%;
+    width: calc(50% + 27px);
     margin-right: 0;
-    // position: relative;
-    // left: -22px;
-    // z-index: -1;
     height: auto;
     min-height: auto;
+    z-index: -12;
+    margin-left: -27px;
   }
   & div {
     border-radius: 30px;
@@ -206,3 +208,59 @@
 // }
 .modalContent.active {
 }
+.contacts_subTitle_elipse {
+  position: relative;
+}
+.contacts_subTitle_elipse::before {
+  // position: absolute;
+  border: 4px solid $blue;
+  left: -14.93%;
+  right: 60.83%;
+  top: -1.44%;
+  bottom: 3.6%;
+  transform: matrix(0.98, -0.1, 0.21, 0.99, 0, 0);
+  // width: 39vw;
+  // height: 8vw;
+  width: 130%;
+  height: 110%;
+}
+
+.contacts_subTitle_elipse::after {
+  border: 4px solid $blue;
+  left: -14.43%;
+  right: 60.09%;
+  top: -6.61%;
+  bottom: 3.77%;
+  transform: matrix(0.99, -0.03, 0.14, 1, 0, 0);
+  // width: 38.4vw;
+  // height: 8vw;
+  width: 130%;
+  height: 110%;
+}
+
+// @media (max-width: 833px) {
+//   .contacts_subTitle_elipse::before {
+//     width: 49vw;
+//     height: 11vw;
+//   }
+
+//   .contacts_subTitle_elipse::after {
+//     width: 48.4vw;
+//     height: 11vw;
+//   }
+// }
+
+// @media (max-width: 625px) {
+//   .contacts_subTitle_elipse::after {
+//     width: 41.4vw;
+//     height: 9vw;
+//     width: 130%;
+//     height: 110%;
+//   }
+//   .contacts_subTitle_elipse::before {
+//     width: 42vw;
+//     height: 8vw;
+//     width: 130%;
+//     height: 110%;
+//   }
+// }
