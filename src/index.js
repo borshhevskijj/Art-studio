@@ -28,3 +28,5 @@ import "./modalMap";
 //fonts
 import "./styles/gilroy-bold.css";
 import "./styles/gilroy-regular.css";
+
+import "./burgerMenu";

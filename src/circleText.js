@@ -1,10 +1,3 @@
-// // const text = document.querySelector(".text")
-// // const signUp  = document.querySelector(".text")
-// // const send  = document.querySelector(".text")
-// // const leaveARequest  = document.querySelector(".text")
-// // const reserve  = document.querySelector(".text")
-// // const certificate    = document.querySelector(".text")
-
 const masterСlass = document.querySelector(".masterСlass");
 const watchVideo = document.querySelector(".watchVideo");
 const buyWorkshops = document.querySelector(".buy_workshops");
@@ -14,7 +7,9 @@ const aboutCourse = document.querySelector(".aboutCourse_leaveARequest");
 const booking = document.querySelector(".booking");
 const certificate = document.querySelector(".certificate");
 
-const setTextContent = (selector, repeat) => {
+// const burgerMasterClass = document.querySelector(".burgerMasterClass");
+
+export const setTextContent = (selector, repeat) => {
   selector.textContent = selector.textContent.toUpperCase().repeat(repeat);
   return new CircleType(selector);
 };
@@ -27,4 +22,11 @@ setTextContent(form, 6);
 setTextContent(aboutCourse, 4);
 setTextContent(booking, 4);
 setTextContent(certificate, 4);
-// setTextContent(timetable, 4)
+
+// const navBar = document.querySelector(".navBar");
+
+// navBar.addEventListener("DOMNodeInserted", () => {
+//   const burgerMasterClass = document.querySelector(".burgerMasterClass");
+//   setTextContent(burgerMasterClass, 3);
+//   console.log("qwwww");
+// });

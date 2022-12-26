@@ -19,6 +19,13 @@
   <!-- !workshops сдвигает контейнер! -->
   <body>
     <header class="header container">
+
+      <div class="logoMobile"> 
+        <!-- скрыто до 625пс -->
+        <img src="./images/logo.svg" alt="" />
+      </div>
+
+
       <nav class="navBar">
         <ul class="navBar_menu">
           <li class="navBar_menu_aboutUs">
@@ -46,12 +53,19 @@
           </li>
         </ul>
       </nav>
+
+      <!-- <div class="brgMenu">
+        <span></span>
+      </div> -->
+      <div class="brgMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+
     </header>
     <section class="main container">
-      <span class="blur blur1"></span>
-      <span class="blur blur2"></span>
-      <span class="blur blur3"></span>
-
       <div class="main_container">
         <h1 class="main_title">
           <div>Внеси</div>
@@ -1161,9 +1175,9 @@
             <div>
               <p>
                 <span>Номер телефона</span>
-              <span>
+              <span class="contacts_phone">
                  <a href="tel:+375(29)646-02-89">+375 (29) 646-02-89</a>
-                 <span>
+              </span>
               </p>
             </div>
             <div>
@@ -1224,8 +1238,8 @@
       </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer_NavBar">
+    <footer class="footer container">
+      <nav class="footer_NavBar">
         <ul class="footer_Left">
           <li> 
             <a href="#"> о нас </a>
@@ -1241,19 +1255,24 @@
           </li>
         </ul>
         <!-- <div class="logo"> -->
-          <div class="navBar_Logo footerLogo">
+          <div class="footerLogo">
             <img src="./images/logo.svg" alt="" />
           </div>
         <!-- </div> -->
         <ul class="footer_Right">
-          <li>как оплатить?</li>
-          <li>договор оферты
+          <li>
+             <a href="#">как оплатить?</a> 
+          </li>
+          <li>
+             <a href="#">договор оферты</a>
           </li>
         </ul>
-      </div>
+      </nav>
       <div class="owner">
-        <p>ИП Левкович Анстасия Валерьевна
-          унп: 691 998 585</p>
+        <p>
+          ИП Левкович Анстасия Валерьевна
+          унп: 691 998 585
+        </p>
       </div>
     </footer>
   </body>

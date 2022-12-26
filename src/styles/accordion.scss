@@ -75,12 +75,13 @@
   margin-left: 5px;
 }
 
-.active {
-  &:after {
-    content: "\2796";
+.accordion {
+  &.active {
+    &:after {
+      content: "\2796";
+    }
   }
 }
-
 .workshopTitleContainer {
   display: flex;
   flex-direction: column;
