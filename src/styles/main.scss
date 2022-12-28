@@ -28,21 +28,25 @@ html {
   font-size: 15px;
   // height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 section {
-  padding-bottom: 100px;
-  margin-bottom: 100px;
+  padding-top: 60px !important;
+  padding-bottom: 70px;
+  margin-bottom: 70px;
 }
 @media (max-width: 768px) {
   section {
-    padding-bottom: 90px;
-    margin-bottom: 90px;
+    padding-top: 35px !important;
+    padding-bottom: 72.5px;
+    margin-bottom: 72.5px;
   }
 }
 @media (max-width: 425px) {
   section {
-    padding-bottom: 55px;
-    margin-bottom: 55px;
+    padding-top: 22px !important;
+    padding-bottom: 44px;
+    margin-bottom: 44px;
   }
 }
 .container {

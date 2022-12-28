@@ -1,5 +1,6 @@
 import { setTextContent } from "./circleText";
 const navBar = document.querySelector(".navBar");
+const navLink = document.querySelectorAll(".navigation a");
 const burgerBtn = document.querySelector(".brgMenu");
 
 const masterClassBtnClone = document
@@ -16,6 +17,7 @@ replacementNodeForMasterClassBtn.innerHTML = `
 <span class="burgerMasterClass buttonText">
   выбрать мастер-класс |
  </span>`;
+// console.log(masterClassBtnClone.childNodes.item(3));
 masterClassBtnClone.replaceChild(
   replacementNodeForMasterClassBtn,
   masterClassBtnClone.childNodes.item(3)
@@ -31,12 +33,20 @@ burgerBtn.addEventListener("click", () => {
   burgerBtn.classList.toggle("open");
 
   if (navBar.classList.contains("active")) {
-    document.documentElement.style.overflowY = "hidden";
     navBar.append(masterClassBtnClone);
     navBar.append(contactsWrapper);
+    document.documentElement.style.overflowY = "hidden";
     return;
   }
   document.documentElement.style.overflowY = "initial";
+});
+
+navLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    navBar.classList.remove("active");
+    burgerBtn.classList.remove("open");
+    document.documentElement.style.overflowY = "initial";
+  });
 });
 
 const observer = new MutationObserver(function (mutations) {

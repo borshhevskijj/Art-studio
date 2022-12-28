@@ -16,6 +16,7 @@ import "./styles/aboutСertificate.scss";
 import "./styles/faq.scss";
 import "./styles/map.scss";
 import "./styles/footer.scss";
+import "./styles/blur.scss";
 //circleText
 import "./circleText";
 //slider
@@ -30,3 +31,5 @@ import "./styles/gilroy-bold.css";
 import "./styles/gilroy-regular.css";
 
 import "./burgerMenu";
+
+import "./noise";

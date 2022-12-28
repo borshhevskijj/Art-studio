@@ -22,11 +22,3 @@ setTextContent(form, 6);
 setTextContent(aboutCourse, 4);
 setTextContent(booking, 4);
 setTextContent(certificate, 4);
-
-// const navBar = document.querySelector(".navBar");
-
-// navBar.addEventListener("DOMNodeInserted", () => {
-//   const burgerMasterClass = document.querySelector(".burgerMasterClass");
-//   setTextContent(burgerMasterClass, 3);
-//   console.log("qwwww");
-// });

@@ -16,7 +16,7 @@
 
 .main {
   position: relative;
-  padding-top: 61px;
+  // padding-top: 61px;
 }
 .main_img {
   z-index: 1;
@@ -44,7 +44,7 @@
   position: relative;
   text-align: center;
   z-index: 2;
-  padding: 0 0 285px 0;
+  padding: 0 0 120px 0;
 }
 
 .main_button {
@@ -72,7 +72,7 @@
     transform: translate(50%, 50%);
   }
   .main_container {
-    padding: 459px 0 180px 0;
+    padding: 459px 0 0 0;
   }
   .main_button {
     position: static;
@@ -85,7 +85,7 @@
     font-size: 14px;
   }
   .main {
-    padding-top: 0;
+    margin-top: -15px;
   }
 }
 
@@ -105,7 +105,8 @@
     padding-top: 60px;
   }
   .main_container {
-    padding: 294px 0 110px 0;
+    margin-top: 100px;
+    padding: 294px 0 0 0;
   }
   .main_img {
     width: 435px;
@@ -125,7 +126,8 @@
     height: 333px;
   }
   .main_container {
-    padding: 180px 0 110px 0;
+    padding: 180px 0 0 0;
+    margin-top: 150px;
   }
   .main {
     padding-top: 84px;

@@ -1,0 +1,28 @@
+.blur {
+  position: absolute;
+  z-index: -1;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  overflow-x: hidden;
+  /* height: auto; */
+  /* width: 2704px; */
+  height: 1708px;
+  left: 0;
+  top: 0;
+  //   max-width: 100vw;
+  & img {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+  }
+}
+.mainBlur {
+  & img {
+    left: -257px;
+    top: -345px;
+  }
+}
