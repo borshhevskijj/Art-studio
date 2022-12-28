@@ -1,28 +1,150 @@
-.blur {
+@import "/src/styles/variables.scss";
+
+.ellipseContainer {
   position: absolute;
-  z-index: -1;
-  margin: auto;
-  bottom: 0;
-  right: 0;
-  overflow-x: hidden;
-  /* height: auto; */
-  /* width: 2704px; */
-  height: 1708px;
-  left: 0;
-  top: 0;
-  //   max-width: 100vw;
-  & img {
-    position: absolute;
-    height: 100%;
-    right: 0;
-    bottom: 0;
+  z-index: -199;
+  width: 100%;
+  height: 1428px;
+  overflow: hidden;
+  background: transparent;
+  mix-blend-mode: hard-light;
+}
+.noise {
+  z-index: 2;
+  position: absolute;
+  mix-blend-mode: plus-lighter;
+  //   width: 1749px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: black;
+  filter: blur(0);
+  background-image: url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.elipseBlue {
+  position: absolute;
+  width: 749px;
+  height: 749px;
+  left: -5%;
+  top: 8%;
+  background: rgba(23, 27, 240, 1);
+  border: 0;
+  filter: blur(310px);
+  mix-blend-mode: color;
+  z-index: 1;
+}
+
+.elipsePink {
+  position: absolute;
+  width: 80%;
+  height: 500px;
+  left: -2%;
+  top: 40px;
+  background: #ff1e98;
+  border: 0;
+  filter: blur(320px);
+  mix-blend-mode: color;
+  z-index: 1;
+}
+
+.elipsePurple {
+  position: absolute;
+  width: 680px;
+  height: 693px;
+  top: 20%;
+  left: 60%;
+  border: 0;
+  filter: blur(320px);
+  background: #8509a6;
+  mix-blend-mode: color;
+  z-index: 1;
+}
+
+.workshops {
+  & .ellipseContainer {
+    height: 1428px;
     left: 0;
-    top: 0;
+    top: -15%;
+  }
+  .elipseBlue {
+    width: 500px;
+    height: 500px;
+    left: 10%;
+    top: 20%;
+  }
+
+  .elipsePink {
+    width: 500px;
+    height: 500px;
+    left: 0;
+    top: 40%;
+  }
+
+  .elipsePurple {
+    width: 500px;
+    height: 500px;
+    top: 30%;
+    left: -20%;
   }
 }
-.mainBlur {
-  & img {
-    left: -257px;
-    top: -345px;
+
+.timetable {
+  position: relative; // lomaet??
+  & .ellipseContainer {
+    height: 1628px;
+    left: 0;
+    top: -10%;
+  }
+  .elipseBlue {
+    width: 550px;
+    height: 400px;
+    left: 70%;
+    top: 65%;
+  }
+
+  .elipsePink {
+    width: 550px;
+    height: 550px;
+    left: 70%;
+    top: 22%;
+  }
+
+  .elipsePurple {
+    width: 450px;
+    height: 350px;
+    top: 50%;
+    left: 70%;
+    filter: blur(170px);
+  }
+}
+
+.aboutCourse {
+  position: relative;
+  & .ellipseContainer {
+    height: 1628px;
+    left: 0;
+    top: -30%;
+  }
+  .elipseBlue {
+    width: 450px;
+    height: 450px;
+    left: 30%;
+    top: 35%;
+  }
+
+  .elipsePink {
+    width: 450px;
+    height: 450px;
+    left: 0;
+    top: 52%;
+  }
+
+  .elipsePurple {
+    width: 550px;
+    height: 550px;
+    top: 12%;
+    left: -10%;
+    filter: blur(210px);
   }
 }

@@ -18,11 +18,11 @@
   </head>
   <!-- !workshops сдвигает контейнер! -->
   <body>
-    <div class="EllipseContainer">
-      <span class="Ellipse115"></span>
-      <span class="blur115"></span>
-      <span class="Ellipse116"></span>
-      <span class="Ellipse117"></span>
+    <div class="ellipseContainer">
+      <span class="noise"></span>
+      <span class="elipseBlue"></span>
+      <span class="elipsePink"></span>
+      <span class="elipsePurple"></span>
     </div>
     <header class="header container">
       <div class="logoMobile">
@@ -154,6 +154,12 @@
     </section>
 
     <section class="workshops container" id="workshops">
+      <div class="ellipseContainer">
+        <span class="noise"></span>
+        <span class="elipseBlue"></span>
+        <span class="elipsePink"></span>
+        <span class="elipsePurple"></span>
+      </div>
       <h2 class="workshops_subTitle subTitle">
         <div>наши занятия</div>
         <div>Вызывают</div>
@@ -281,6 +287,12 @@
     </section>
 
     <section class="timetable container" id="timetable">
+      <div class="ellipseContainer">
+        <span class="noise"></span>
+        <span class="elipsePink"></span>
+        <span class="elipsePurple"></span>
+        <span class="elipseBlue"></span>
+      </div>
       <div class="timetableSubTitleWrapper">
         <h2 class="timetableSubTitle subTitle">
           Расписание <br />
@@ -707,6 +719,12 @@
       </div>
     </section>
     <section class="aboutCourse container" id="aboutCourse">
+      <div class="ellipseContainer">
+        <span class="noise"></span>
+        <span class="elipsePink"></span>
+        <span class="elipsePurple"></span>
+        <span class="elipseBlue"></span>
+      </div>
       <h2 class="aboutCourseSubTitle subTitle">
         THE КУРС <br />
         <span class="elipse aboutCourseSubTitle_elipse">«Все об акриле»</span>
@@ -1284,88 +1302,5 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <style>
-    #canvas {
-      z-index: -100;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0.8;
-      background-color: #fff;
-    }
-
-    .EllipseContainer {
-      position: absolute;
-      z-index: -199;
-      width: 100%;
-      height: 1428px;
-      overflow-x: hidden;
-    }
-    .EllipseContainer span {
-      /* background-image: url("https://grainy-gradients.vercel.app/noise.svg"); */
-      /* background-image: url("./images/blurAndNoise/noise.svg"); */
-      /* background: linear-gradient(
-          0.55turn,
-          rgba(255, 255, 255, 0.5),
-          rgba(0, 0, 0, 0.5)
-        ),
-        url("https://grainy-gradients.vercel.app/noise.svg"); */
-    }
-    /* url("./images/blurAndNoise/noise.svg"); */
-
-    .Ellipse115 {
-      position: absolute;
-      z-index: 1;
-      width: 749px;
-      height: 749px;
-      left: 10%;
-      top: 25%;
-      background: rgba(23, 27, 240, 0.5);
-      border-radius: 50%;
-      border: 0;
-      /* filter: blur(100px); */
-      filter: blur(100px);
-      mix-blend-mode: color;
-    }
-
-    .blur115 {
-      z-index: 2;
-      position: absolute;
-      /* mix-blend-mode: color; */
-      width: 749px;
-      height: 749px;
-      left: 10%;
-      top: 25%;
-      border-radius: 50%;
-      border: 0;
-      background-color: black;
-      /* background-image: url("https://grainy-gradients.vercel.app/noise.svg"); */
-      background-image: url("./images/blurAndNoise/noise.svg");
-    }
-
-    /* .Ellipse116 {
-      position: absolute;
-      width: 658px;
-      height: 658px;
-      left: 25%;
-      top: 0;
-      background: #8509a6;
-      border-radius: 50%;
-      border: 0;
-      filter: blur(100px);
-    }
-
-    .Ellipse117 {
-      position: absolute;
-      width: 680px;
-      height: 693px;
-      top: 30%;
-      left: 40%;
-      background: #ff1e98;
-      border: 1px solid #000000;
-      border-radius: 50%;
-      border: 0;
-      filter: blur(100px);
-    } */
-  </style>
+  <style></style>
 </html>
