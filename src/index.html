@@ -18,8 +18,9 @@
   </head>
   <!-- !workshops сдвигает контейнер! -->
   <body>
-    <div class="ellipseContainer">
-      <span class="noise"></span>
+    <div class="ellipseContainer ellipseContainerHeader">
+      <!-- <span class="noise"></span> -->
+      <canvas id="canvas"></canvas>
       <span class="elipseBlue"></span>
       <span class="elipsePink"></span>
       <span class="elipsePurple"></span>
@@ -155,7 +156,9 @@
 
     <section class="workshops container" id="workshops">
       <div class="ellipseContainer">
-        <span class="noise"></span>
+        <!-- <span class="noise"></span>
+         -->
+        <canvas class="canvas"></canvas>
         <span class="elipseBlue"></span>
         <span class="elipsePink"></span>
         <span class="elipsePurple"></span>
@@ -288,7 +291,9 @@
 
     <section class="timetable container" id="timetable">
       <div class="ellipseContainer">
-        <span class="noise"></span>
+        <!-- <span class="noise"></span> -->
+        <canvas class="canvas"></canvas>
+
         <span class="elipsePink"></span>
         <span class="elipsePurple"></span>
         <span class="elipseBlue"></span>
@@ -720,10 +725,11 @@
     </section>
     <section class="aboutCourse container" id="aboutCourse">
       <div class="ellipseContainer">
-        <span class="noise"></span>
+        <!-- <span class="noise"></span> -->
+        <canvas class="canvas"></canvas>
         <span class="elipsePink"></span>
-        <span class="elipsePurple"></span>
         <span class="elipseBlue"></span>
+        <span class="elipsePurple"></span>
       </div>
       <h2 class="aboutCourseSubTitle subTitle">
         THE КУРС <br />
@@ -767,6 +773,14 @@
     </section>
 
     <section class="ourStudios">
+      <div class="ellipseContainer">
+        <!-- <span class="noise"></span> -->
+        <canvas class="canvas"></canvas>
+
+        <span class="elipsePink"></span>
+        <span class="elipsePurple"></span>
+        <span class="elipseBlue"></span>
+      </div>
       <h2 class="ourStudiosSubTitle subTitle">
         <span> У нас две студии</span> <br />
         <span class="elipse ourStudiosSubTitle_elipse">в самом центре </span>
@@ -846,6 +860,14 @@
     </section>
 
     <section class="teachers container">
+      <div class="ellipseContainer">
+        <!-- <span class="noise"></span> -->
+        <canvas class="canvas"></canvas>
+        <span class="elipseBlue"></span>
+        <span class="elipsePurple"></span>
+        <span class="elipsePink"></span>
+      </div>
+
       <h2 class="teachers_subTitle subTitle">
         <span>наши</span>
         <br />
@@ -1070,237 +1092,253 @@
       </div>
     </section>
 
-    <section class="faq container" id="faq">
-      <!-- <div class="faqSubTitleWrapper"> -->
-      <h2 class="faqSubTitle subTitle">FAQ</h2>
-      <!-- </div> -->
+    <div class="elipseWrapper">
+      <div class="ellipseContainer">
+        <!-- <span class="noise"></span> -->
+        <canvas class="canvas"></canvas>
+        <span class="elipseBlue"></span>
+        <span class="elipsePurple"></span>
+        <span class="elipsePink"></span>
 
-      <ul class="accordionWrapper">
-        <li class="accordionConteiner">
-          <button class="accordion">
-            <div class="accordionVisiblePart">
-              <div class="faqTitle">
-                <h3>
-                  <span>01</span>
-                  <span>Можно ли посещать занятия, если не рисовал? </span>
-                </h3>
-              </div>
-            </div>
-          </button>
-
-          <div class="panel">
-            <p class="faqContent">
-              Конечно! Наши мастер-классы подходят для людей без опыта
-              рисования. <br />
-              В нашей студии каждый может погрузиться в атмосферу творчества и
-              создать своими руками картину под чутким руководством наших
-              преподавателей, даже не имея навыков рисования!
-            </p>
-          </div>
-        </li>
-        <li class="accordionConteiner">
-          <button class="accordion">
-            <div class="accordionVisiblePart">
-              <div class="faqTitle">
-                <h3>
-                  <span>02</span>
-                  <span>Как записаться на курс ?</span>
-                </h3>
-              </div>
-            </div>
-          </button>
-
-          <div class="panel">
-            <p class="faqContent">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              maxime hic, voluptas qui quae aliquam. <br />
-              Eum atque eligendi at, aliquam, accusamus enim vel ullam, totam
-              laudantium doloremque laboriosam similique rerum?
-            </p>
-          </div>
-        </li>
-        <li class="accordionConteiner">
-          <button class="accordion">
-            <div class="accordionVisiblePart">
-              <div class="faqTitle">
-                <h3>
-                  <span>03</span>
-                  <span>Как происходит оплата?</span>
-                </h3>
-              </div>
-            </div>
-          </button>
-
-          <div class="panel">
-            <p class="faqContent">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
-              quidem ratione nulla neque quasi, tenetur eius sint quaerat.<br />
-              Consequuntur minima nobis necessitatibus sequi quia maiores odio,
-              aliquid laudantium hic mollitia!
-            </p>
-          </div>
-        </li>
-        <li class="accordionConteiner">
-          <button class="accordion">
-            <div class="accordionVisiblePart">
-              <div class="faqTitle">
-                <h3>
-                  <span>04</span>
-                  <span>Нужно ли что-нибудь брать на мастер-классы?</span>
-                </h3>
-              </div>
-            </div>
-          </button>
-
-          <div class="panel">
-            <p class="faqContent">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
-              quidem ratione nulla neque quasi, tenetur eius sint quaerat.<br />
-              Consequuntur minima nobis necessitatibus sequi quia maiores odio,
-              aliquid laudantium hic mollitia!
-            </p>
-          </div>
-        </li>
-        <li class="accordionConteiner">
-          <button class="accordion">
-            <div class="accordionVisiblePart">
-              <div class="faqTitle">
-                <h3>
-                  <span>05</span>
-                  <span>А если у меня не получится?</span>
-                </h3>
-              </div>
-            </div>
-          </button>
-
-          <div class="panel">
-            <p class="faqContent">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
-              quidem ratione nulla neque quasi, tenetur eius sint quaerat.<br />
-              Consequuntur minima nobis necessitatibus sequi quia maiores odio,
-              aliquid laudantium hic mollitia!
-            </p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="contacts container" id="contacts">
-      <h2 class="contacts_subTitle subTitle">
-        <span>нАШИ</span>
-        <br />
-        <span class="elipse contacts_subTitle_elipse">Контакты</span>
-      </h2>
-      <div class="contactsWrapper">
-        <div class="info">
-          <div>
-            <p>
-              <span>Адрес студий</span>
-              <span> Машерова 11 , 7 этаж </span>
-            </p>
-          </div>
-          <div>
-            <p>
-              <span>Номер телефона</span>
-              <span class="contacts_phone">
-                <a href="tel:+375(29)646-02-89">+375 (29) 646-02-89</a>
-              </span>
-            </p>
-          </div>
-          <div>
-            <p>
-              <span>Время работы</span>
-              11:00-22:00
-            </p>
-          </div>
-          <div>
-            <p>
-              <span>Соц. сети</span>
-              <span class="contactsIcons">
-                <a href="https://www.instagram.com/">
-                  <img src="./images/IGIcon.svg" alt=""
-                /></a>
-                <a href="https://telegram.org/">
-                  <img src="./images/TGIcon.svg" alt=""
-                /></a>
-              </span>
-            </p>
-          </div>
-        </div>
-
-        <div class="map">
-          <div>
-            <a
-              href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps"
-              style="
-                color: rgb(79, 79, 79);
-                font-size: 12px;
-                position: absolute;
-                top: 0px;
-              "
-            >
-            </a
-            ><a
-              href="https://yandex.by/maps/157/minsk/house/Zk4YcwFpTUYGQFtpfXVwdHphbQ==/?ll=27.569431%2C53.915629&utm_medium=mapframe&utm_source=maps&z=16.92"
-              style="
-                color: rgb(124, 123, 123);
-                font-size: 12px;
-                position: absolute;
-                top: 14px;
-              "
-            >
-            </a>
-            <!-- <div class="iframeContainer"> -->
-            <iframe
-              class="iframe"
-              src="https://yandex.by/map-widget/v1/-/CCUnjWD8sC"
-              frameborder="1"
-              allowfullscreen
-            >
-            </iframe>
-            <!-- </div> -->
-          </div>
-        </div>
+        <span class="elipseBlue bottomBlue"></span>
+        <span class="elipsePurple bottomPurple"></span>
+        <span class="elipsePink bottomPink"></span>
       </div>
-      <!-- </div> -->
-    </section>
-    <footer class="footer container">
-      <nav class="footer_NavBar navigation">
-        <ul class="footer_Left">
-          <li>
-            <a href="#aboutUs"> о нас </a>
+
+      <section class="faq container" id="faq">
+        <!-- <div class="ellipseContainer">
+        <span class="noise"></span>
+        <span class="elipseBlue"></span>
+        <span class="elipsePurple"></span>
+        <span class="elipsePink"></span>
+      </div> -->
+        <h2 class="faqSubTitle subTitle">FAQ</h2>
+
+        <ul class="accordionWrapper">
+          <li class="accordionConteiner">
+            <button class="accordion">
+              <div class="accordionVisiblePart">
+                <div class="faqTitle">
+                  <h3>
+                    <span>01</span>
+                    <span>Можно ли посещать занятия, если не рисовал? </span>
+                  </h3>
+                </div>
+              </div>
+            </button>
+
+            <div class="panel">
+              <p class="faqContent">
+                Конечно! Наши мастер-классы подходят для людей без опыта
+                рисования. <br />
+                В нашей студии каждый может погрузиться в атмосферу творчества и
+                создать своими руками картину под чутким руководством наших
+                преподавателей, даже не имея навыков рисования!
+              </p>
+            </div>
           </li>
-          <li>
-            <a href="#workshops"> мастер-классы </a>
+          <li class="accordionConteiner">
+            <button class="accordion">
+              <div class="accordionVisiblePart">
+                <div class="faqTitle">
+                  <h3>
+                    <span>02</span>
+                    <span>Как записаться на курс ?</span>
+                  </h3>
+                </div>
+              </div>
+            </button>
+
+            <div class="panel">
+              <p class="faqContent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                maxime hic, voluptas qui quae aliquam. <br />
+                Eum atque eligendi at, aliquam, accusamus enim vel ullam, totam
+                laudantium doloremque laboriosam similique rerum?
+              </p>
+            </div>
           </li>
-          <li>
-            <a href="#timetable"> расписание </a>
+          <li class="accordionConteiner">
+            <button class="accordion">
+              <div class="accordionVisiblePart">
+                <div class="faqTitle">
+                  <h3>
+                    <span>03</span>
+                    <span>Как происходит оплата?</span>
+                  </h3>
+                </div>
+              </div>
+            </button>
+
+            <div class="panel">
+              <p class="faqContent">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+                quidem ratione nulla neque quasi, tenetur eius sint quaerat.<br />
+                Consequuntur minima nobis necessitatibus sequi quia maiores
+                odio, aliquid laudantium hic mollitia!
+              </p>
+            </div>
           </li>
-          <li>
-            <a href="#faq"> FAQ </a>
+          <li class="accordionConteiner">
+            <button class="accordion">
+              <div class="accordionVisiblePart">
+                <div class="faqTitle">
+                  <h3>
+                    <span>04</span>
+                    <span>Нужно ли что-нибудь брать на мастер-классы?</span>
+                  </h3>
+                </div>
+              </div>
+            </button>
+
+            <div class="panel">
+              <p class="faqContent">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+                quidem ratione nulla neque quasi, tenetur eius sint quaerat.<br />
+                Consequuntur minima nobis necessitatibus sequi quia maiores
+                odio, aliquid laudantium hic mollitia!
+              </p>
+            </div>
+          </li>
+          <li class="accordionConteiner">
+            <button class="accordion">
+              <div class="accordionVisiblePart">
+                <div class="faqTitle">
+                  <h3>
+                    <span>05</span>
+                    <span>А если у меня не получится?</span>
+                  </h3>
+                </div>
+              </div>
+            </button>
+
+            <div class="panel">
+              <p class="faqContent">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+                quidem ratione nulla neque quasi, tenetur eius sint quaerat.<br />
+                Consequuntur minima nobis necessitatibus sequi quia maiores
+                odio, aliquid laudantium hic mollitia!
+              </p>
+            </div>
           </li>
         </ul>
-        <!-- <div class="logo"> -->
-        <div class="footerLogo">
-          <a href="#main">
-            <img src="./images/logo.svg" alt="" />
-          </a>
+      </section>
+      <section class="contacts container" id="contacts">
+        <h2 class="contacts_subTitle subTitle">
+          <span>нАШИ</span>
+          <br />
+          <span class="elipse contacts_subTitle_elipse">Контакты</span>
+        </h2>
+        <div class="contactsWrapper">
+          <div class="info">
+            <div>
+              <p>
+                <span>Адрес студий</span>
+                <span> Машерова 11 , 7 этаж </span>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>Номер телефона</span>
+                <span class="contacts_phone">
+                  <a href="tel:+375(29)646-02-89">+375 (29) 646-02-89</a>
+                </span>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>Время работы</span>
+                11:00-22:00
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>Соц. сети</span>
+                <span class="contactsIcons">
+                  <a href="https://www.instagram.com/">
+                    <img src="./images/IGIcon.svg" alt=""
+                  /></a>
+                  <a href="https://telegram.org/">
+                    <img src="./images/TGIcon.svg" alt=""
+                  /></a>
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div class="map">
+            <div>
+              <a
+                href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps"
+                style="
+                  color: rgb(79, 79, 79);
+                  font-size: 12px;
+                  position: absolute;
+                  top: 0px;
+                "
+              >
+              </a
+              ><a
+                href="https://yandex.by/maps/157/minsk/house/Zk4YcwFpTUYGQFtpfXVwdHphbQ==/?ll=27.569431%2C53.915629&utm_medium=mapframe&utm_source=maps&z=16.92"
+                style="
+                  color: rgb(124, 123, 123);
+                  font-size: 12px;
+                  position: absolute;
+                  top: 14px;
+                "
+              >
+              </a>
+              <iframe
+                class="iframe"
+                src="https://yandex.by/map-widget/v1/-/CCUnjWD8sC"
+                frameborder="1"
+                allowfullscreen
+              >
+                <!-- src="https://yandex.by/map-widget/v1/-/CCUnjWD8sC" -->
+              </iframe>
+            </div>
+          </div>
         </div>
         <!-- </div> -->
-        <ul class="footer_Right">
-          <li>
-            <a href="#faq">как оплатить?</a>
-          </li>
-          <li>
-            <a href="#">договор оферты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="owner">
-        <p>ИП Левкович Анстасия Валерьевна унп: 691 998 585</p>
-      </div>
-    </footer>
+      </section>
+      <footer class="footer container">
+        <nav class="footer_NavBar navigation">
+          <ul class="footer_Left">
+            <li>
+              <a href="#aboutUs"> о нас </a>
+            </li>
+            <li>
+              <a href="#workshops"> мастер-классы </a>
+            </li>
+            <li>
+              <a href="#timetable"> расписание </a>
+            </li>
+            <li>
+              <a href="#faq"> FAQ </a>
+            </li>
+          </ul>
+          <!-- <div class="logo"> -->
+          <div class="footerLogo">
+            <a href="#main">
+              <img src="./images/logo.svg" alt="" />
+            </a>
+          </div>
+          <!-- </div> -->
+          <ul class="footer_Right">
+            <li>
+              <a href="#faq">как оплатить?</a>
+            </li>
+            <li>
+              <a href="#">договор оферты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="owner">
+          <p>ИП Левкович Анстасия Валерьевна унп: 691 998 585</p>
+        </div>
+      </footer>
+    </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <style></style>
 </html>

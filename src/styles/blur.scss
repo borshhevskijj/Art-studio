@@ -4,61 +4,73 @@
   position: absolute;
   z-index: -199;
   width: 100%;
-  height: 1428px;
+  height: 1198px;
   overflow: hidden;
   background: transparent;
-  mix-blend-mode: hard-light;
+  mix-blend-mode: unset;
+  // isolation: isolate;
 }
-.noise {
-  z-index: 2;
+
+#canvas,
+.canvas {
+  z-index: 4;
   position: absolute;
-  mix-blend-mode: plus-lighter;
-  //   width: 1749px;
-  width: 100%;
-  height: 100%;
+  /* mix-blend-mode: lighten; */
+  // width: 100%;
+  // height: 100%;
   border: 0;
-  background-color: black;
+  background-color: rgb(54 54 54 / 0%);
   filter: blur(0);
-  background-image: url(https://grainy-gradients.vercel.app/noise.svg);
+  // isolation: isolate;
 }
 
 .elipseBlue {
   position: absolute;
-  width: 749px;
-  height: 749px;
-  left: -5%;
-  top: 8%;
-  background: rgba(23, 27, 240, 1);
+  width: 849px;
+  height: 1129px;
+  left: -10%;
+  top: -1%;
+  // background: rgba(23, 27, 240, 0.55);
+  background-color: transparentize($blue, 0.45);
   border: 0;
-  filter: blur(310px);
-  mix-blend-mode: color;
-  z-index: 1;
+  filter: blur(100px);
+  z-index: 2;
+  border-radius: 50%;
+}
+.ellipseContainerHeader {
+  & .elipseBlue {
+    transform: rotate(312deg);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 0%;
+  }
 }
 
 .elipsePink {
   position: absolute;
-  width: 80%;
-  height: 500px;
-  left: -2%;
-  top: 40px;
-  background: #ff1e98;
+  width: 105%;
+  height: 749px;
+  left: -1%;
+  top: -19%;
+  // background: rgba(255, 30, 152, 0.7);
+  background-color: transparentize($pink, 0.25);
   border: 0;
-  filter: blur(320px);
-  mix-blend-mode: color;
+  filter: blur(100px);
   z-index: 1;
+  border-radius: 50%;
 }
 
 .elipsePurple {
   position: absolute;
-  width: 680px;
-  height: 693px;
-  top: 20%;
-  left: 60%;
+  width: 739px;
+  height: 975px;
+  top: -3%;
+  left: 58%;
   border: 0;
-  filter: blur(320px);
-  background: #8509a6;
-  mix-blend-mode: color;
+  filter: blur(100px);
+  background-color: $purple;
   z-index: 1;
+  border-radius: 50%;
+  transform: rotate(255deg);
 }
 
 .workshops {
@@ -68,24 +80,25 @@
     top: -15%;
   }
   .elipseBlue {
-    width: 500px;
-    height: 500px;
-    left: 10%;
-    top: 20%;
+    width: 700px;
+    height: 700px;
+    left: -10%;
+    top: 10%;
+    border-radius: 50%;
   }
 
   .elipsePink {
-    width: 500px;
-    height: 500px;
-    left: 0;
-    top: 40%;
+    width: 700px;
+    height: 700px;
+    left: -10%;
+    top: 35%;
   }
 
   .elipsePurple {
     width: 500px;
     height: 500px;
-    top: 30%;
-    left: -20%;
+    top: 34%;
+    left: 10%;
   }
 }
 
@@ -97,25 +110,25 @@
     top: -10%;
   }
   .elipseBlue {
-    width: 550px;
-    height: 400px;
-    left: 70%;
-    top: 65%;
+    width: 750px;
+    height: 600px;
+    left: 60%;
+    top: 57%;
+    // transform: rotate(0deg);
   }
 
   .elipsePink {
-    width: 550px;
-    height: 550px;
-    left: 70%;
-    top: 22%;
+    width: 750px;
+    height: 750px;
+    left: 65%;
+    top: 12%;
   }
 
   .elipsePurple {
-    width: 450px;
-    height: 350px;
-    top: 50%;
-    left: 70%;
-    filter: blur(170px);
+    width: 650px;
+    height: 550px;
+    top: 44%;
+    left: 68%;
   }
 }
 
@@ -127,17 +140,17 @@
     top: -30%;
   }
   .elipseBlue {
-    width: 450px;
-    height: 450px;
-    left: 30%;
-    top: 35%;
+    width: 650px;
+    height: 650px;
+    left: 14%;
+    top: 24%;
   }
 
   .elipsePink {
-    width: 450px;
-    height: 450px;
-    left: 0;
-    top: 52%;
+    width: 650px;
+    height: 650px;
+    left: -5%;
+    top: 31%;
   }
 
   .elipsePurple {
@@ -145,6 +158,125 @@
     height: 550px;
     top: 12%;
     left: -10%;
-    filter: blur(210px);
+    // filter: blur(100px);
+  }
+}
+.ourStudios {
+  position: relative;
+  & .ellipseContainer {
+    height: 1608px;
+    top: 22%;
+    width: 100%;
+  }
+  .elipseBlue {
+    width: 750px;
+    height: 750px;
+    left: 54%;
+    top: 35%;
+  }
+
+  .elipsePink {
+    width: 750px;
+    height: 650px;
+    left: 47%;
+    top: 29%;
+  }
+
+  .elipsePurple {
+    width: 650px;
+    height: 650px;
+    top: 10%;
+    left: 61%;
+  }
+}
+.teachers {
+  position: relative;
+  & .ellipseContainer {
+    height: 1838px;
+    top: 6%;
+    width: 80%;
+    left: 0;
+  }
+  .elipseBlue {
+    width: 770px;
+    height: 630px;
+    left: -20%;
+    top: 13%;
+    filter: blur(240px);
+  }
+
+  .elipsePink {
+    width: 650px;
+    height: 950px;
+    left: -10%;
+    top: 32%;
+    filter: blur(308px);
+  }
+
+  .elipsePurple {
+    width: 731px;
+    height: 850px;
+    top: 9%;
+    left: -30%;
+    border-radius: 50%;
+    filter: blur(100px);
+  }
+}
+.elipseWrapper {
+  position: relative;
+  & .ellipseContainer {
+    height: 150%;
+    top: -50%;
+    width: 100%;
+    left: 0;
+  }
+  .elipseBlue {
+    width: 570px;
+    height: 490px;
+    left: 80%;
+    top: 34%;
+    filter: blur(330px);
+  }
+
+  .elipsePink {
+    width: 760px;
+    height: 550px;
+    left: 50%;
+    top: 22%;
+    filter: blur(313px);
+  }
+
+  .elipsePurple {
+    width: 731px;
+    height: 750px;
+    top: 9%;
+    left: 69%;
+    border-radius: 50%;
+    filter: blur(100px);
+  }
+
+  .bottomBlue {
+    width: 470px;
+    height: 390px;
+    left: 11%;
+    top: 84%;
+    filter: blur(230px);
+  }
+
+  .bottomPink {
+    width: 560px;
+    height: 550px;
+    left: 0%;
+    top: 65%;
+    filter: blur(313px);
+  }
+
+  .bottomPurple {
+    width: 611px;
+    height: 549px;
+    top: 59%;
+    left: 32%;
+    border-radius: 50%;
+    filter: blur(220px);
   }
 }

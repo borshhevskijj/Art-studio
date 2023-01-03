@@ -3,7 +3,6 @@ const map = document.querySelector(".map");
 // const iframe = document.querySelector(".frame");
 
 let active = false;
-
 map.addEventListener("click", (e) => {
   e.stopPropagation();
   if (!active) {
