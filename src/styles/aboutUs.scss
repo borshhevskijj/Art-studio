@@ -43,7 +43,9 @@
   // bottom: -52px;
   z-index: 2;
   margin-bottom: 146px;
-
+  & .imgWrapper {
+    left: 5px;
+  }
   & .watchVideo {
     & div {
       //   line-height: 1.7;
@@ -70,29 +72,27 @@
   height: 588px;
 }
 
-.aboutUs_subTitle_elipse::before {
-  left: 34.82%;
-  right: 25.9%;
-  top: 8%;
-  bottom: 92.18%;
-  transform: matrix(0.98, -0.1, 0.22, 0.99, 0, 0);
-  border: 4px solid $pink;
-  width: 38vw;
-  height: 7vw;
+.aboutUs_subTitle_elipse {
+  position: relative;
+  &::before {
+    left: -10%;
+    top: 7%;
+    transform: matrix(0.98, -0.1, 0.22, 0.99, 0, 0);
+    border: 4px solid $pink;
+  }
+  &::after {
+    left: -10%;
+    top: 0;
+    transform: matrix(0.99, -0.03, 0.14, 1, 18, 5);
+    border: 4px solid $pink;
+  }
 }
-
-.aboutUs_subTitle_elipse::after {
-  border: 4px solid $pink;
-  left: 33.33%;
-  right: 30.23%;
-  top: 7.84%;
-  bottom: 91.34%;
-  transform: matrix(0.99, -0.03, 0.14, 1, 18, 5);
-  // width: 524px;
-  // height: 103.68px;
-  width: 38vw;
-  height: 7vw;
-}
+// .aboutUs_subTitle_elipse::after {
+//   left: -10%;
+//   top: 0;
+//   transform: matrix(0.99, -0.03, 0.14, 1, 18, 5);
+//   border: 4px solid $pink;
+// }
 .aboutUs_wrapper {
   display: flex;
   flex-direction: column;
@@ -156,24 +156,24 @@
   .abouteUsImgRight {
     height: 242px;
   }
-  .aboutUs_subTitle_elipse::after {
-    left: 18.15%;
-    right: 19.28%;
-    top: 7.3%;
-    bottom: 88.52%;
-    transform: matrix(0.99, -0.03, 0.15, 1, 0, 0);
-    width: 62.7vw;
-    height: 11.3vw;
-  }
-  .aboutUs_subTitle_elipse::before {
-    left: 18.98%;
-    right: 20.58%;
-    top: 6.6%;
-    bottom: 88.38%;
-    width: 60vw;
-    height: 11.3vw;
-    transform: matrix(0.97, -0.09, 0.24, 1, 0, 0);
-  }
+  // .aboutUs_subTitle_elipse::after {
+  //   left: 18.15%;
+  //   right: 19.28%;
+  //   top: 7.3%;
+  //   bottom: 88.52%;
+  //   transform: matrix(0.99, -0.03, 0.15, 1, 0, 0);
+  //   width: 62.7vw;
+  //   height: 11.3vw;
+  // }
+  // .aboutUs_subTitle_elipse::before {
+  //   left: 18.98%;
+  //   right: 20.58%;
+  //   top: 6.6%;
+  //   bottom: 88.38%;
+  //   width: 60vw;
+  //   height: 11.3vw;
+  //   transform: matrix(0.97, -0.09, 0.24, 1, 0, 0);
+  // }
 }
 
 @media (max-width: 700px) {
@@ -218,26 +218,26 @@
     padding-top: 195px;
   }
 
-  .aboutUs_subTitle_elipse::after {
-    left: 32.47%;
-    left: 25vw;
-    right: 11.13%;
-    top: 5.84%;
-    bottom: 90.83%;
-    transform: matrix(0.99, -0.03, 0.14, 1, 0, 0);
-    width: calc(49% + 8vw);
-    height: 9vw;
-  }
-  .aboutUs_subTitle_elipse::before {
-    left: 32.5%;
-    left: 26vw;
-    right: 12.69%;
-    top: 5.75%;
-    bottom: 90.73%;
-    transform: matrix(0.98, -0.1, 0.22, 0.99, 0, 0);
-    width: calc(50% + 8vw);
-    height: 9vw;
-  }
+  // .aboutUs_subTitle_elipse::after {
+  //   left: 32.47%;
+  //   left: 25vw;
+  //   right: 11.13%;
+  //   top: 5.84%;
+  //   bottom: 90.83%;
+  //   transform: matrix(0.99, -0.03, 0.14, 1, 0, 0);
+  //   width: calc(49% + 8vw);
+  //   height: 9vw;
+  // }
+  // .aboutUs_subTitle_elipse::before {
+  //   left: 32.5%;
+  //   left: 26vw;
+  //   right: 12.69%;
+  //   top: 5.75%;
+  //   bottom: 90.73%;
+  //   transform: matrix(0.98, -0.1, 0.22, 0.99, 0, 0);
+  //   width: calc(50% + 8vw);
+  //   height: 9vw;
+  // }
 }
 @media (max-width: 400px) {
   .aboutUs_text_description {
@@ -250,22 +250,22 @@
       object-position: 0 51%;
     }
   }
-  .aboutUs_subTitle_elipse::after {
-    left: 14.47%;
-    right: 11.13%;
-    top: 4.84%;
-    bottom: 90.83%;
-    transform: matrix(0.99, -0.03, 0.14, 1, 0, 0);
-    width: 290.26px;
-    height: 55.72px;
-  }
-  .aboutUs_subTitle_elipse::before {
-    left: 17.5%;
-    right: 12.69%;
-    top: 4.75%;
-    bottom: 90.73%;
-    transform: matrix(0.98, -0.1, 0.22, 0.99, 0, 0);
-    height: 55.72px;
-    width: 280.53px;
-  }
+  // .aboutUs_subTitle_elipse::after {
+  //   left: 14.47%;
+  //   right: 11.13%;
+  //   top: 4.84%;
+  //   bottom: 90.83%;
+  //   transform: matrix(0.99, -0.03, 0.14, 1, 0, 0);
+  //   width: 290.26px;
+  //   height: 55.72px;
+  // }
+  // .aboutUs_subTitle_elipse::before {
+  //   left: 17.5%;
+  //   right: 12.69%;
+  //   top: 4.75%;
+  //   bottom: 90.73%;
+  //   transform: matrix(0.98, -0.1, 0.22, 0.99, 0, 0);
+  //   height: 55.72px;
+  //   width: 280.53px;
+  // }
 }

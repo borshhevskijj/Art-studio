@@ -36,7 +36,7 @@
   background-color: transparent;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.65s ease-in-out;
+  transition: max-height 0.45s ease;
 
   & .workshopTitle {
     width: 100%;
@@ -65,8 +65,9 @@
 }
 
 .accordion:after {
-  content: "\02795";
-  /* Символ юникода знак (+) */
+  content: url("../images/accordionArrow.svg");
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in;
   position: absolute;
   right: 0;
   font-size: 13px;
@@ -78,10 +79,12 @@
 .accordion {
   &.active {
     &:after {
-      content: "\2796";
+      transform: rotate(180deg);
+      transition: transform 0.3s ease-in;
     }
   }
 }
+
 .workshopTitleContainer {
   display: flex;
   flex-direction: column;

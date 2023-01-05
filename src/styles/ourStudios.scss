@@ -12,30 +12,18 @@
 }
 
 .ourStudiosSubTitle_elipse::before {
-  left: 25.5%;
-  right: 23.71%;
-  top: 17.89%;
-  bottom: 48.15%;
-  top: calc(37.89% - 4vw);
-  // display: none;
+  left: -10%;
+  top: 0;
   border: 4px solid $blue;
   transform: matrix(0.97, -0.08, 0.27, 1, 0, 0);
-  width: 38vw;
-  height: 7vw;
-  width: 52.5vw;
-  height: 9vw;
 }
 
 .ourStudiosSubTitle_elipse::after {
-  left: 24.8%;
-  right: 22.57%;
-  top: 18.7%;
-  top: calc(38.89% - 4vw);
-  bottom: 48.35%;
+  left: -10%;
+  top: 5%;
   border: 4px solid $blue;
   transform: matrix(0.99, -0.02, 0.17, 1, 0, 0);
-  width: 54vw;
-  height: 9vw;
+  width: 123% !important;
 }
 
 .ourStudiosWrapper_topContent {

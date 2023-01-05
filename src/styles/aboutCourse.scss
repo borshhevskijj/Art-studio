@@ -44,29 +44,17 @@
 }
 
 .aboutCourseSubTitle_elipse::before {
-  position: absolute;
-  left: 21.89%;
-  right: 23.49%;
-  top: 30.09%;
-  bottom: 53.96%;
-
-  border: 4px solid #ff1e98;
+  left: -10%;
+  top: 0;
+  border: 4px solid $pink;
   transform: matrix(0.99, -0.02, 0.17, 1, 0, 0);
-  width: 54vw;
-  height: 9vw;
 }
 
 .aboutCourseSubTitle_elipse::after {
-  position: absolute;
-  left: 22.59%;
-  right: 24.63%;
-  top: 31.28%;
-  bottom: 53.77%;
-
-  border: 4px solid #ff1e98;
+  left: -10%;
+  top: 0;
+  border: 4px solid $pink;
   transform: matrix(0.97, -0.08, 0.27, 1, 0, 0);
-  width: 52vw;
-  height: 9vw;
 }
 
 @media (max-width: 1160px) {

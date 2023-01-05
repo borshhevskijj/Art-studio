@@ -186,13 +186,19 @@ section {
   //   margin-bottom: 55px;
   // }
 }
-
-.elipse::after,
-.elipse::before {
-  content: "";
-  border-radius: 50%;
-  position: absolute;
-  z-index: -1;
+.elipse {
+  position: relative;
+  &.elipse::after,
+  &.elipse::before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 120%;
+    height: 110%;
+  }
 }
 @media (max-width: 625px) {
   .elipse::after,

@@ -11,29 +11,17 @@
 }
 
 .teachers_subTitle_elipse::before {
-  position: absolute;
-  left: 19.59%;
-  right: 24.63%;
-  top: 40%;
-  bottom: 50.22%;
-
+  left: -10%;
+  top: -5%;
   border: 4px solid $pink;
   transform: matrix(0.97, -0.08, 0.27, 1, 0, 0);
-
-  width: 52.5vw;
-  height: 9vw;
 }
 
 .teachers_subTitle_elipse::after {
-  position: absolute;
-  border: 4px solid $pink;
-  left: 18.89%;
-  right: 23.49%;
-  top: 40.64%;
-  bottom: 35.41%;
+  left: -10%;
+  top: -5%;
   transform: matrix(0.99, -0.02, 0.17, 1, 0, 0);
-  width: 54vw;
-  height: 9vw;
+  border: 4px solid $pink;
 }
 
 @media (max-width: 833px) {
