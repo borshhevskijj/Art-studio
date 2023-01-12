@@ -1,4 +1,5 @@
 import { setTextContent } from "./circleText";
+import { drawing } from "./noise";
 const navBar = document.querySelector(".navBar");
 const navLink = document.querySelectorAll(".navigation a");
 const burgerBtn = document.querySelector(".brgMenu");
@@ -17,7 +18,6 @@ replacementNodeForMasterClassBtn.innerHTML = `
 <span class="burgerMasterClass buttonText">
   выбрать мастер-класс |
  </span>`;
-// console.log(masterClassBtnClone.childNodes.item(3));
 masterClassBtnClone.replaceChild(
   replacementNodeForMasterClassBtn,
   masterClassBtnClone.childNodes.item(3)
@@ -38,6 +38,8 @@ burgerBtn.addEventListener("click", () => {
     document.documentElement.style.overflowY = "hidden";
     return;
   }
+  navBar.removeChild(masterClassBtnClone);
+  navBar.removeChild(contactsWrapper);
   document.documentElement.style.overflowY = "initial";
 });
 
@@ -49,12 +51,40 @@ navLink.forEach((link) => {
   });
 });
 
-const observer = new MutationObserver(function (mutations) {
+const contaniner = document.querySelector(".ellipseContainerBrgMenu");
+const burgerBtnObs = new MutationObserver(function (entries) {
   if (document.querySelector(".burgerMasterClass")) {
     setTextContent(document.querySelector(".burgerMasterClass"), 3);
-    observer.disconnect();
+    //
+    navBar.append(contaniner);
+    //tut
+    console.log(navBar.contains(contaniner));
+    burgerBtnObs.disconnect();
   }
 });
-const config = { attributes: true, childList: true, characterData: true };
 
-observer.observe(navBar, config);
+const options = {
+  attributes: true,
+  childList: true,
+  characterData: true,
+};
+burgerBtnObs.observe(navBar, options);
+
+const resizeObs = new ResizeObserver((entries) => {
+  for (let entry of entries) {
+    if (
+      entry.contentRect.width >= 695 &&
+      document.querySelector(".burgerMasterClass")
+    ) {
+      burgerBtn.classList.remove("open");
+      navBar.classList.remove("active");
+      navBar.removeChild(masterClassBtnClone);
+      navBar.removeChild(contactsWrapper);
+      navBar.removeChild(contaniner);
+
+      document.documentElement.style.overflowY = "initial";
+    }
+  }
+});
+
+resizeObs.observe(document.documentElement);
