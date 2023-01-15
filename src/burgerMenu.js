@@ -51,14 +51,28 @@ navLink.forEach((link) => {
   });
 });
 
-const contaniner = document.querySelector(".ellipseContainerBrgMenu");
+const ellipseContainer = document.createElement("div");
+ellipseContainer.classList.add("ellipseContainer");
+
+export const canvasBrg = document.createElement("canvas");
+const span = document.createElement("span");
+const span1 = document.createElement("span");
+const span2 = document.createElement("span");
+span.classList.add("elipseBlue");
+span1.classList.add("elipsePurple");
+span2.classList.add("elipsePink");
+
+ellipseContainer.append(canvasBrg);
+ellipseContainer.append(span);
+ellipseContainer.append(span1);
+ellipseContainer.append(span2);
+console.log(ellipseContainer);
+
 const burgerBtnObs = new MutationObserver(function (entries) {
   if (document.querySelector(".burgerMasterClass")) {
     setTextContent(document.querySelector(".burgerMasterClass"), 3);
-    //
-    navBar.append(contaniner);
     //tut
-    console.log(navBar.contains(contaniner));
+    navBar.append(ellipseContainer);
     burgerBtnObs.disconnect();
   }
 });
@@ -80,8 +94,7 @@ const resizeObs = new ResizeObserver((entries) => {
       navBar.classList.remove("active");
       navBar.removeChild(masterClassBtnClone);
       navBar.removeChild(contactsWrapper);
-      navBar.removeChild(contaniner);
-
+      navBar.removeChild(ellipseContainer);
       document.documentElement.style.overflowY = "initial";
     }
   }

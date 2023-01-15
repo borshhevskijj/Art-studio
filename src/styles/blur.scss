@@ -27,22 +27,29 @@ canvas {
 
 .elipseBlue {
   position: absolute;
-  width: 849px;
-  height: 1129px;
+  width: 991px;
+  height: 929px;
   left: -10%;
   top: -1%;
   // background: rgba(23, 27, 240, 0.55);
-  background-color: transparentize($blue, 0.45);
   border: 0;
   filter: blur(100px);
   z-index: 2;
   border-radius: 50%;
+  background-color: transparentize($blue, 0.45);
 }
 .ellipseContainerHeader {
   & .elipseBlue {
     transform: rotate(312deg);
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 0%;
+  }
+}
+@media (max-width: 869px) {
+  .elipseBlue {
+    width: 491px;
+    height: 729px;
+    left: -20%;
   }
 }
 
@@ -62,26 +69,52 @@ canvas {
 
 .elipsePurple {
   position: absolute;
-  width: 739px;
+  width: 839px;
   height: 975px;
   top: -3%;
-  left: 58%;
+  left: 42%;
   border: 0;
   filter: blur(100px);
-  background-color: $purple;
   z-index: 1;
   border-radius: 50%;
   transform: rotate(255deg);
+  background-color: $purple;
+
+  @media (max-width: 869px) {
+    height: 865px;
+    top: 9%;
+  }
+}
+@media (max-width: 475px) {
+  .elipseBlue {
+    width: 50%;
+    height: 508px;
+    left: 50%;
+    top: 0%;
+  }
+  .elipsePink {
+    width: 95%;
+    height: 569px;
+    left: 0%;
+    top: 10%;
+  }
+  .elipsePurple {
+    height: 475px;
+    width: 50%;
+    top: 0%;
+    left: 0%;
+    transform: rotate(0deg);
+  }
 }
 
 .workshops {
   & .ellipseContainer {
-    height: 1428px;
+    height: 131%;
     left: 0;
-    top: -15%;
+    top: -25%;
   }
   .elipseBlue {
-    width: 700px;
+    width: 800px;
     height: 700px;
     left: -10%;
     top: 10%;
@@ -89,17 +122,47 @@ canvas {
   }
 
   .elipsePink {
-    width: 700px;
+    width: 800px;
     height: 700px;
     left: -10%;
     top: 35%;
   }
 
   .elipsePurple {
-    width: 500px;
+    width: 600px;
     height: 500px;
     top: 34%;
     left: 10%;
+  }
+}
+@media (max-width: 869px) {
+  .workshops {
+    & .elipsePink,
+    .elipseBlue {
+      left: -45%;
+    }
+  }
+}
+@media (max-width: 475px) {
+  .workshops {
+    .elipseBlue {
+      width: 60%;
+      height: 400px;
+      left: 0%;
+      top: 19%;
+    }
+    .elipsePink {
+      width: 70%;
+      height: 500px;
+      left: 0%;
+      top: 35%;
+    }
+    .elipsePurple {
+      width: 50%;
+      height: 500px;
+      top: 24%;
+      left: 32%;
+    }
   }
 }
 
@@ -113,7 +176,7 @@ canvas {
   .elipseBlue {
     width: 750px;
     height: 600px;
-    left: 60%;
+    left: 68%;
     top: 57%;
     // transform: rotate(0deg);
   }
@@ -121,7 +184,7 @@ canvas {
   .elipsePink {
     width: 750px;
     height: 750px;
-    left: 65%;
+    left: 55%;
     top: 12%;
   }
 
@@ -129,7 +192,29 @@ canvas {
     width: 650px;
     height: 550px;
     top: 44%;
-    left: 68%;
+    left: 60%;
+  }
+}
+@media (max-width: 475px) {
+  .timetable {
+    .elipseBlue {
+      width: 64%;
+      height: 490px;
+      left: 44%;
+      top: 39%;
+    }
+    .elipsePink {
+      width: 64%;
+      height: 550px;
+      left: 54%;
+      top: 8%;
+    }
+    .elipsePurple {
+      width: 100%;
+      height: 250px;
+      top: 32%;
+      left: 10%;
+    }
   }
 }
 
@@ -146,14 +231,12 @@ canvas {
     left: 14%;
     top: 24%;
   }
-
   .elipsePink {
     width: 650px;
     height: 650px;
     left: -5%;
     top: 31%;
   }
-
   .elipsePurple {
     width: 550px;
     height: 550px;
@@ -161,6 +244,47 @@ canvas {
     left: -10%;
   }
 }
+@media (max-width: 869px) {
+  .aboutCourse {
+    position: relative;
+    .elipseBlue {
+      width: 550px;
+    }
+
+    .elipsePink {
+      width: 400px;
+    }
+
+    .elipsePurple {
+      width: 400px;
+      top: 12%;
+      left: -10%;
+    }
+  }
+}
+@media (max-width: 475px) {
+  .aboutCourse {
+    .elipseBlue {
+      width: 60%;
+      height: 250px;
+      left: 44%;
+      top: 24%;
+    }
+    .elipsePink {
+      width: 50%;
+      height: 449px;
+      left: 5%;
+      top: 30%;
+    }
+    .elipsePurple {
+      width: 50%;
+      top: 12%;
+      left: 0%;
+      height: 350px;
+    }
+  }
+}
+
 .ourStudios {
   position: relative;
   & .ellipseContainer {
@@ -178,8 +302,9 @@ canvas {
   .elipsePink {
     width: 750px;
     height: 650px;
-    left: 47%;
-    top: 29%;
+    left: 40%;
+    top: 30%;
+    background-color: $pink;
   }
 
   .elipsePurple {
@@ -189,19 +314,73 @@ canvas {
     left: 61%;
   }
 }
+@media (max-width: 869px) {
+  .ourStudios {
+    position: relative;
+    .ellipseContainer {
+      height: 1100px;
+      top: 12%;
+      width: 100%;
+    }
+    .elipseBlue {
+      width: 250px;
+      height: 247px;
+      left: 84%;
+      top: 55%;
+    }
+
+    .elipsePink {
+      width: 450px;
+      height: 550px;
+      left: 45%;
+      top: 30%;
+    }
+
+    .elipsePurple {
+      width: 550px;
+      height: 530px;
+      top: 13%;
+      left: 50%;
+    }
+  }
+}
+@media (max-width: 475px) {
+  .ourStudios {
+    .elipseBlue {
+      width: 40%;
+      height: 247px;
+      left: 54%;
+      top: 37%;
+    }
+    .elipsePink {
+      width: 80%;
+      height: 350px;
+      left: 25%;
+      top: 18%;
+    }
+    .elipsePurple {
+      width: 70%;
+      height: 340px;
+      top: 6%;
+      left: 50%;
+    }
+  }
+}
+
 .teachers {
   position: relative;
   & .ellipseContainer {
     height: 1838px;
     top: 6%;
-    width: 80%;
+    width: 100%;
     left: 0;
   }
   .elipseBlue {
-    width: 670px;
-    height: 830px;
+    width: 570px;
+    height: 930px;
     left: 12%;
-    top: 12%;
+    top: 10%;
+    transform: rotate(166deg);
   }
 
   .elipsePink {
@@ -218,65 +397,98 @@ canvas {
     left: -30%;
   }
 }
-.elipseWrapper {
-  position: relative;
-  & .ellipseContainer {
-    // height: 150%;
-    // top: -50%;
-    // width: 100%;
-    // left: 0;
+@media (max-width: 869px) {
+  .teachers {
+    & .ellipseContainer {
+      height: 1435px;
+      top: 6%;
+      width: 100%;
+      left: 0;
+    }
+    .elipseBlue {
+      height: 530px;
+      top: 22%;
+    }
 
-    min-height: 150%;
-    height: 150%;
-    top: -50%;
-    width: 100%;
-    left: 0px;
-    height: 2733px;
-    max-height: 150%;
-  } //????????????????????????????????
-  .elipseBlue {
-    width: 670px;
-    height: 590px;
-    left: 75%;
-    top: 41%;
-  }
-
-  .elipsePink {
-    width: 860px;
-    height: 850px;
-    left: 46%;
-    top: 23%;
-  }
-
-  .elipsePurple {
-    width: 731px;
-    height: 750px;
-    top: 13%;
-    left: 69%;
-  }
-  // ------
-
-  .bottomBlue {
-    width: 870px;
-    height: 610px;
-    left: 0%;
-    top: 76%;
-  }
-
-  .bottomPink {
-    width: 760px;
-    height: 750px;
-    left: 0;
-    top: 51%;
-  }
-
-  .bottomPurple {
-    width: 711px;
-    height: 649px;
-    top: 60%;
-    left: 32%;
+    .elipsePink {
+      width: 500px;
+      height: 750px;
+    }
   }
 }
+@media (max-width: 475px) {
+  .teachers {
+    .elipseBlue {
+      width: 70%;
+      height: 430px;
+      left: -12%;
+      top: 29%;
+      transform: rotate(50deg);
+    }
+
+    .elipsePurple {
+      width: 50%;
+      height: 150px;
+      left: 0%;
+      top: 32%;
+    }
+    .elipsePink {
+      width: 100%;
+      height: 400px;
+      top: 12%;
+      left: -21%;
+    }
+  }
+}
+
+// .elipseWrapper {
+//   position: relative;
+//   & .ellipseContainer {
+//     min-height: 150%;
+//     height: 150%;
+//     top: -50%;
+//     width: 100%;
+//     left: 0px;
+//     height: 2733px;
+//     max-height: 150%;
+//   }
+//   .elipseBlue {
+//     width: 670px;
+//     height: 590px;
+//     left: 75%;
+//     top: 41%;
+//   }
+//   .elipsePink {
+//     width: 860px;
+//     height: 850px;
+//     left: 46%;
+//     top: 23%;
+//   }
+//   .elipsePurple {
+//     width: 731px;
+//     height: 750px;
+//     top: 13%;
+//     left: 69%;
+//   }
+//   .bottomBlue {
+//     width: 870px;
+//     height: 610px;
+//     left: 0%;
+//     top: 76%;
+//   }
+//   .bottomPink {
+//     width: 760px;
+//     height: 750px;
+//     left: 0;
+//     top: 51%;
+//   }
+//   .bottomPurple {
+//     width: 711px;
+//     height: 649px;
+//     top: 60%;
+//     left: 32%;
+//   }
+// }
 
 // .navBar.active{
 .navBar {
@@ -288,24 +500,24 @@ canvas {
     left: 0;
   }
   .elipseBlue {
-    width: 670px;
-    height: 830px;
-    left: 12%;
-    top: 12%;
+    width: 470px;
+    height: 430px;
+    left: 0%;
+    top: 38%;
   }
 
   .elipsePink {
-    width: 750px;
-    height: 950px;
-    left: -10%;
-    top: 32%;
+    width: 450px;
+    height: 450px;
+    left: -30%;
+    top: 18%;
   }
 
   .elipsePurple {
-    width: 731px;
-    height: 850px;
-    top: 7%;
-    left: -30%;
+    width: 431px;
+    height: 250px;
+    top: 17%;
+    left: 10%;
   }
 }
 .aboutСertificate {
@@ -337,6 +549,21 @@ canvas {
     left: 70%;
   }
 }
+@media (max-width: 869px) {
+  .aboutСertificate {
+    & .elipseBlue {
+      height: 530px;
+      top: 50%;
+    }
+    & .elipsePurple {
+      width: 531px;
+      height: 450px;
+      top: 46%;
+      left: 30%;
+    }
+  }
+}
+
 .footer {
   position: relative;
   & .ellipseContainer {
@@ -364,5 +591,62 @@ canvas {
     height: 850px;
     top: 7%;
     left: -30%;
+  }
+}
+@media (max-width: 1320px) {
+  .footer {
+    & .ellipseContainer {
+      height: 590%;
+      top: -490%;
+    }
+    .elipseBlue {
+      left: calc(12% - 10vw);
+    }
+    .elipsePink {
+      left: calc(-10% + 10vw);
+    }
+
+    .elipsePurple {
+      left: calc(-30% + 10vw);
+    }
+  }
+}
+@media (max-width: 869px) {
+  .footer {
+    & .ellipseContainer {
+      height: 390%;
+      top: -290%;
+    }
+    .elipseBlue {
+      width: 470px;
+      height: 630px;
+      left: 0;
+      top: 80%;
+    }
+    .elipsePink {
+      width: 450px;
+      height: 450px;
+      left: 0;
+      top: 20%;
+    }
+
+    .elipsePurple {
+      width: 531px;
+      height: 650px;
+      top: 57%;
+      left: -30%;
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .elipseBlue {
+    background-color: $blue;
+  }
+  .elipsePink {
+    background-color: $pink;
+  }
+  .elipsePurple {
+    background-color: $purple;
   }
 }

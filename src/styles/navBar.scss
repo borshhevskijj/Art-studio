@@ -52,6 +52,9 @@
 @media (max-width: 695px) {
   .navBar {
     display: none;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
   }
   .navBar {
     &.active {
@@ -70,7 +73,7 @@
       bottom: 0;
       margin: 0 auto;
       background-color: black;
-      padding-top: 100px;
+      padding-top: 115px;
       & .mainBlur {
         position: absolute;
         z-index: -1;
@@ -109,7 +112,7 @@
         font-size: 18px !important;
         // font-weight: 600;
         & li {
-          margin: 0 0 20px 0;
+          margin: 0 0 30px 0;
         }
       }
       & .contacts_phone {

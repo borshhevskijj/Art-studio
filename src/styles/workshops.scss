@@ -23,9 +23,6 @@
 }
 
 .workshops {
-  // overflow-x: hidden;
-  //   overflow-y: visible;
-  //   width: 100%;
   position: relative;
 }
 
@@ -128,6 +125,7 @@
 @media (min-width: 1401px) {
   .swiper-container {
     max-height: 1000px;
+    // VOPROSIKI
   }
   .swiper-slide {
     max-width: 100%;
@@ -143,6 +141,7 @@
 @media (max-width: 833px) {
   .swiper-container {
     position: static;
+    // position: relative;
     left: 0;
     margin-right: -299px;
   }
@@ -174,10 +173,6 @@
     margin: 0 auto;
     margin-top: 50px;
   }
-  .workshops {
-    position: static;
-  }
-
   .swiper-pagination {
     position: static;
     background-color: #ffffff;
