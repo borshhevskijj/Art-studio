@@ -141,10 +141,16 @@
     min-width: auto;
     & .booking {
       & div {
-        line-height: 2.4;
-        top: -6px;
+        line-height: 0;
+        top: -24px;
       }
     }
+    // & .booking {
+    //   & div {
+    //     line-height: 2.4;
+    //     top: -6px;
+    //   }
+    // }
   }
   .artPartyImgRight {
     transform: translateY(-92px);

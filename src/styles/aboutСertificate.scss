@@ -108,11 +108,19 @@
   .aboutСertificate_button {
     & .certificate {
       & div {
-        line-height: 3.5;
-        top: 0px;
+        line-height: 0.7;
+        top: -19px;
       }
     }
   }
+  // .aboutСertificate_button {
+  //   & .certificate {
+  //     & div {
+  //       line-height: 3.5;
+  //       top: 0px;
+  //     }
+  //   }
+  // }
 }
 @media (max-width: 625px) {
   .aboutСertificate {

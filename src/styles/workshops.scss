@@ -196,11 +196,19 @@
   .workshops_button {
     & .buy_workshops {
       & div {
-        line-height: 4.2;
-        top: 9px;
+        line-height: 1;
+        top: -15px;
       }
     }
   }
+  // .workshops_button {
+  //   & .buy_workshops {
+  //     & div {
+  //       line-height: 4.2;
+  //       top: 9px;
+  //     }
+  //   }
+  // }
 }
 @media (max-width: 625px) {
   .swiper-container {

@@ -180,11 +180,19 @@
   .aboutUs_button {
     .watchVideo {
       & div {
-        line-height: 2.6;
-        top: 0;
+        line-height: 0.5;
+        top: -22px;
       }
     }
   }
+  // .aboutUs_button {
+  //   .watchVideo {
+  //     & div {
+  //       line-height: 2.6;
+  //       top: 0;
+  //     }
+  //   }
+  // }
 }
 
 @media (max-width: 625px) {

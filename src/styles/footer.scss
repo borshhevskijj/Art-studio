@@ -13,6 +13,10 @@
     gap: calc(8.8vw - 4%);
     flex-direction: row;
   }
+  @media (max-width: 625px) {
+    gap: 10px;
+    padding-bottom: 13px;
+  }
 }
 .footer_NavBar {
   display: flex;
@@ -27,8 +31,8 @@
   & li {
     list-style: none;
   }
-  @media (min-width: 1320px) {
-  }
+  // @media (min-width: 1320px) {
+  // }
 }
 .footer_Left {
   display: flex;

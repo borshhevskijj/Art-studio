@@ -10,15 +10,19 @@ const certificate = document.querySelector(".certificate");
 // const burgerMasterClass = document.querySelector(".burgerMasterClass");
 
 export const setTextContent = (selector, repeat) => {
+  if (window.matchMedia("(max-width: 700px)").matches && repeat > 3) {
+    repeat = repeat - 1;
+    console.log(repeat);
+  }
   selector.textContent = selector.textContent.toUpperCase().repeat(repeat);
   return new CircleType(selector);
 };
 
 setTextContent(masterСlass, 3);
-setTextContent(watchVideo, 4);
-setTextContent(buyWorkshops, 4);
-setTextContent(timetable, 6);
-setTextContent(form, 6);
-setTextContent(aboutCourse, 4);
-setTextContent(booking, 4);
-setTextContent(certificate, 4);
+setTextContent(watchVideo, 4); //3
+setTextContent(buyWorkshops, 4); //3
+setTextContent(timetable, 6); //4
+setTextContent(form, 6); //5
+setTextContent(aboutCourse, 4); //3
+setTextContent(booking, 4); //3
+setTextContent(certificate, 4); //3

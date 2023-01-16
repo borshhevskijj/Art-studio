@@ -119,10 +119,25 @@
   .aboutCourse_button {
     & .aboutCourse_leaveARequest {
       & div {
-        line-height: 2.9;
+        line-height: 0.4;
+        top: -20px;
       }
     }
   }
+  // .aboutCourse_button {
+  //   & .aboutCourse_leaveARequest {
+  //     & div {
+  //       line-height: 2.9;
+  //     }
+  //   }
+  // }
+  // .aboutCourse_button {
+  //   & .aboutCourse_leaveARequest {
+  //     & div {
+  //       line-height: 2.9;
+  //     }
+  //   }
+  // }
 }
 @media (max-width: 625px) {
   .aboutCourseWrapperContentWrapper {
