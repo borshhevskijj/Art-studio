@@ -66,7 +66,6 @@ ellipseContainer.append(canvasBrg);
 ellipseContainer.append(span);
 ellipseContainer.append(span1);
 ellipseContainer.append(span2);
-console.log(ellipseContainer);
 
 const burgerBtnObs = new MutationObserver(function (entries) {
   if (document.querySelector(".burgerMasterClass")) {

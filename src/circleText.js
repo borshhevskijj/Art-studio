@@ -7,12 +7,9 @@ const aboutCourse = document.querySelector(".aboutCourse_leaveARequest");
 const booking = document.querySelector(".booking");
 const certificate = document.querySelector(".certificate");
 
-// const burgerMasterClass = document.querySelector(".burgerMasterClass");
-
 export const setTextContent = (selector, repeat) => {
   if (window.matchMedia("(max-width: 700px)").matches && repeat > 3) {
     repeat = repeat - 1;
-    console.log(repeat);
   }
   selector.textContent = selector.textContent.toUpperCase().repeat(repeat);
   return new CircleType(selector);

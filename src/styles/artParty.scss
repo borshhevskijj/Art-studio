@@ -187,6 +187,7 @@
     margin-left: 0;
     margin-bottom: 15px;
     height: calc(129px + 32vw);
+    padding: 0 $mobileContainerPadding + px;
 
     & img {
       width: 100%;
