@@ -100,3 +100,18 @@ const resizeObs = new ResizeObserver((entries) => {
 });
 
 resizeObs.observe(document.documentElement);
+
+const header = document.querySelector("header");
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function () {
+  if (window.matchMedia("(max-width: 695px)").matches) {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      header.style.opacity = 1;
+    } else {
+      header.style.opacity = 0;
+    }
+    prevScrollpos = currentScrollPos;
+  }
+};
