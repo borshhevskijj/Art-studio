@@ -1,9 +1,9 @@
-const path = require("path")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const devServer = (isDev) => {
-  console.log(isDev)
+  // console.log(isDev)
   return !isDev
     ? {}
     : {
@@ -15,8 +15,8 @@ const devServer = (isDev) => {
           port: 8080,
           watchFiles: ["src/*.html"],
         },
-      }
-}
+      };
+};
 
 module.exports = ({ develop }) => ({
   mode: develop ? "development" : "production",
@@ -63,4 +63,5 @@ module.exports = ({ develop }) => ({
     ],
   },
   ...devServer(develop),
-})
+});
+//     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js"
