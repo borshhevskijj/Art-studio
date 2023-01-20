@@ -28,7 +28,6 @@ contactsWrapper.classList.add("burgerMenuContactsWrapper");
 contactsWrapper.append(phoneClone);
 contactsWrapper.append(contactsIconsClone);
 
-let firstClick = false;
 burgerBtn.addEventListener("click", () => {
   navBar.classList.toggle("active");
   burgerBtn.classList.toggle("open");
