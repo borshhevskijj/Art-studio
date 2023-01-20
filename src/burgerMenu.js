@@ -117,5 +117,6 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
     return;
   }
+
   header.style.opacity = 1;
 };
