@@ -52,16 +52,16 @@ canvasElArr.forEach((cnvs) => {
 
 // --------
 
-const navBar = document.querySelector(".navBar");
+// const navBar = document.querySelector(".navBar");
 
-const burgerMenuCanvasObs = new MutationObserver(function (entries) {
-  drawing([canvasBrg]);
-  burgerMenuCanvasObs.unobserve(canvas);
-});
+// const burgerMenuCanvasObs = new MutationObserver(function (entries) {
+//   drawing([canvasBrg]);
+//   burgerMenuCanvasObs.unobserve;
+// });
 
-const config = {
-  attributes: true,
-  childList: true,
-  characterData: true,
-};
-burgerMenuCanvasObs.observe(navBar, config);
+// const config = {
+//   attributes: true,
+//   childList: true,
+//   characterData: true,
+// };
+// burgerMenuCanvasObs.observe(navBar, config);

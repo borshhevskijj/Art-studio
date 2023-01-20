@@ -28,6 +28,7 @@ contactsWrapper.classList.add("burgerMenuContactsWrapper");
 contactsWrapper.append(phoneClone);
 contactsWrapper.append(contactsIconsClone);
 
+let firstClick = false;
 burgerBtn.addEventListener("click", () => {
   navBar.classList.toggle("active");
   burgerBtn.classList.toggle("open");
@@ -72,6 +73,7 @@ const burgerBtnObs = new MutationObserver(function (entries) {
     setTextContent(document.querySelector(".burgerMasterClass"), 3);
     //tut
     navBar.append(ellipseContainer);
+    drawing([canvasBrg]);
     burgerBtnObs.disconnect();
   }
 });
@@ -113,5 +115,7 @@ window.onscroll = function () {
       header.style.opacity = 0;
     }
     prevScrollpos = currentScrollPos;
+    return;
   }
+  header.style.opacity = 1;
 };

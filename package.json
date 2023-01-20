@@ -1,11 +1,13 @@
+
 {
   "name": "art-studio-landing",
   "scripts": {
-    "build": "webpack",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "start": "webpack serve --env develop"
   },
   "http.proxySupport": "off",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "html-loader": "^3.1.0",
     "mini-css-extract-plugin": "^2.5.2",
@@ -23,4 +25,5 @@
     "normalize.css": "^8.0.1",
     "swiper": "^8.4.4"
   }
+
 }
