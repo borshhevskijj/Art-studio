@@ -42,6 +42,7 @@ burgerBtn.addEventListener("click", () => {
   navBar.removeChild(contactsWrapper);
   document.documentElement.style.overflowY = "initial";
 });
+console.log(burgerBtn);
 
 navLink.forEach((link) => {
   link.addEventListener("click", () => {
