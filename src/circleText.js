@@ -1,3 +1,5 @@
+// import "../node_modules/circletype/dist/circletype.min.js";
+// import "../node_modules/circletype/dist/circletype.min.js";
 const masterСlass = document.querySelector(".masterСlass");
 const watchVideo = document.querySelector(".watchVideo");
 const buyWorkshops = document.querySelector(".buy_workshops");
@@ -8,7 +10,7 @@ const booking = document.querySelector(".booking");
 const certificate = document.querySelector(".certificate");
 
 export const setTextContent = (selector, repeat) => {
-  if (window.matchMedia("(max-width: 700px)").matches && repeat > 3) {
+  if (window.matchMedia("(max-width: 695px)").matches && repeat > 3) {
     repeat = repeat - 1;
   }
   selector.textContent = selector.textContent.toUpperCase().repeat(repeat);

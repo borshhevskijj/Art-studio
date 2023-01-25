@@ -1,4 +1,9 @@
 import "normalize.css";
+import "./burgerMenu";
+import "./noise";
+import "../node_modules/swiper/swiper-bundle.min.js";
+// import "../node_modules/circletype/dist/circletype.min.js";
+// import "../@circletype/dist/circletype.min.js";
 //styles
 import "./styles/variables.scss";
 import "./styles/main.scss";
@@ -17,19 +22,15 @@ import "./styles/faq.scss";
 import "./styles/contacts.scss";
 import "./styles/footer.scss";
 import "./styles/blur.scss";
+import "./styles/accordion.scss";
 //circleText
 import "./circleText";
 //slider
 import "./swiperSlider";
 //accordion
 import "./accordion.js";
-import "./styles/accordion.scss";
 // modal map
 import "./modalMap";
 //fonts
 import "./styles/gilroy-bold.css";
 import "./styles/gilroy-regular.css";
-
-import "./burgerMenu";
-
-import "./noise";

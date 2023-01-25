@@ -105,9 +105,11 @@
   left: 27% !important;
   width: 83% !important;
   height: 3px !important;
+  overflow: hidden;
+
   & .swiper-pagination-progressbar-fill {
     background-color: $pink;
-    // height: 3px !important;
+    height: 4px !important;
   }
   // &::before {
   //   content: "";
@@ -197,7 +199,7 @@
     margin-top: 25px;
     left: 0;
     width: 100% !important;
-    height: 3px !important;
+    // height: 3px !important;
     // &::before {
     //   display: none;
     // }
