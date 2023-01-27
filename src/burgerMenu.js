@@ -16,28 +16,31 @@ const contactsIconsClone = document
 // circleText.firstChild.nextSibling.classList.add("burgerMasterClass");
 // circleText.firstChild.nextSibling.classList.remove("masterСlass");
 
-const replacementNodeForMasterClassBtn = document.createElement("div");
-replacementNodeForMasterClassBtn.classList.add("circleText");
+// const replacementNodeForMasterClassBtn = document.createElement("div");
+// replacementNodeForMasterClassBtn.classList.add("circleText");
 {
   /* <span class="burgerMasterClass buttonText">выбрать мастер-класс |</span>; */
 }
-const spanBrg = document.createElement("span");
-spanBrg.classList.add("burgerMasterClass");
-spanBrg.classList.add("buttonText");
-spanBrg.innerHTML = "выбрать мастер-класс | ";
-replacementNodeForMasterClassBtn.append(spanBrg);
+// const spanBrg = document.createElement("span");
+// spanBrg.classList.add("burgerMasterClass");
+// spanBrg.classList.add("buttonText");
+// spanBrg.innerHTML = "выбрать мастер-класс | ";
+// replacementNodeForMasterClassBtn.append(spanBrg);
 
 const masterClassBtnClone = document
   .querySelector(".main_button")
   .cloneNode(true);
 
-// console.log(masterClassBtnClone.childNodes.item(3));
+const buttonText = masterClassBtnClone.querySelector("span");
+buttonText.classList.add("burgerMasterClass");
+buttonText.classList.remove("masterСlass");
 
-masterClassBtnClone.replaceChild(
-  spanBrg,
-  masterClassBtnClone.childNodes.item(3)
-);
+// masterClassBtnClone.replaceChild(
+//   spanBrg,
+//   masterClassBtnClone.childNodes.item(3)
+// );
 
+console.log(masterClassBtnClone);
 // -err
 
 const contactsWrapper = document.createElement("div");
@@ -92,7 +95,7 @@ const burgerBtnObs = new MutationObserver(function (entries) {
     burgerBtn.classList.contains("open") &&
     navBar.classList.contains("active")
   ) {
-    setTextContent(document.querySelector(".burgerMasterClass"), 3);
+    setTextContent(document.querySelector(".burgerMasterClass"), 1);
     //tut
     navBar.append(ellipseContainer);
     drawing([canvasBrg]);

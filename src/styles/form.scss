@@ -34,7 +34,8 @@
   & * {
     margin-bottom: 30px;
   }
-  & input[type="text"] {
+  // & input[type="text"] {
+  & input {
     padding: 15px 2px;
     border: none;
     border-bottom: 1px solid $mainTextColor;

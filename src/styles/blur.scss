@@ -21,100 +21,64 @@ canvas {
   min-height: 100%;
   max-height: 100%;
   border: 0;
-  // background-color: rgb(54 54 54 / 0%);
   filter: blur(0);
 }
 
-.elipseBlue {
+.elipseBlue,
+.elipsePink,
+.elipsePurple {
   position: absolute;
-  width: 691px;
-  height: 1129px;
-  left: -3%;
-  top: -6%;
   border: 0;
-  filter: blur(100px);
-  z-index: 2;
   border-radius: 50%;
-  transform: rotate(281deg);
-  opacity: 0.7;
-  // background-color: transparentize($blue, 0.45);
+}
 
-  width: 45vw;
-  height: 95%;
-  top: calc(4% - 5vw);
+.elipseBlue {
+  left: -15%;
+  z-index: 2;
+  transform: rotate(285deg);
+  width: 76vw;
+  height: 165%;
+  top: calc(-33% - 5vw);
 }
 
 .elipsePink {
-  position: absolute;
-  width: 91%;
-  height: 749px;
-  left: 10%;
-  top: -19%;
-  border: 0;
-  filter: blur(100px);
-  z-index: 1;
-  border-radius: 50%;
-  background-color: transparentize($pink, 0.25);
+  width: 100%;
+  height: 959px;
+  left: 4%;
+  top: -29%;
 }
 
 .elipsePurple {
-  position: absolute;
-  width: 639px;
-  height: 1175px;
-  top: -13%;
-  left: 59%;
-  border: 0;
-  filter: blur(100px);
-  z-index: 1;
-  border-radius: 50%;
-  transform: rotate(243deg);
-
-  background-color: $purple;
-
-  width: 44vw;
-  height: 95%;
-  top: calc(-3% - 5vw);
+  left: 49%;
+  width: 54vw;
+  height: 155%;
+  top: calc(-23% - 5vw);
+  transform: rotate(254deg);
 }
 @media (max-width: 1160px) {
   .elipseBlue {
     left: 54%;
     top: -36%;
-    border: 0;
-    filter: blur(100px);
-    z-index: 2;
-    border-radius: 50%;
-    transform: rotate(-40deg);
-    opacity: 0.65;
+
+    // transform: rotate(-40deg);
     width: 64%;
     height: 91%;
   }
   .elipsePink {
-    position: absolute;
     width: 121%;
     height: 84%;
     left: -10%;
     top: 0%;
-    border: 0;
-    filter: blur(100px);
-    z-index: 1;
-    border-radius: 50%;
   }
   .elipsePurple {
-    position: absolute;
     width: 639px;
     height: 1175px;
     top: -1%;
     left: -45%;
-    border: 0;
-    filter: blur(100px);
-    z-index: 1;
-    border-radius: 50%;
-    transform: rotate(160deg);
-    background-color: #8509a6;
+
+    // transform: rotate(160deg);
     width: 105%;
     height: 56%;
-    /* top: calc(-3% - 5vw); */
-    opacity: 0.7;
   }
 }
 @media (max-width: 654px) {
@@ -135,7 +99,6 @@ canvas {
   .elipseBlue {
     left: -25%;
     top: 11%;
-    border-radius: 50%;
     width: 54%;
     height: 38vw;
   }
@@ -161,8 +124,6 @@ canvas {
     }
     .elipsePink {
       top: 45%;
-      // width: 59%;
-      // height: 81vw;
     }
     .elipsePurple {
       top: 41%;
@@ -201,7 +162,7 @@ canvas {
 }
 
 .timetable {
-  position: relative; // lomaet??
+  position: relative;
   & .ellipseContainer {
     height: 1628px;
     left: 0;
@@ -263,7 +224,6 @@ canvas {
     top: 24%;
     width: 45%;
     height: 40%;
-    opacity: 0.7;
   }
   .elipsePink {
     left: -5%;
@@ -278,32 +238,6 @@ canvas {
     height: 40%;
   }
 }
-// @media (max-width: 625px) {
-//   .aboutCourse {
-//     position: relative;
-//     .elipseBlue {
-//       left: 29%;
-//       top: 30%;
-//       width: 50%;
-//       height: 28%;
-//       opacity: 1;
-//     }
-
-//     .elipsePink {
-//       left: 5%;
-//       top: 31%;
-//       width: 45%;
-//       height: 30%;
-//     }
-
-//     .elipsePurple {
-//       top: 12%;
-//       left: 0%;
-//       width: 39%;
-//       height: 30%;
-//     }
-//   }
-// }
 @media (max-width: 675px) {
   .aboutCourse {
     .elipseBlue {
@@ -311,7 +245,6 @@ canvas {
       height: 300px;
       left: 14%;
       top: 30%;
-      opacity: 1;
     }
     .elipsePink {
       width: 90%;
@@ -340,7 +273,6 @@ canvas {
     height: 750px;
     left: 54%;
     top: 27%;
-    opacity: 0.6;
     width: 52%;
     height: 52vw;
   }
@@ -350,7 +282,6 @@ canvas {
     height: 650px;
     left: 40%;
     top: 25%;
-    background-color: $pink;
     width: 55%;
     height: 47vw;
   }
@@ -364,7 +295,6 @@ canvas {
     height: 43vw;
   }
 }
-// @media (max-width: 869px) {
 @media (max-width: 969px) {
   .ourStudios {
     position: relative;
@@ -378,7 +308,6 @@ canvas {
       height: 247px;
       left: 84%;
       top: 40%;
-      opacity: 1;
     }
 
     .elipsePink {
@@ -433,8 +362,7 @@ canvas {
     height: 930px;
     left: 12%;
     top: 10%;
-    transform: rotate(166deg);
-    opacity: 0.6;
+    // transform: rotate(166deg);
   }
 
   .elipsePink {
@@ -470,7 +398,6 @@ canvas {
     }
   }
 }
-// @media (max-width: 475px) {
 @media (max-width: 625px) {
   .teachers {
     .elipseBlue {
@@ -478,8 +405,7 @@ canvas {
       height: 430px;
       left: -12%;
       top: 29%;
-      transform: rotate(50deg);
-      opacity: 1;
+      // transform: rotate(50deg);
     }
 
     .elipsePurple {
@@ -496,57 +422,6 @@ canvas {
     }
   }
 }
-
-// .elipseWrapper {
-//   position: relative;
-//   & .ellipseContainer {
-//     min-height: 150%;
-//     height: 150%;
-//     top: -50%;
-//     width: 100%;
-//     left: 0px;
-//     height: 2733px;
-//     max-height: 150%;
-//   }
-//   .elipseBlue {
-//     width: 670px;
-//     height: 590px;
-//     left: 75%;
-//     top: 41%;
-//   }
-//   .elipsePink {
-//     width: 860px;
-//     height: 850px;
-//     left: 46%;
-//     top: 23%;
-//   }
-//   .elipsePurple {
-//     width: 731px;
-//     height: 750px;
-//     top: 13%;
-//     left: 69%;
-//   }
-//   .bottomBlue {
-//     width: 870px;
-//     height: 610px;
-//     left: 0%;
-//     top: 76%;
-//   }
-//   .bottomPink {
-//     width: 760px;
-//     height: 750px;
-//     left: 0;
-//     top: 51%;
-//   }
-//   .bottomPurple {
-//     width: 711px;
-//     height: 649px;
-//     top: 60%;
-//     left: 32%;
-//   }
-// }
-
-// .navBar.active{
 .navBar {
   position: relative;
   & .ellipseContainer {
@@ -560,8 +435,6 @@ canvas {
     height: 243px;
     left: -20%;
     top: 50%;
-    opacity: 1;
-    filter: blur(70px);
   }
 
   .elipsePink {
@@ -569,8 +442,6 @@ canvas {
     height: 270px;
     left: -20%;
     top: 20%;
-    opacity: 1;
-    filter: blur(70px);
   }
 
   .elipsePurple {
@@ -578,8 +449,6 @@ canvas {
     height: 250px;
     top: 32%;
     left: 35%;
-    opacity: 1;
-    filter: blur(70px);
   }
 }
 .aboutСertificate {
@@ -763,14 +632,73 @@ canvas {
   }
 }
 
-// @media (max-width: 475px) {
 .elipseBlue {
-  background-color: $blue;
+  background: rgb(22, 26, 239);
+  background: -moz-radial-gradient(
+    65% 45%,
+    #161aef 24%,
+    rgba(22, 26, 239, 0.2) 61%,
+    rgba(22, 26, 239, 0) 97%
+  );
+  background: -webkit-radial-gradient(
+    65% 45%,
+    #161aef 24%,
+    rgba(22, 26, 239, 0.2) 61%,
+    rgba(22, 26, 239, 0) 97%
+  );
+  background: radial-gradient(
+    65% 45%,
+    #161aef 24%,
+    rgba(22, 26, 239, 0.2) 61%,
+    rgba(22, 26, 239, 0) 97%
+  );
 }
 .elipsePink {
-  background-color: $pink;
+  background: rgba(255, 30, 152, 1);
+  background: -moz-radial-gradient(
+    65% 45%,
+    rgba(255, 30, 152, 1) 24%,
+    rgba(255, 30, 152, 0.2) 61%,
+    rgba(255, 30, 152, 0) 97%
+  );
+  background: -webkit-radial-gradient(
+    65% 45%,
+    rgba(255, 30, 152, 1) 24%,
+    rgba(255, 30, 152, 0.2) 61%,
+    rgba(255, 30, 152, 0) 97%
+  );
+  background: radial-gradient(
+    65% 45%,
+    rgba(255, 30, 152, 1) 24%,
+    rgba(255, 30, 152, 0.2) 61%,
+    rgba(255, 30, 152, 0) 97%
+  );
 }
 .elipsePurple {
-  background-color: $purple;
+  background: rgb(133, 9, 166);
+  background: -moz-radial-gradient(
+    65% 45%,
+    rgba(133, 9, 166, 1) 24%,
+    rgba(133, 9, 166, 0.2) 61%,
+    rgba(133, 9, 166, 0) 97%
+  );
+  background: -webkit-radial-gradient(
+    65% 45%,
+    rgba(133, 9, 166, 1) 24%,
+    rgba(133, 9, 166, 0.2) 61%,
+    rgba(133, 9, 166, 0) 97%
+  );
+  background: radial-gradient(
+    65% 45%,
+    rgba(133, 9, 166, 1) 24%,
+    rgba(133, 9, 166, 0.2) 61%,
+    rgba(133, 9, 166, 0) 97%
+  );
 }
-// }
+
+.elipsePink,
+.elipseBlue,
+.elipsePurple {
+  filter: blur(20px) !important;
+  opacity: 1 !important;
+}

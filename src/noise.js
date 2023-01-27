@@ -17,14 +17,10 @@ function noise(ctx) {
   }
   ctx.putImageData(idata, 0, 0);
 }
+
 export const drawing = (canvasArr) => {
-  // const canvasEl = canvas[i];
-  // var ctx = canvasEl.getContext("2d"),
-  //   canvasContainer = canvasEl.parentNode;
-  // resize(canvasEl, canvasContainer);
-  // noise(ctx);
   return canvasArr.map((canvasEl) => {
-    let ctx = canvasEl.getContext("2d");
+    let ctx = canvasEl.getContext("2d", { alpha: false });
     let canvasContainer = canvasEl.parentNode;
     resize(canvasEl, canvasContainer);
     noise(ctx);
