@@ -11,7 +11,7 @@ const devServer = (isDev) => {
           open: true,
           liveReload: true,
           hot: true,
-          host: "192.168.0.105", //home
+          // host: "192.168.0.105", //home
           // host: "172.20.10.10", //mobile
           port: 8080,
           watchFiles: ["src/*.html"],
