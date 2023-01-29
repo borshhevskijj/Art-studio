@@ -57,36 +57,39 @@ canvas {
 }
 @media (max-width: 1160px) {
   .elipseBlue {
-    left: 54%;
+    left: 12%;
     top: -36%;
-
-    // transform: rotate(-40deg);
-    width: 64%;
-    height: 91%;
+    transform: rotate(42deg);
+    width: 115%;
+    height: 106%;
   }
   .elipsePink {
     width: 121%;
-    height: 84%;
+    height: 104%;
     left: -10%;
     top: 0%;
+    z-index: 3;
   }
   .elipsePurple {
-    width: 639px;
-    height: 1175px;
-    top: -1%;
-    left: -45%;
-
-    // transform: rotate(160deg);
+    z-index: 2;
+    top: -30%;
+    left: -28%;
+    transform: rotate(130deg);
     width: 105%;
-    height: 56%;
+    height: 96%;
   }
 }
 @media (max-width: 654px) {
   .elipsePink {
-    height: 56%;
+    height: 76%;
+  }
+  .elipseBlue {
+    left: 0%;
+    width: 145%;
   }
   .elipsePurple {
-    height: 39%;
+    height: 89%;
+    width: 87%;
   }
 }
 
@@ -100,65 +103,40 @@ canvas {
     left: -15%;
     top: 3%;
     width: 64%;
-    height: 78vw;
+    height: 70%;
     transform: rotate(219deg);
   }
 
   .elipsePink {
     left: -15%;
-    top: 43%;
+    top: 40%;
     width: 72%;
-    height: 54vw;
+    height: 56%;
   }
 
   .elipsePurple {
-    top: 33%;
-    left: -18%;
-    width: 72%;
-    height: 55vw;
+    top: 26%;
+    left: -23%;
+    width: 82%;
+    height: 61%;
     transform: rotate(199deg);
   }
 }
-@media (max-width: 969px) {
+@media (max-width: 600px) {
   .workshops {
     .elipseBlue {
-      top: 31%;
+      transform: rotate(0deg);
+      width: 64%;
     }
     .elipsePink {
-      top: 45%;
+      top: 36%;
+      height: 60%;
     }
     .elipsePurple {
-      top: 41%;
-    }
-  }
-}
-@media (max-width: 832px) {
-  .workshops {
-    .elipsePink {
-      width: 59%;
-      height: 81vw;
-    }
-  }
-}
-@media (max-width: 475px) {
-  .workshops {
-    .elipseBlue {
-      width: 60%;
-      height: 400px;
-      left: 0%;
-      top: 19%;
-    }
-    .elipsePink {
-      width: 70%;
-      height: 500px;
-      left: 0%;
-      top: 35%;
-    }
-    .elipsePurple {
-      width: 50%;
-      height: 500px;
-      top: 24%;
-      left: 32%;
+      width: 130%;
+      top: 12%;
+      left: -23%;
+      height: 75%;
     }
   }
 }
@@ -171,47 +149,76 @@ canvas {
     top: -10%;
   }
   .elipseBlue {
-    left: 43%;
-    top: 46%;
-    width: 75%;
-    height: 65vw;
-    transform: rotate(26deg);
+    left: 33%;
+    top: 32%;
+    width: 95%;
+    height: 65%;
+    transform: rotate(16deg);
   }
-
   .elipsePink {
-    left: 66%;
-    top: 14%;
-    width: 55%;
-    height: 67vw;
+    left: 51%;
+    top: -6%;
+    width: 75%;
+    height: 70%;
   }
-
   .elipsePurple {
-    top: 37%;
-    left: 53%;
-    width: 65%;
-    height: 50vw;
+    top: 26%;
+    left: 43%;
+    width: 85%;
+    height: 46%;
     transform: rotate(15deg);
   }
 }
-@media (max-width: 475px) {
+
+@media (max-width: 900px) {
   .timetable {
     .elipseBlue {
-      width: 64%;
-      height: 490px;
-      left: 44%;
-      top: 39%;
+      left: 10%;
+      top: 32%;
+      width: 115%;
+      height: 65%;
+      transform: rotate(42deg);
     }
     .elipsePink {
-      width: 64%;
-      height: 550px;
-      left: 54%;
-      top: 8%;
+      left: 35%;
+      top: -11%;
+      width: 85%;
+      height: 90%;
+      transform: rotate(307deg);
     }
     .elipsePurple {
-      width: 100%;
-      height: 250px;
-      top: 32%;
-      left: 10%;
+      top: 27%;
+      left: 3%;
+      width: 125%;
+      height: 46%;
+      transform: rotate(27deg);
+    }
+  }
+}
+
+@media (max-width: 625px) {
+  .timetable {
+    .elipseBlue {
+      left: 16%;
+      top: 19%;
+      width: 105%;
+      height: 60%;
+      transform: rotate(293deg);
+    }
+    .elipsePink {
+      left: 25%;
+      top: -4%;
+      width: 115%;
+      height: 54%;
+
+      transform: rotate(38deg);
+    }
+    .elipsePurple {
+      top: 10%;
+      left: -4%;
+      width: 145%;
+      height: 56%;
+      transform: rotate(7deg);
     }
   }
 }
@@ -230,10 +237,10 @@ canvas {
     height: 60%;
   }
   .elipsePink {
-    left: -9%;
-    top: 34%;
-    width: 45%;
-    height: 50%;
+    left: -19%;
+    top: 24%;
+    width: 75%;
+    height: 58%;
     z-index: 3;
   }
   .elipsePurple {
@@ -243,25 +250,39 @@ canvas {
     height: 80%;
   }
 }
-@media (max-width: 675px) {
+@media (max-width: 1160px) {
   .aboutCourse {
     .elipseBlue {
-      width: 80%;
-      height: 300px;
-      left: 14%;
-      top: 30%;
+      left: 12%;
+      top: 12%;
+      width: 85%;
+      height: 80%;
     }
     .elipsePink {
-      width: 90%;
-      height: 449px;
       left: -25%;
-      top: 30%;
+      top: 24%;
+      width: 85%;
+      height: 68%;
+      z-index: 3;
     }
     .elipsePurple {
-      width: 80%;
-      top: 12%;
+      top: 0%;
       left: -20%;
-      height: 350px;
+      width: 80%;
+      height: 80%;
+    }
+  }
+}
+@media (max-width: 834px) {
+  .aboutCourse {
+    .elipseBlue {
+      top: 2%;
+    }
+    .elipsePink {
+      top: 14%;
+    }
+    .elipsePurple {
+      top: -10%;
     }
   }
 }
