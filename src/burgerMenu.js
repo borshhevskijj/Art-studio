@@ -35,14 +35,6 @@ const buttonText = masterClassBtnClone.querySelector("span");
 buttonText.classList.add("burgerMasterClass");
 buttonText.classList.remove("masterСlass");
 
-// masterClassBtnClone.replaceChild(
-//   spanBrg,
-//   masterClassBtnClone.childNodes.item(3)
-// );
-
-console.log(masterClassBtnClone);
-// -err
-
 const contactsWrapper = document.createElement("div");
 contactsWrapper.classList.add("burgerMenuContactsWrapper");
 contactsWrapper.append(phoneClone);
