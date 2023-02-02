@@ -6,4 +6,5 @@
 		 url('../fonts/fonts/gilroy-regular/gilroy-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		 url('../fonts/fonts/gilroy-regular/gilroy-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 		 url('../fonts/fonts/gilroy-regular/gilroy-regular.svg#gilroy-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+		 font-display: swap;
 }

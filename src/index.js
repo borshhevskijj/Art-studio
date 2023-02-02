@@ -1,9 +1,9 @@
 import "normalize.css";
 import "./burgerMenu";
+// import(/* webpackPrefetch: true */ "./noise");
 import "./noise";
 import "../node_modules/swiper/swiper-bundle.min.js";
-// import "../node_modules/circletype/dist/circletype.min.js";
-// import "../@circletype/dist/circletype.min.js";
+import "../node_modules/swiper/swiper-bundle.min.css";
 //styles
 import "./styles/variables.scss";
 import "./styles/main.scss";

@@ -6,4 +6,5 @@
 		url('../fonts/fonts/gilroy-bold/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('../fonts/fonts/gilroy-bold/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('../fonts/fonts/gilroy-bold/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+		font-display: swap;
 }

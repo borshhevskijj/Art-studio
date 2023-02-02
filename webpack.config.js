@@ -1,9 +1,10 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 const devServer = (isDev) => {
-  // console.log(isDev)
   return !isDev
     ? {}
     : {
@@ -11,9 +12,8 @@ const devServer = (isDev) => {
           open: true,
           liveReload: true,
           hot: true,
-          // host: "192.168.0.105", //home
-          // host: "172.20.10.10", //mobile
           port: 8080,
+          host: "192.168.0.105",
           watchFiles: ["src/*.html"],
         },
       };
@@ -21,13 +21,17 @@ const devServer = (isDev) => {
 
 module.exports = ({ develop }) => ({
   mode: develop ? "development" : "production",
-  // content: "./index.js", //?
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
     clean: true,
   },
+  // performance: {
+  //   hints: false,
+  //   maxEntrypointSize: 512000,
+  //   maxAssetSize: 512000,
+  // },
   plugins: [
     new HtmlWebpackPlugin({
       //   template: "./src/index.html",
@@ -38,13 +42,14 @@ module.exports = ({ develop }) => ({
     new MiniCssExtractPlugin({
       filename: "./styles/main.css",
     }),
+    new BundleAnalyzerPlugin(),
   ],
   module: {
     rules: [
-      {
-        test: /\.(?:ico|png|jpg|jpeg|svg)$/i,
-        type: "asset/inline",
-      },
+      // {
+      //   test: /\.(?:ico|png|jpg|jpeg|svg)$/i,
+      //   type: "asset/inline",
+      // },
       {
         test: /\.html$/i,
         loader: "html-loader",

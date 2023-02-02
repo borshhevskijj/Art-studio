@@ -10,10 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
     <title>Art Studio</title>
   </head>
   <body>
@@ -22,6 +18,7 @@
       class="ellipseContainer ellipseContainerBrgMenu"
     >
       <canvas class="canvas1"></canvas>
+      <div class="bgNoise"></div>
       <span class="elipseBlue"></span>
       <span class="elipsePink"></span>
       <span class="elipsePurple"></span>
@@ -82,17 +79,17 @@
 
         <a class="button main_button" href="#">
           <div class="imgWrapper">
-            <img loading="lazy" src="./images/arrow.svg" alt="" />
+            <img src="./images/arrow.svg" alt="" />
           </div>
           <div class="circleText">
-            <span class="masterСlass buttonText"
+            <span data-repeat="3" class="masterСlass buttonText"
               >&nbsp; выбрать мастер-класс |&nbsp;</span
             >
           </div>
         </a>
 
         <div class="main_img">
-          <img loading="lazy" src="./images/main-min.jpg" alt="" />
+          <img src="./images/main-min.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -106,7 +103,6 @@
           />
         </div>
       </div>
-
       <div class="aboutUs_wrapper">
         <h2 class="aboutUs_subTitle subTitle">
           <span>Окунись</span> <br />
@@ -137,7 +133,9 @@
             <img loading="lazy" src="./images/play.svg" alt="" />
           </div>
           <div class="circleText">
-            <span class="watchVideo buttonText">&nbsp;смотреть видео |</span>
+            <span data-repeat="4" class="watchVideo buttonText"
+              >&nbsp;смотреть видео |</span
+            >
           </div>
         </a>
       </div>
@@ -329,7 +327,7 @@
           <img loading="lazy" src="./images/arrow.svg" alt="" />
         </div>
         <div class="circleText">
-          <span class="buy_workshops buttonText"
+          <span data-repeat="4" class="buy_workshops buttonText"
             >&nbsp;&zwnj;купить абонемент |&nbsp;</span
           >
         </div>
@@ -339,7 +337,6 @@
     <section class="timetable container" id="timetable">
       <div class="ellipseContainer">
         <canvas class="canvas3"></canvas>
-
         <span class="elipsePink"></span>
         <span class="elipsePurple"></span>
         <span class="elipseBlue"></span>
@@ -751,7 +748,7 @@
           <img src="./images/arrow.svg" alt="" loading="lazy" />
         </div>
         <div class="circleText">
-          <span class="timetableMasterClass buttonText"
+          <span data-repeat="6" class="timetableMasterClass buttonText"
             >&nbsp; записаться |&nbsp;</span
           >
         </div>
@@ -790,7 +787,9 @@
               <img loading="lazy" src="./images/arrow.svg" alt="" />
             </div>
             <div class="circleText">
-              <span class="form_send buttonText">&nbsp;Отправить |</span>
+              <span data-repeat="6" class="form_send buttonText"
+                >&nbsp;Отправить |</span
+              >
             </div>
           </a>
         </div>
@@ -813,7 +812,7 @@
             <img loading="lazy" src="./images/arrow.svg" alt="" />
           </div>
           <div class="circleText">
-            <span class="aboutCourse_leaveARequest buttonText"
+            <span data-repeat="4" class="aboutCourse_leaveARequest buttonText"
               >&nbsp;Оставить заявку |</span
             >
           </div>
@@ -1123,7 +1122,9 @@
                 <img loading="lazy" src="./images/arrow.svg" alt="" />
               </div>
               <div class="circleText">
-                <span class="booking buttonText">&nbsp;забронировать |</span>
+                <span data-repeat="4" class="booking buttonText"
+                  >&nbsp;забронировать |</span
+                >
               </div>
             </a>
           </div>
@@ -1192,7 +1193,7 @@
               <img loading="lazy" src="./images/arrow.svg" alt="" />
             </div>
             <div class="circleText">
-              <span class="certificate buttonText"
+              <span data-repeat="4" class="certificate buttonText"
                 >&nbsp;хочу сертификат |</span
               >
             </div>
@@ -1379,6 +1380,7 @@
             >
             </a>
             <iframe
+              title="localization"
               loading="lazy"
               class="iframe"
               src="https://yandex.by/map-widget/v1/-/CCUnjWD8sC"
