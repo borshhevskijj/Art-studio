@@ -179,13 +179,17 @@
   // }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 695px) {
   .aboutUs_button {
     .watchVideo {
       & div {
-        line-height: 0.5;
-        top: -22px;
+        line-height: 2;
+        top: -15px;
       }
+      // & div {
+      //   line-height: 0.5;
+      //   top: -22px;
+      // }
     }
   }
   // .aboutUs_button {
@@ -214,10 +218,9 @@
     position: absolute;
     min-height: 183px;
     max-height: 215px;
-    left: 0;
-    margin-left: auto;
-    min-width: calc(100% - 40px);
-    margin-right: auto;
+    min-width: 100%;
+    padding: 0 $mobileContainerPadding + px;
+    transform: translate(0px, 150px);
     & img {
       width: 100%;
       transform: translate(0, 0);

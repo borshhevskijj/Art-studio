@@ -104,13 +104,17 @@
     }
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 695px) {
   .aboutСertificate_button {
     & .certificate {
       & div {
-        line-height: 0.7;
-        top: -19px;
+        line-height: 2.4;
+        top: -12px;
       }
+      // & div {
+      //   line-height: 0.7;
+      //   top: -19px;
+      // }
     }
   }
   // .aboutСertificate_button {

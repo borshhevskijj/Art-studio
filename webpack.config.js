@@ -1,8 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const BundleAnalyzerPlugin =
-  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin =
+// require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 const devServer = (isDev) => {
   return !isDev
@@ -13,11 +13,21 @@ const devServer = (isDev) => {
           liveReload: true,
           hot: true,
           port: 8080,
-          host: "192.168.0.105",
+          // host: "192.168.0.105",
+          allowedHosts: "all",
           watchFiles: ["src/*.html"],
         },
       };
 };
+
+// devServer: {
+//   open: true,
+//   liveReload: true,
+//   hot: true,
+//   port: 8080,
+//   host: "0.0.0.0",
+//   watchFiles: ["src/*.html"],
+// },
 
 module.exports = ({ develop }) => ({
   mode: develop ? "development" : "production",
@@ -34,7 +44,6 @@ module.exports = ({ develop }) => ({
   // },
   plugins: [
     new HtmlWebpackPlugin({
-      //   template: "./src/index.html",
       watchFiles: ["src/*.html"],
       template: path.resolve(__dirname, "src", "index.html"),
       filename: "index.html",
@@ -42,7 +51,7 @@ module.exports = ({ develop }) => ({
     new MiniCssExtractPlugin({
       filename: "./styles/main.css",
     }),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ],
   module: {
     rules: [

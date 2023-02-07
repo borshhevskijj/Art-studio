@@ -31,6 +31,8 @@ import "./swiperSlider";
 import "./accordion.js";
 // modal map
 import "./modalMap";
+// footer ellipses positioning
+import "./footerBlurAndNoize.js";
 //fonts
 import "./styles/gilroy-bold.css";
 import "./styles/gilroy-regular.css";

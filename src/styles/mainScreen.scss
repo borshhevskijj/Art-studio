@@ -89,13 +89,17 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 695px) {
   .main_button {
     & .masterСlass {
       & div {
-        line-height: 3.2;
-        top: 2px;
+        line-height: 5.2;
+        top: 12px;
       }
+      // & div {
+      //   line-height: 3.2;
+      //   top: 2px;
+      // }
     }
   }
 }

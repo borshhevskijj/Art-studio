@@ -1,13 +1,5 @@
 import { options } from "./noise";
 const buttons = Array.from(document.querySelectorAll(".buttonText"));
-// const masterСlass = document.querySelector(".masterСlass");
-// const watchVideo = document.querySelector(".watchVideo");
-// const buyWorkshops = document.querySelector(".buy_workshops");
-// const timetable = document.querySelector(".timetableMasterClass");
-// const form = document.querySelector(".form_send");
-// const aboutCourse = document.querySelector(".aboutCourse_leaveARequest");
-// const booking = document.querySelector(".booking");
-// const certificate = document.querySelector(".certificate");
 
 export const setTextContent = (selector) => {
   let repeat = +selector.dataset.repeat;
@@ -20,13 +12,7 @@ export const setTextContent = (selector) => {
   selector.textContent = selector.textContent.toUpperCase().repeat(repeat);
   return new CircleType(selector);
 };
-// export const setTextContent = (selector, repeat) => {
-//   if (window.matchMedia("(max-width: 695px)").matches && repeat > 3) {
-//     repeat = repeat - 1;
-//   }
-//   selector.textContent = selector.textContent.toUpperCase().repeat(repeat);
-//   return new CircleType(selector);
-// };
+
 const callback = function (entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -41,6 +27,19 @@ const observer = new IntersectionObserver(callback, options);
 buttons.forEach((button) => {
   observer.observe(button);
 });
+
+// const text = document.querySelector(".text p");
+// const _innerText = text.innerText.repeat(3);
+// text.innerHTML = _innerText
+//   .split("")
+//   .map((char, i) => `<span>${char}</span>`)
+//   .join("");
+// const chars = text.querySelectorAll("span");
+// chars.forEach((char, i) => {
+//   char.style.transform = `translateX( ${
+//     (-0.5 * char.getBoundingClientRect().width) / 15
+//   }px) rotate(${(i - 30) * (360 / _innerText.length)}deg`;
+// });
 
 // setTextContent(masterСlass, 3);
 // setTextContent(watchVideo, 4);

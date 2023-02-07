@@ -233,13 +233,17 @@
     }
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 695px) {
   .workshops_button {
     & .buy_workshops {
       & div {
-        line-height: 1;
-        top: -15px;
+        line-height: 3;
+        top: -5px;
       }
+      // & div {
+      //   line-height: 1;
+      //   top: -15px;
+      // }
     }
   }
   // .workshops_button {

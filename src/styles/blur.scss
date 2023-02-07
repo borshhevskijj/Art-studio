@@ -607,6 +607,7 @@ canvas {
     }
   }
 }
+
 @media (max-width: 420px) {
   .teachers {
     .elipseBlue {
@@ -694,11 +695,16 @@ canvas {
     }
   }
 }
+
+body {
+  position: relative;
+}
+// .footer_ellipseContainer {
 .footer {
   position: relative;
   & .ellipseContainer {
-    height: 900%;
-    top: -800%;
+    height: 400%;
+    top: -300%;
     width: 100%;
     left: 0;
   }
@@ -718,73 +724,47 @@ canvas {
   }
 
   .elipsePurple {
-    top: -10%;
+    top: 0%;
     left: -20%;
     width: 85%;
     /* height: 70vw; */
     height: 95%;
   }
 }
-@media (max-width: 1320px) {
-  .footer {
-    & .ellipseContainer {
-      height: 500%;
-      top: -400%;
-    }
-  }
-}
-// @media (max-width: 869px) {
+// @media (max-width: 1320px) {
 //   .footer {
 //     & .ellipseContainer {
-//       height: 390%;
-//       top: -290%;
-//     }
-//     .elipseBlue {
-//       // width: 470px;
-//       height: 630px;
-//       left: 0;
-//       top: 80%;
-//     }
-//     .elipsePink {
-//       // width: 450px;
-//       height: 450px;
-//       left: 0;
-//       top: 20%;
-//     }
-
-//     .elipsePurple {
-//       // width: 531px;
-//       height: 650px;
-//       top: 57%;
-//       left: -30%;
+//       height: 500%;
+//       top: -400%;
 //     }
 //   }
 // }
-@media (max-width: 475px) {
-  .footer {
-    .elipseBlue {
-      left: 22%;
-      top: 27%;
-      width: 90%;
-      height: 70%;
-    }
-    .elipsePink {
-      left: -26%;
-      top: 9%;
-      width: 85%;
-      height: 59vw;
-      height: 115%;
-    }
-    .elipsePurple {
-      top: -12%;
-      left: -20%;
-      width: 85%;
-      /* height: 70vw; */
-      height: 95%;
-      transform: rotate(165deg);
-    }
-  }
-}
+
+// @media (max-width: 475px) {
+//   .footer {
+//     .elipseBlue {
+//       left: 22%;
+//       top: 27%;
+//       width: 90%;
+//       height: 70%;
+//     }
+//     .elipsePink {
+//       left: -26%;
+//       top: 9%;
+//       width: 85%;
+//       height: 59vw;
+//       height: 115%;
+//     }
+//     .elipsePurple {
+//       top: -12%;
+//       left: -20%;
+//       width: 85%;
+//       /* height: 70vw; */
+//       height: 95%;
+//       transform: rotate(165deg);
+//     }
+//   }
+// }
 
 .elipsePink,
 .elipseBlue,

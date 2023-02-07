@@ -36,7 +36,7 @@
   background-color: transparent;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.55s;
+  // transition: max-height .5s;
 
   & .workshopTitle {
     width: 100%;
@@ -67,7 +67,7 @@
 .accordion:after {
   content: url("../images/accordionArrow.svg");
   transform: rotate(0deg);
-  transition: transform 0.3s ease-in;
+  transition: transform 0.25s ease-in;
   position: absolute;
   right: 0;
   font-size: 13px;
@@ -80,7 +80,7 @@
   &.active {
     &:after {
       transform: rotate(180deg);
-      transition: transform 0.3s ease-in;
+      // transition: transform 0.3s ease-in;
     }
   }
 }

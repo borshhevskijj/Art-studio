@@ -19,21 +19,21 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 695px) {
   .timetable_button {
     .timetableMasterClass {
+      // & div {
+      //   line-height: 3;
+      //   top: -3px;
+      // }
       & div {
-        line-height: 3;
-        top: -3px;
+        line-height: 5;
+        top: 11px;
       }
     }
   }
   // .timetable_button {
   //   .timetableMasterClass {
-  //     & div {
-  //       line-height: 5;
-  //       top: 13px;
-  //     }
   //   }
   // }
 }

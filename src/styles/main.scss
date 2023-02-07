@@ -79,6 +79,39 @@ section {
     padding-right: $desctopContainerPadding + px;
   }
 }
+//
+
+// .circle {
+//   position: relative;
+//   width: 247px;
+//   height: 247px;
+//   border-radius: 50%;
+//   border: none;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-weight: 700;
+//   font-size: 15px;
+//   & .text {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     & p {
+//       width: 100%;
+//       height: 100%;
+//     }
+//     & span {
+//       color: red;
+//       position: absolute;
+//       left: 50%;
+//       font-size: 19px;
+//       transform-origin: 0 123.5px;
+//     }
+//   }
+// }
+
+//
+
 .button {
   position: absolute;
   width: 247px;
@@ -88,7 +121,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  // font-family: $fontMainTextDesctop;
   font-weight: 700;
   font-size: 15px;
   & .imgWrapper {

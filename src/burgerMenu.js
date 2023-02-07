@@ -45,11 +45,13 @@ burgerBtn.addEventListener("click", () => {
   burgerBtn.classList.toggle("open");
 
   if (navBar.classList.contains("active")) {
+    // navBar.style.height = window.innerHeight;
     navBar.append(masterClassBtnClone);
     navBar.append(contactsWrapper);
     document.documentElement.style.overflowY = "hidden";
     return;
   }
+  // navBar.style.height = "0px";
   navBar.removeChild(masterClassBtnClone);
   navBar.removeChild(contactsWrapper);
   document.documentElement.style.overflowY = "initial";
@@ -137,14 +139,13 @@ window.onscroll = function () {
   if (window.matchMedia("(max-width: 695px)").matches) {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      header.style.top = "0px";
+      header.style.transform = "translateY(0px)";
     } else {
-      header.style.top = "-220px";
+      // header.style.top = "-220px";
+      header.style.transform = "translateY(-220px)";
     }
     prevScrollpos = currentScrollPos;
     return;
   }
-
-  header.style.top = "0px";
-  // header.style.opacity = 1;
+  header.style.transform = "translateY(0px)";
 };
