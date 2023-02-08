@@ -3,12 +3,12 @@
 .aboutCourse_button {
   position: static;
   background-color: $pink;
-  min-width: 250px;
+  min-width: 247px;
   & .aboutCourse_leaveARequest {
-    & div {
-      line-height: 0.7;
-      top: 0px;
-    }
+    // & div {
+    //   line-height: 0.7;
+    //   top: 0px;
+    // }
   }
 }
 .aboutCourseWrapper {
@@ -118,10 +118,12 @@
 @media (max-width: 695px) {
   .aboutCourse_button {
     & .aboutCourse_leaveARequest {
-      & div {
-        line-height: 2.4;
-        top: -9px;
-      }
+      font-size: 14px;
+      // & div {
+      //   line-height: 2.4;
+      //   top: -9px;
+      // }
+
       // & div {
       //   line-height: 0.4;
       //   top: -20px;

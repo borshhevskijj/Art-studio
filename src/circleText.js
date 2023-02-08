@@ -13,6 +13,9 @@ export const setTextContent = (selector) => {
   return new CircleType(selector);
 };
 
+// const buttonTextTest = document.querySelector(".buttonTextTest");
+// new CircleType(buttonTextTest);
+
 const callback = function (entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {

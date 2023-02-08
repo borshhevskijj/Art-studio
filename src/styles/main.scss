@@ -111,39 +111,61 @@ section {
 // }
 
 //
-
 .button {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   width: 247px;
   height: 247px;
+  // width: 192px;
+  // height: 192px;
+  background-color: rgb(255, 140, 0);
   border-radius: 50%;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 15px;
-  & .imgWrapper {
-    display: flex;
-    margin: 0 auto;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  // & .buttonText {
-  //   position: relative;
-  //   left: -50%;
-  //   right: 0;
-  // }
+  text-transform: uppercase;
   & .buttonText {
-    position: absolute;
-    font-size: 15px;
+    font: 15px sans-serif;
     user-select: none;
-    color: white;
-    font-weight: 700;
-    bottom: -96px;
+  }
+  & .imgWrapper {
+    position: relative;
+    & img {
+      position: absolute;
+      right: 50%;
+      bottom: 50%;
+      transform: translate(50%, 50%);
+    }
   }
 }
+
+// .button {
+//   position: absolute;
+//   width: 247px;
+//   height: 247px;
+//   border-radius: 50%;
+//   border: none;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   font-weight: 700;
+//   font-size: 15px;
+//   & .imgWrapper {
+//     display: flex;
+//     margin: 0 auto;
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//   }
+
+//   & .buttonText {
+//     position: absolute;
+//     font-size: 15px;
+//     user-select: none;
+//     color: white;
+//     font-weight: 700;
+//     bottom: -96px;
+//   }
+// }
 .subTitle {
   text-align: center;
   line-height: calc(1.7rem + 4vw);
@@ -171,14 +193,14 @@ section {
   }
 }
 
-.circleText {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: -50%;
-  top: 12px;
-}
+// .circleText {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   left: -50%;
+//   top: 12px;
+// }
 
 @media (max-width: 1024px) {
   html {
@@ -198,10 +220,12 @@ section {
     width: 192px;
     height: 192px;
   }
-  .circleText {
+  .button {
+    width: 192px;
+    height: 192px;
     & .buttonText {
-      font-size: 14px;
-      bottom: -90px;
+      font-size: 12px;
+      // line-height: 2.3;
     }
   }
   // .subTitle {

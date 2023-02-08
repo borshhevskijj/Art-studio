@@ -47,12 +47,12 @@
     left: 5px;
   }
   & .watchVideo {
-    & div {
-      //   line-height: 1.7;
-      // top: 8px;
-      line-height: 0.7;
-      top: 0px;
-    }
+    // & div {
+    //   //   line-height: 1.7;
+    //   // top: 8px;
+    //   line-height: 0.7;
+    //   top: 0px;
+    // }
   }
 }
 
@@ -182,10 +182,11 @@
 @media (max-width: 695px) {
   .aboutUs_button {
     .watchVideo {
-      & div {
-        line-height: 2;
-        top: -15px;
-      }
+      font-size: 14px;
+      // & div {
+      //   line-height: 2;
+      //   top: -15px;
+      // }
       // & div {
       //   line-height: 0.5;
       //   top: -22px;

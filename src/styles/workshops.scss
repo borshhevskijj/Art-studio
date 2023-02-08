@@ -32,8 +32,8 @@
   z-index: 2;
   & .buy_workshops {
     & div {
-      line-height: 2;
-      top: 11px;
+      line-height: 2.4;
+      // top: 11px;
     }
   }
 }
@@ -236,10 +236,7 @@
 @media (max-width: 695px) {
   .workshops_button {
     & .buy_workshops {
-      & div {
-        line-height: 3;
-        top: -5px;
-      }
+      font-size: 15px;
       // & div {
       //   line-height: 1;
       //   top: -15px;

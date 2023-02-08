@@ -60,10 +60,11 @@
   background-color: $pink;
   min-width: 250px;
   & .booking {
-    & div {
-      line-height: 0;
-      top: -5px;
-    }
+    font-size: 15.7px;
+    // & div {
+    //   line-height: 0;
+    //   top: -5px;
+    // }
   }
 }
 .artParty_subTitle_elipse::before {
@@ -140,10 +141,11 @@
   .artParty_button {
     min-width: auto;
     & .booking {
-      & div {
-        line-height: 1.5;
-        top: -17px;
-      }
+      // & div {
+      //   line-height: 1.5;
+      //   top: -17px;
+      // }
+
       // & div {
       //   line-height: 0;
       //   top: -24px;

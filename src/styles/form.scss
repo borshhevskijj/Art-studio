@@ -21,10 +21,10 @@
   top: 100%;
   transform: translate(0, -50%);
   & .form_send {
-    & div {
-      line-height: 0.7;
-      top: 0px;
-    }
+    // & div {
+    //   line-height: 0.7;
+    //   top: 0px;
+    // }
   }
 }
 
@@ -204,10 +204,13 @@
     left: 50%;
     transform: translate(-50%, 0);
     & .form_send {
-      & div {
-        line-height: 3.4;
-        top: -6px;
-      }
+      font-size: 13.5px;
+
+      // & div {
+      //   line-height: 3.4;
+      //   top: -6px;
+      // }
+
       // & div {
       //   line-height: 1.4;
       //   top: -16px;
