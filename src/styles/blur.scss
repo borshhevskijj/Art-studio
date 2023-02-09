@@ -699,12 +699,11 @@ canvas {
 body {
   position: relative;
 }
-// .footer_ellipseContainer {
 .footer {
   position: relative;
   & .ellipseContainer {
-    height: 400%;
-    top: -300%;
+    height: 900%;
+    top: -800%;
     width: 100%;
     left: 0;
   }
@@ -717,10 +716,10 @@ body {
 
   .elipsePink {
     left: -16%;
-    top: 19%;
+    top: -10%;
     width: 65%;
     height: 59vw;
-    height: 95%;
+    height: 145%;
   }
 
   .elipsePurple {
@@ -731,14 +730,28 @@ body {
     height: 95%;
   }
 }
-// @media (max-width: 1320px) {
-//   .footer {
-//     & .ellipseContainer {
-//       height: 500%;
-//       top: -400%;
-//     }
-//   }
-// }
+@media (max-width: 1320px) {
+  .footer {
+    & .ellipseContainer {
+      height: 500%;
+      top: -400%;
+    }
+    .elipsePurple {
+      top: 10%;
+      left: -20%;
+      width: 85%;
+      /* height: 70vw; */
+      height: 84%;
+    }
+    .elipsePink {
+      left: -16%;
+      top: 10%;
+      width: 65%;
+      height: 59vw;
+      height: 125%;
+    }
+  }
+}
 
 // @media (max-width: 475px) {
 //   .footer {

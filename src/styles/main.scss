@@ -118,14 +118,15 @@ section {
   position: relative;
   width: 247px;
   height: 247px;
-  // width: 192px;
-  // height: 192px;
   background-color: rgb(255, 140, 0);
   border-radius: 50%;
   text-transform: uppercase;
   & .buttonText {
     font: 15px sans-serif;
     user-select: none;
+    & > div {
+      animation: rotateText 15s linear infinite;
+    }
   }
   & .imgWrapper {
     position: relative;
@@ -135,6 +136,15 @@ section {
       bottom: 50%;
       transform: translate(50%, 50%);
     }
+  }
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 

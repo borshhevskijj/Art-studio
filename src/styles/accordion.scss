@@ -5,6 +5,7 @@
   width: 100%;
   padding-bottom: 25px;
   margin-bottom: 25px;
+  list-style-type: none;
 }
 
 .accordionWrapper:not(:first-child) {
@@ -161,12 +162,6 @@
   }
 }
 
-@media (max-width: 695px) {
-  .panel {
-    transition: none;
-  }
-}
-
 @media (max-width: 625px) {
   .accordion {
     padding: 15px 0;
@@ -180,6 +175,7 @@
   }
   .panel {
     position: static;
+    transition: none;
   }
   .timetableDayOfTheWeek {
     font-size: 18px;

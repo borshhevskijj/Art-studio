@@ -1,5 +1,6 @@
 import "normalize.css";
 import "./burgerMenu";
+import "./scrollReveal";
 // import(/* webpackPrefetch: true */ "./noise");
 import "./noise";
 import "../node_modules/swiper/swiper-bundle.min.js";

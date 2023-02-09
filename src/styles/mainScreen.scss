@@ -50,19 +50,8 @@
 .main_button {
   background-color: $pink;
   left: -31px;
-  bottom: 65px;
+  bottom: 205px;
   z-index: 2;
-  // .main_button {
-  & .masterСlass {
-    // bottom: -100px;
-    & div {
-      // line-height: 2.1;
-      // top: 11px;
-      // line-height: 1.3;
-      // top: 4px;
-    }
-  }
-  // }
 }
 
 @media (max-width: 1160px) {
