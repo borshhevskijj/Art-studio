@@ -26,6 +26,8 @@
   top: 0;
   right: -119px;
   & img {
+    object-fit: cover;
+    object-position: center 25%;
     border-radius: 50%;
     width: 100%;
     height: 100%;

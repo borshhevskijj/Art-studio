@@ -178,16 +178,36 @@
 //
 
 .map::after {
-  content: url("../images/arrow.svg");
+  content: url("../images/openIcon.svg");
   position: absolute;
   z-index: 122312312;
   right: 25px;
   bottom: 25px;
   font-size: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin: 25px;
+}
+.map::before {
+  content: "";
+  position: absolute;
+  z-index: 122312312;
+
+  right: 16px;
+  bottom: 16px;
+
+  width: 70px;
+  height: 70px;
+  background-color: rgb(111 111 111 / 31%);
+  filter: blur(10px);
+  border-radius: 40px;
 }
 
 .map.active::after {
-  content: url("../images/arrow.svg");
+  content: url("../images/closeIcon.svg");
 }
 
 .iframe {

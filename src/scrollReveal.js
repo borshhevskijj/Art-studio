@@ -2,32 +2,33 @@ const title = document.querySelectorAll(".subTitle");
 const toLeft = document.querySelectorAll(".scrollRevealLeft");
 const toRight = document.querySelectorAll(".scrollRevealRight");
 const toOpacity = document.querySelectorAll(".scrollRevealOpacity");
+ScrollReveal.debug = true;
 
 const slideUp = {
-  distance: "75%",
   origin: "bottom",
-  duration: 800,
-  delay: 250,
-};
-const slideLeft = {
-  distance: "35%",
-  origin: "left",
-  viewFactor: 0.5,
-  duration: 800,
+  duration: 1000,
   delay: 450,
+  distance: "350px",
+};
+
+const slideLeft = {
+  origin: "left",
+  duration: 1350,
+  delay: 550,
+  distance: "450px",
 };
 const slideRight = {
-  distance: "35%",
   origin: "right",
-  viewFactor: 0.5,
-  duration: 900,
-  delay: 350,
+  duration: 1250,
+  delay: 450,
+  distance: "450px",
 };
 const slideOpacity = {
   duration: 1000,
-  viewFactor: 0.5,
   duration: 900,
-  delay: 450,
+  delay: 650,
+  // distance: "350px",
+  // origin: "bottom",
 };
 
 ScrollReveal().reveal(title, slideUp);

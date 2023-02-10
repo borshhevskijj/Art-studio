@@ -12,9 +12,9 @@ const devServer = (isDev) => {
           open: true,
           liveReload: true,
           hot: true,
-          port: 8080,
+          port: 8081,
           // host: "192.168.0.105",
-          allowedHosts: "all",
+          // allowedHosts: "all",
           watchFiles: ["src/*.html"],
         },
       };
