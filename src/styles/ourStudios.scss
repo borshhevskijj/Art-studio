@@ -1,9 +1,5 @@
 @import "/src/styles/variables.scss";
 
-.ourStudios {
-  max-width: 1776px;
-  margin: 0 auto;
-}
 .ourStudiosSubTitle {
   position: relative;
   & span {
@@ -31,7 +27,6 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  // bottom: calc(20vw - 75px);
 
   & p {
     padding: 0 50px;
@@ -86,7 +81,6 @@
     & img {
       width: 100%;
       height: auto;
-      // border-radius: 25px;
     }
   }
 }
@@ -117,8 +111,6 @@
     & img {
       min-width: 340px;
       min-height: 445px;
-      // min-width: auto;
-      // min-height: auto;
     }
   }
   .ourStudiosWrapper_bottomContent_rigthImg {
@@ -126,17 +118,12 @@
     & img {
       min-width: 340px;
       min-height: 445px;
-      // min-width: auto;
-      // min-height: auto;
     }
   }
 }
 
 @media (max-width: 869px) {
   .ourStudiosWrapper_topContent {
-    // & img {
-    //   width: 175.08px;
-    // }
     & p {
       font-size: 14px;
     }

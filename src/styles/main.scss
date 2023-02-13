@@ -56,8 +56,8 @@ section {
 .container {
   width: 100%;
   max-width: 1700px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   box-sizing: inherit;
   display: block;
   padding-left: $mobileContainerPadding + px;
@@ -81,6 +81,11 @@ section {
   .container {
     padding-left: $desctopContainerPadding + px;
     padding-right: $desctopContainerPadding + px;
+  }
+}
+@media (min-width: 1700px) {
+  .container {
+    max-width: none;
   }
 }
 //

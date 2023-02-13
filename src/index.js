@@ -1,11 +1,9 @@
 import "normalize.css";
 import "./burgerMenu";
 import "./scrollReveal";
-// import(/* webpackPrefetch: true */ "./noise");
 import "./noise";
 import "../node_modules/swiper/swiper-bundle.min.js";
 import "../node_modules/swiper/swiper-bundle.min.css";
-//styles
 import "./styles/variables.scss";
 import "./styles/main.scss";
 import "./styles/navBar.scss";
@@ -24,16 +22,9 @@ import "./styles/contacts.scss";
 import "./styles/footer.scss";
 import "./styles/blur.scss";
 import "./styles/accordion.scss";
-//circleText
 import "./circleText";
-//slider
 import "./swiperSlider";
-//accordion
 import "./accordion.js";
-// modal map
 import "./modalMap";
-// footer ellipses positioning
-import "./footerBlurAndNoize.js";
-//fonts
 import "./styles/gilroy-bold.css";
 import "./styles/gilroy-regular.css";

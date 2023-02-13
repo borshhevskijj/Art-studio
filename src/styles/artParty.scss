@@ -103,30 +103,6 @@
       padding-bottom: 30px;
     }
   }
-  // .artParty_subTitle_elipse::before {
-  //   border: 4px solid $blue;
-  //   left: 13.62%;
-  //   right: 14.79%;
-  //   top: -31.15%;
-  //   bottom: 27.35%;
-  //   transform: matrix(0.98, -0.1, 0.23, 0.99, 0, 0);
-  //   width: 70vw;
-  //   height: 12vw;
-  // }
-
-  // .artParty_subTitle_elipse::after {
-  //   border: 4px solid $blue;
-  //   left: 13.62%;
-  //   right: 14.79%;
-  //   top: -51.15%;
-  //   bottom: 27.35%;
-  //   transform: matrix(0.98, -0.09, 0.23, 0.99, 0, 0);
-  //   width: 551.28px;
-  //   height: 102px;
-  //   width: 532.62px;
-  //   height: 12vw;
-  //   width: 71vw;
-  // }
 }
 @media (max-width: 800px) {
   .artPartyImgRight {
@@ -139,23 +115,6 @@
 @media (max-width: 695px) {
   .artParty_button {
     min-width: auto;
-    & .booking {
-      // & div {
-      //   line-height: 1.5;
-      //   top: -17px;
-      // }
-
-      // & div {
-      //   line-height: 0;
-      //   top: -24px;
-      // }
-    }
-    // & .booking {
-    //   & div {
-    //     line-height: 2.4;
-    //     top: -6px;
-    //   }
-    // }
   }
   .artPartyImgRight {
     transform: translateY(-92px);
@@ -188,7 +147,6 @@
     flex-direction: column;
   }
   .artPartyImg {
-    // height: 300px;
     margin-left: 0;
     margin-bottom: 15px;
     height: calc(129px + 32vw);
@@ -212,23 +170,4 @@
       font-size: 18px;
     }
   }
-  // .artParty_subTitle_elipse::before {
-  //   left: 3.39%;
-  //   right: 5.24%;
-  //   top: -9.37%;
-  //   bottom: 28.73%;
-  //   transform: matrix(0.98, -0.1, 0.23, 0.99, 0, 0);
-  //   width: 86vw;
-  //   height: 12vw;
-  // }
-
-  // .artParty_subTitle_elipse::after {
-  //   left: 2.13%;
-  //   right: 3.32%;
-  //   top: -9.49%;
-  //   bottom: 28.86%;
-  //   transform: matrix(0.99, -0.03, 0.14, 1, 0, 0);
-  //   width: 89vw;
-  //   height: 12vw;
-  // }
 }

@@ -81,7 +81,6 @@
   &.active {
     &:after {
       transform: rotate(180deg);
-      // transition: transform 0.3s ease-in;
     }
   }
 }
@@ -123,7 +122,6 @@
 
 .panelWrapper {
   display: flex;
-  // column-gap: 35px;
 }
 
 .timetableDayOfTheWeek {
@@ -198,7 +196,6 @@
   .panelImg {
     transform-origin: 0 0;
     position: absolute;
-    /* top: 86px; */
     right: 0;
     bottom: 0;
     bottom: 34%;
@@ -207,7 +204,6 @@
       width: 115px;
       height: 115px;
     }
-    // position: absolute;
   }
 
   .workshopTitle {

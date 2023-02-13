@@ -59,21 +59,13 @@
     & .form_elements {
       padding: 0;
       align-items: center;
-      // & h3 {
-      //   font-size: 30px;
-      //   padding-bottom: 20px;
-      // }
       & .form_elements_content {
         display: flex;
         flex-wrap: wrap;
         padding: 0 15vw;
         justify-content: space-between;
-        // &:nth-child(odd) {
-        //   gap: 30px;
-        // }
         & div {
           flex: 0 0 44%;
-          // margin-right: 20px;
           &:last-child {
             display: block;
           }
@@ -88,7 +80,7 @@
     }
   }
   .aboutСertificate_button {
-    top: 100%;
+    top: calc(100% + 61.5px);
   }
 }
 @media (max-width: 833px) {
@@ -96,13 +88,13 @@
     & .form_elements {
       & h3 {
         font-size: 24px;
-        // padding-bottom: 20px;
       }
     }
   }
 }
 @media (max-width: 695px) {
   .aboutСertificate_button {
+    top: 100%;
     & .certificate {
       font-size: 14px;
     }
@@ -129,9 +121,6 @@
           &:last-child {
             padding-bottom: 25px;
           }
-          // & p {
-          //   font-size: 12px;
-          // }
         }
       }
     }

@@ -1,4 +1,3 @@
-import { canvasBrg } from "./burgerMenu";
 const canvasElArr = Array.from(document.getElementsByTagName("canvas"));
 
 function resize(element, canvasContainer) {
@@ -19,13 +18,11 @@ function noise(ctx) {
   ctx.putImageData(idata, 0, 0);
 }
 
-export const drawing = (canvasArr) => {
-  return canvasArr.map((canvasEl) => {
-    let ctx = canvasEl.getContext("2d");
-    let canvasContainer = canvasEl.parentNode;
-    resize(canvasEl, canvasContainer);
-    noise(ctx);
-  });
+export const drawing = (canvasEl) => {
+  let ctx = canvasEl.getContext("2d");
+  let canvasContainer = canvasEl.parentNode;
+  resize(canvasEl, canvasContainer);
+  noise(ctx);
 };
 
 export const options = {
@@ -38,7 +35,7 @@ const callback = function (entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const canvas = entry.target;
-      drawing([canvas]);
+      drawing(canvas);
       observer.unobserve(canvas);
     }
   });

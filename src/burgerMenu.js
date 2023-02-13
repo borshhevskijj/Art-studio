@@ -4,41 +4,22 @@ const navBar = document.querySelector(".navBar");
 const navLink = document.querySelectorAll(".navigation a");
 const burgerBtn = document.querySelector(".brgMenu");
 
-const phoneClone = document.querySelector(".contacts_phone").cloneNode(true);
+const contacts_phoneClone = document
+  .querySelector(".contacts_phone")
+  .cloneNode(true);
 const contactsIconsClone = document
   .querySelector(".contactsIcons")
   .cloneNode(true);
 
-// -err
-// const mainButton = document.querySelector(".main_button");
-// const masterClassBtnClone = mainButton.cloneNode(true);
-// const circleText = masterClassBtnClone.querySelector(".circleText");
-// circleText.firstChild.nextSibling.classList.add("burgerMasterClass");
-// circleText.firstChild.nextSibling.classList.remove("masterСlass");
-
-// const replacementNodeForMasterClassBtn = document.createElement("div");
-// replacementNodeForMasterClassBtn.classList.add("circleText");
-{
-  /* <span class="burgerMasterClass buttonText">выбрать мастер-класс |</span>; */
-}
-// const spanBrg = document.createElement("span");
-// spanBrg.classList.add("burgerMasterClass");
-// spanBrg.classList.add("buttonText");
-// spanBrg.innerHTML = "выбрать мастер-класс | ";
-// replacementNodeForMasterClassBtn.append(spanBrg);
-
-const masterClassBtnClone = document
-  .querySelector(".main_button")
-  .cloneNode(true);
-
-const buttonText = masterClassBtnClone.querySelector("span");
+const mainButtonClone = document.querySelector(".main_button").cloneNode(true);
+const buttonText = mainButtonClone.querySelector("span");
 buttonText.classList.add("burgerMasterClass");
 buttonText.classList.remove("masterСlass");
 
-const contactsWrapper = document.createElement("div");
-contactsWrapper.classList.add("burgerMenuContactsWrapper");
-contactsWrapper.append(phoneClone);
-contactsWrapper.append(contactsIconsClone);
+const brgContactsWrapper = document.createElement("div");
+brgContactsWrapper.classList.add("burgerMenuContactsWrapper");
+brgContactsWrapper.append(contacts_phoneClone);
+brgContactsWrapper.append(contactsIconsClone);
 
 burgerBtn.addEventListener("click", () => {
   navBar.classList.toggle("active");
@@ -46,14 +27,14 @@ burgerBtn.addEventListener("click", () => {
 
   if (navBar.classList.contains("active")) {
     // navBar.style.height = window.innerHeight;
-    navBar.append(masterClassBtnClone);
-    navBar.append(contactsWrapper);
+    navBar.append(mainButtonClone);
+    navBar.append(brgContactsWrapper);
     document.documentElement.style.overflowY = "hidden";
     return;
   }
   // navBar.style.height = "0px";
-  navBar.removeChild(masterClassBtnClone);
-  navBar.removeChild(contactsWrapper);
+  navBar.removeChild(mainButtonClone);
+  navBar.removeChild(brgContactsWrapper);
   document.documentElement.style.overflowY = "initial";
 });
 
@@ -65,8 +46,8 @@ navLink.forEach((link) => {
   });
 });
 
-const ellipseContainer = document.createElement("div");
-ellipseContainer.classList.add("ellipseContainer");
+const brgEllipseContainer = document.createElement("div");
+brgEllipseContainer.classList.add("ellipseContainer");
 
 export const canvasBrg = document.createElement("canvas");
 const span = document.createElement("span");
@@ -76,23 +57,19 @@ span.classList.add("elipseBlue");
 span1.classList.add("elipsePurple");
 span2.classList.add("elipsePink");
 
-ellipseContainer.append(canvasBrg);
-ellipseContainer.append(span);
-ellipseContainer.append(span1);
-ellipseContainer.append(span2);
+brgEllipseContainer.append(canvasBrg);
+brgEllipseContainer.append(span);
+brgEllipseContainer.append(span1);
+brgEllipseContainer.append(span2);
 
-//
-
-const burgerBtnObs = new MutationObserver(function (entries) {
-  // if (document.querySelector(".burgerMasterClass")) {
+const burgerBtnObs = new MutationObserver(function () {
   if (
     burgerBtn.classList.contains("open") &&
     navBar.classList.contains("active")
   ) {
     setTextContent(document.querySelector(".burgerMasterClass"), 1);
-    //tut
-    navBar.append(ellipseContainer);
-    drawing([canvasBrg]);
+    navBar.append(brgEllipseContainer);
+    drawing(canvasBrg);
     burgerBtnObs.disconnect();
   }
 });
@@ -113,21 +90,10 @@ const resizeObs = new ResizeObserver((entries) => {
     ) {
       burgerBtn.classList.remove("open");
       navBar.classList.remove("active");
-      navBar.removeChild(masterClassBtnClone);
-      navBar.removeChild(contactsWrapper);
-      // ellipseContainer.style.display = "none";
-      // ellipseContainer.remove();
-      // navBar.removeChild(ellipseContainer);
+      navBar.removeChild(mainButtonClone);
+      navBar.removeChild(brgContactsWrapper);
       document.documentElement.style.overflowY = "initial";
     }
-    // if (
-    //   entry.contentRect.width <= 695 &&
-    //   !burgerBtn.classList.contains("open") &&
-    //   !navBar.classList.contains("active")
-    // ) {
-    //   navBar.append(ellipseContainer);
-    //   drawing([canvasBrg]);
-    // }
   }
 });
 resizeObs.observe(document.documentElement);
@@ -141,7 +107,6 @@ window.onscroll = function () {
     if (prevScrollpos > currentScrollPos) {
       header.style.transform = "translateY(0px)";
     } else {
-      // header.style.top = "-220px";
       header.style.transform = "translateY(-220px)";
     }
     prevScrollpos = currentScrollPos;

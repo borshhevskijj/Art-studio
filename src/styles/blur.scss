@@ -64,71 +64,6 @@
     rgba(133, 9, 166, 0) 97%
   );
 }
-// .elipseBlue {
-//   background: rgb(22, 26, 239);
-//   background: -moz-radial-gradient(
-//     65% 45%,
-//     rgba(22, 26, 239,1) 24%,
-//     rgba(22, 26, 239, 0.2) 61%,
-//     rgba(22, 26, 239, 0) 97%
-//   );
-//   background: -webkit-radial-gradient(
-//     65% 45%,
-//     rgba(22, 26, 239,1) 24%,
-//     rgba(22, 26, 239, 0.2) 61%,
-//     rgba(22, 26, 239, 0) 97%
-//   );
-//   background: radial-gradient(
-//     65% 45%,
-//     rgba(22, 26, 239,1) 24%,
-//     rgba(22, 26, 239, 0.2) 61%,
-//     rgba(22, 26, 239, 0) 97%
-//   );
-// }
-
-// .elipsePink {
-//   background: rgb(255, 30, 152);
-//   background: -moz-radial-gradient(
-//     65% 45%,
-//     rgba(255, 30, 152, 1) 24%,
-//     rgba(255, 30, 152, 0.2) 61%,
-//     rgba(255, 30, 152, 0) 97%
-//   );
-//   background: -webkit-radial-gradient(
-//     65% 45%,
-//     rgba(255, 30, 152, 1) 24%,
-//     rgba(255, 30, 152, 0.2) 61%,
-//     rgba(255, 30, 152, 0) 97%
-//   );
-//   background: radial-gradient(
-//     65% 45%,
-//     rgba(255, 30, 152, 1) 24%,
-//     rgba(255, 30, 152, 0.2) 61%,
-//     rgba(255, 30, 152, 0) 97%
-//   );
-// }
-// .elipsePurple {
-//   background: rgb(133, 9, 166);
-//   background: -moz-radial-gradient(
-//     65% 45%,
-//     rgba(133, 9, 166, 1) 24%,
-//     rgba(133, 9, 166, 0.2) 61%,
-//     rgba(133, 9, 166, 0) 97%
-//   );
-//   background: -webkit-radial-gradient(
-//     65% 45%,
-//     rgba(133, 9, 166, 1) 24%,
-//     rgba(133, 9, 166, 0.2) 61%,
-//     rgba(133, 9, 166, 0) 97%
-//   );
-//   background: radial-gradient(
-//     65% 45%,
-//     rgba(133, 9, 166, 1) 24%,
-//     rgba(133, 9, 166, 0.2) 61%,
-//     rgba(133, 9, 166, 0) 97%
-//   );
-// }
-
 .ellipseContainer {
   position: absolute;
   z-index: -199;
@@ -137,7 +72,6 @@
   overflow: hidden;
   background: transparent;
   mix-blend-mode: unset;
-  // isolation: isolate;
 }
 
 #canvas,
@@ -164,17 +98,6 @@ canvas {
 }
 
 #ellipseContainerHeader {
-  // background: black;
-  // mix-blend-mode: screen;
-  // & .bgNoise {
-  //   background-image: url("../images/blurAndNoise/noise.svg");
-  //   width: 100%;
-  //   height: 100%;
-  //   background-color: black;
-  //   position: relative;
-  //   z-index: 6;
-  //   mix-blend-mode: soft-light;
-  // }
   & .elipseBlue {
     left: -15%;
     z-index: 2;
@@ -293,7 +216,6 @@ canvas {
   & .ellipseContainer {
     height: 1708px;
     left: 0;
-    // top: -10%;
     top: 0%;
   }
   .elipseBlue {
@@ -453,7 +375,6 @@ canvas {
     width: 52%;
     height: 49%;
     transform: rotate(167deg);
-    // top: calc(20% - 5vw);
   }
 
   .elipsePink {
@@ -461,7 +382,6 @@ canvas {
     top: 5%;
     width: 85%;
     height: 78%;
-    // top: calc(5% - 5vw);
   }
 
   .elipsePurple {
@@ -469,7 +389,6 @@ canvas {
     left: 57%;
     width: 65%;
     height: 65%;
-    // top: calc(0% - 5vw);
   }
 }
 
@@ -726,7 +645,6 @@ body {
     top: 0%;
     left: -20%;
     width: 85%;
-    /* height: 70vw; */
     height: 95%;
   }
 }
@@ -740,7 +658,6 @@ body {
       top: 10%;
       left: -20%;
       width: 85%;
-      /* height: 70vw; */
       height: 84%;
     }
     .elipsePink {
@@ -752,32 +669,6 @@ body {
     }
   }
 }
-
-// @media (max-width: 475px) {
-//   .footer {
-//     .elipseBlue {
-//       left: 22%;
-//       top: 27%;
-//       width: 90%;
-//       height: 70%;
-//     }
-//     .elipsePink {
-//       left: -26%;
-//       top: 9%;
-//       width: 85%;
-//       height: 59vw;
-//       height: 115%;
-//     }
-//     .elipsePurple {
-//       top: -12%;
-//       left: -20%;
-//       width: 85%;
-//       /* height: 70vw; */
-//       height: 95%;
-//       transform: rotate(165deg);
-//     }
-//   }
-// }
 
 .elipsePink,
 .elipseBlue,

@@ -6,7 +6,6 @@
   flex-direction: row;
   padding-top: 30px;
   z-index: 2;
-  // overflow-x: hidden;
   max-width: 1700px;
   margin-left: auto;
   margin-right: auto;
@@ -51,7 +50,6 @@
 
 .abouteUsImg {
   & img {
-    // width: 33%;
     width: 27.4vw;
     min-width: 350px;
     border-radius: 25px;
@@ -81,12 +79,6 @@
     border: 4px solid $pink;
   }
 }
-// .aboutUs_subTitle_elipse::after {
-//   left: -10%;
-//   top: 0;
-//   transform: matrix(0.99, -0.03, 0.14, 1, 18, 5);
-//   border: 4px solid $pink;
-// }
 .aboutUs_wrapper {
   display: flex;
   flex-direction: column;
@@ -102,17 +94,12 @@
 @media (max-width: 1160px) {
   .abouteUsImg {
     & img {
-      // width: 33%;
       width: 27.4vw;
       min-width: 240px;
       border-radius: 25px;
-      // height: 100%;
       height: 120%;
     }
   }
-  // .aboutUs_subTitle {
-  //   padding-bottom: 30px;
-  // }
   .aboutUs_button {
     margin-bottom: 0;
   }
@@ -152,24 +139,6 @@
   .abouteUsImgRight {
     height: 242px;
   }
-  // .aboutUs_subTitle_elipse::after {
-  //   left: 18.15%;
-  //   right: 19.28%;
-  //   top: 7.3%;
-  //   bottom: 88.52%;
-  //   transform: matrix(0.99, -0.03, 0.15, 1, 0, 0);
-  //   width: 62.7vw;
-  //   height: 11.3vw;
-  // }
-  // .aboutUs_subTitle_elipse::before {
-  //   left: 18.98%;
-  //   right: 20.58%;
-  //   top: 6.6%;
-  //   bottom: 88.38%;
-  //   width: 60vw;
-  //   height: 11.3vw;
-  //   transform: matrix(0.97, -0.09, 0.24, 1, 0, 0);
-  // }
 }
 
 @media (max-width: 695px) {
@@ -186,8 +155,6 @@
   }
   .aboutUs {
     flex-direction: column;
-    // padding-left: 22px;
-    // padding-right: 22px;
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
@@ -212,27 +179,6 @@
     padding-top: 220px;
     padding: 220px 0 0 10px;
   }
-
-  // .aboutUs_subTitle_elipse::after {
-  //   left: 32.47%;
-  //   left: 25vw;
-  //   right: 11.13%;
-  //   top: 5.84%;
-  //   bottom: 90.83%;
-  //   transform: matrix(0.99, -0.03, 0.14, 1, 0, 0);
-  //   width: calc(49% + 8vw);
-  //   height: 9vw;
-  // }
-  // .aboutUs_subTitle_elipse::before {
-  //   left: 32.5%;
-  //   left: 26vw;
-  //   right: 12.69%;
-  //   top: 5.75%;
-  //   bottom: 90.73%;
-  //   transform: matrix(0.98, -0.1, 0.22, 0.99, 0, 0);
-  //   width: calc(50% + 8vw);
-  //   height: 9vw;
-  // }
 }
 @media (max-width: 400px) {
   .aboutUs_text_description {
@@ -245,22 +191,4 @@
       object-position: 0 51%;
     }
   }
-  // .aboutUs_subTitle_elipse::after {
-  //   left: 14.47%;
-  //   right: 11.13%;
-  //   top: 4.84%;
-  //   bottom: 90.83%;
-  //   transform: matrix(0.99, -0.03, 0.14, 1, 0, 0);
-  //   width: 290.26px;
-  //   height: 55.72px;
-  // }
-  // .aboutUs_subTitle_elipse::before {
-  //   left: 17.5%;
-  //   right: 12.69%;
-  //   top: 4.75%;
-  //   bottom: 90.73%;
-  //   transform: matrix(0.98, -0.1, 0.22, 0.99, 0, 0);
-  //   height: 55.72px;
-  //   width: 280.53px;
-  // }
 }

@@ -27,8 +27,6 @@ const slideOpacity = {
   duration: 1000,
   duration: 900,
   delay: 650,
-  // distance: "350px",
-  // origin: "bottom",
 };
 
 ScrollReveal().reveal(title, slideUp);

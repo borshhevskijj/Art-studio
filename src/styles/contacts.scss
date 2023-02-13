@@ -17,7 +17,6 @@
   border-radius: 30px;
   height: 39.8vw;
   min-height: 293px;
-  // z-index: -1;
   &.active {
     transition: 0.35s all ease-in;
     width: 100%;
@@ -37,7 +36,6 @@
     margin-right: 0;
     height: auto;
     min-height: auto;
-    // z-index: -12;
     margin-left: -27px;
     &.active {
       margin-left: 0;
@@ -80,7 +78,6 @@
   }
 }
 .info {
-  //     padding: 3.5vw 6vw;
   border-radius: 30px;
   background-color: $blue;
   height: min-content;
@@ -176,10 +173,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin: 25px;
 }
 .map::before {
-  // display: none;
   content: "";
   position: absolute;
   z-index: 122312311;
@@ -190,7 +185,6 @@
   width: 70px;
   height: 70px;
   background-color: rgb(111 111 111 / 41%);
-  // background-color: rgba($pink, 0.3);
   filter: blur(10px);
   border-radius: 40px;
 }
