@@ -20,24 +20,34 @@
   background-color: $pink;
   top: 100%;
   transform: translate(0, -50%);
-  & .form_send {
-    // & div {
-    //   line-height: 0.7;
-    //   top: 0px;
-    // }
+  &:hover {
+    box-shadow: 0 0 15px 10px rgba($pink, 0.4);
   }
 }
 
 .form_elements_inputs {
   display: flex;
   flex-direction: column;
+  position: relative;
+  & .before {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 0.5px;
+      width: 100%;
+      background: $mainTextColor;
+      top: -30px;
+    }
+  }
   & * {
     margin-bottom: 30px;
   }
-  & input {
+  & input[type="text"] {
     padding: 15px 2px;
     border: none;
-    border-bottom: 1px solid $mainTextColor;
+    // border-bottom: 1px solid $mainTextColor;
+    text-decoration: dashed;
     background-color: inherit;
     outline: none;
     &::placeholder {

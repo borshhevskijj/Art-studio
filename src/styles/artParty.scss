@@ -61,10 +61,9 @@
   min-width: 250px;
   & .booking {
     font-size: 15.7px;
-    // & div {
-    //   line-height: 0;
-    //   top: -5px;
-    // }
+  }
+  &:hover {
+    box-shadow: 0 0 15px 10px rgba($pink, 0.4);
   }
 }
 .artParty_subTitle_elipse::before {

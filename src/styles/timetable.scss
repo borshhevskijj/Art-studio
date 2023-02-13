@@ -13,10 +13,9 @@
   position: static;
   & .timetableMasterClass {
     font-size: 13.7px;
-    & div {
-      // line-height: 3;
-      // top: 17px;
-    }
+  }
+  &:hover {
+    box-shadow: 0 0 15px 10px rgba($pink, 0.4);
   }
 }
 
@@ -24,19 +23,6 @@
   .timetable_button {
     .timetableMasterClass {
       font-size: 12.5px;
-
-      // & div {
-      //   line-height: 3;
-      //   top: -3px;
-      // }
-      // & div {
-      //   line-height: 5;
-      //   top: 11px;
-      // }
     }
   }
-  // .timetable_button {
-  //   .timetableMasterClass {
-  //   }
-  // }
 }

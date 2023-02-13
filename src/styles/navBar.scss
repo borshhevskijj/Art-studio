@@ -109,14 +109,9 @@
       margin-top: 30px;
       & .burgerMasterClass {
         font-size: 11.7px;
-        & div {
-          // line-height: 5.6;
-          // top: 15px;
-        }
-        // & div {
-        //   line-height: 3.4;
-        //   top: 2px;
-        // }
+      }
+      &:hover {
+        box-shadow: 0 0 15px 10px rgba($pink, 0.4);
       }
     }
     & .contactsIcons {
@@ -219,7 +214,7 @@
   .brgMenu {
     width: 35px;
     height: 30px;
-    top: 15px;
+    top: 27px;
     position: fixed;
     right: $mobileContainerPadding + px;
     cursor: pointer;

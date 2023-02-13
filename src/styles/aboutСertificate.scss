@@ -4,11 +4,8 @@
   position: absolute;
   background-color: $pink;
   top: calc(100% - 123.5px);
-  & .certificate {
-    // & div {
-    //   line-height: 1.2;
-    //   top: 2px;
-    // }
+  &:hover {
+    box-shadow: 0 0 15px 10px rgba($pink, 0.4);
   }
 }
 .aboutСertificate_subTitle_elipse::before {
@@ -108,25 +105,8 @@
   .aboutСertificate_button {
     & .certificate {
       font-size: 14px;
-      // & div {
-      //   line-height: 2.4;
-      //   top: -12px;
-      // }
-
-      // & div {
-      //   line-height: 0.7;
-      //   top: -19px;
-      // }
     }
   }
-  // .aboutСertificate_button {
-  //   & .certificate {
-  //     & div {
-  //       line-height: 3.5;
-  //       top: 0px;
-  //     }
-  //   }
-  // }
 }
 @media (max-width: 625px) {
   .aboutСertificate {

@@ -39,20 +39,13 @@
 .aboutUs_button {
   background-color: $blue;
   position: static;
-  // left: -31px;
-  // bottom: -52px;
   z-index: 2;
   margin-bottom: 146px;
+  &:hover {
+    box-shadow: 0 0 15px 10px rgba($blue, 0.4);
+  }
   & .imgWrapper {
     left: 5px;
-  }
-  & .watchVideo {
-    // & div {
-    //   //   line-height: 1.7;
-    //   // top: 8px;
-    //   line-height: 0.7;
-    //   top: 0px;
-    // }
   }
 }
 
@@ -183,24 +176,8 @@
   .aboutUs_button {
     .watchVideo {
       font-size: 14px;
-      // & div {
-      //   line-height: 2;
-      //   top: -15px;
-      // }
-      // & div {
-      //   line-height: 0.5;
-      //   top: -22px;
-      // }
     }
   }
-  // .aboutUs_button {
-  //   .watchVideo {
-  //     & div {
-  //       line-height: 2.6;
-  //       top: 0;
-  //     }
-  //   }
-  // }
 }
 
 @media (max-width: 625px) {

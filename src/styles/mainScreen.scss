@@ -54,6 +54,10 @@
   left: -31px;
   bottom: 205px;
   z-index: 2;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 0 15px 10px rgba($pink, 0.4);
+  }
 }
 
 @media (max-width: 1160px) {

@@ -4,11 +4,8 @@
   position: static;
   background-color: $pink;
   min-width: 247px;
-  & .aboutCourse_leaveARequest {
-    // & div {
-    //   line-height: 0.7;
-    //   top: 0px;
-    // }
+  &:hover {
+    box-shadow: 0 0 15px 10px rgba($pink, 0.4);
   }
 }
 .aboutCourseWrapper {

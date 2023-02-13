@@ -8,6 +8,10 @@
   box-sizing: border-box;
   color: $mainTextColor;
   user-select: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 h1,
 h2,
