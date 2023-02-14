@@ -16,7 +16,6 @@
 
 .main {
   position: relative;
-  // padding-top: 61px;
 }
 .main_img {
   z-index: 1;
@@ -40,7 +39,6 @@
   position: relative;
   font-size: 15px;
   z-index: 2;
-  // font-family: $fontMainTextDesctop;
 }
 .main_container {
   position: relative;
@@ -71,7 +69,6 @@
   }
   .main_button {
     position: static;
-    // margin: 50px 5px 5px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -81,21 +78,6 @@
   }
   .main {
     margin-top: -15px;
-  }
-}
-
-@media (max-width: 695px) {
-  .main_button {
-    & .masterСlass {
-      // & div {
-      //   line-height: 5.2;
-      //   top: 12px;
-      // }
-      // & div {
-      //   line-height: 3.2;
-      //   top: 2px;
-      // }
-    }
   }
 }
 

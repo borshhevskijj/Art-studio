@@ -1,7 +1,7 @@
 import { setTextContent } from "./circleText";
 import { drawing } from "./noise";
 const navBar = document.querySelector(".navBar");
-const navLink = document.querySelectorAll(".navigation a");
+const navLink = navBar.querySelectorAll("a");
 const burgerBtn = document.querySelector(".brgMenu");
 
 const contacts_phoneClone = document
@@ -26,7 +26,6 @@ burgerBtn.addEventListener("click", () => {
   burgerBtn.classList.toggle("open");
 
   if (navBar.classList.contains("active")) {
-    // navBar.style.height = window.innerHeight;
     navBar.append(mainButtonClone);
     navBar.append(brgContactsWrapper);
     document.documentElement.style.overflowY = "hidden";
@@ -93,6 +92,7 @@ const resizeObs = new ResizeObserver((entries) => {
       navBar.removeChild(mainButtonClone);
       navBar.removeChild(brgContactsWrapper);
       document.documentElement.style.overflowY = "initial";
+      document.body.style.overflowY = "initial";
     }
   }
 });
@@ -105,7 +105,7 @@ window.onscroll = function () {
   if (window.matchMedia("(max-width: 695px)").matches) {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      header.style.transform = "translateY(0px)";
+      header.style.transform = "translateY(-2px)";
     } else {
       header.style.transform = "translateY(-220px)";
     }

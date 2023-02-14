@@ -23,7 +23,6 @@
   height: 100%;
   width: 100%;
   justify-content: space-between;
-  //   align-items: start;
   align-items: baseline;
   & a {
     text-decoration: none;
@@ -31,8 +30,6 @@
   & li {
     list-style: none;
   }
-  // @media (min-width: 1320px) {
-  // }
 }
 .footer_Left {
   display: flex;
@@ -58,13 +55,11 @@
   align-items: center;
   justify-content: center;
   line-height: 25px;
-  //   text-align: center;
   white-space: initial;
   text-align: center;
 
   @media (min-width: 1320px) {
     white-space: pre-line;
-    // line-height: normal;
     text-align: initial;
   }
 }

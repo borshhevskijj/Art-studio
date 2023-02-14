@@ -4,6 +4,7 @@ map.addEventListener("click", (e) => {
   e.stopPropagation();
   if (!isOpen) {
     isOpen = true;
+
     map.classList.add("active");
     document.documentElement.style.overflowY = "hidden";
     return;

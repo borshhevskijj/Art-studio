@@ -14,7 +14,6 @@
   font-size: 15px;
   position: relative;
 }
-
 .form_button {
   position: absolute;
   background-color: $pink;
@@ -44,7 +43,6 @@
     margin-bottom: 30px;
     padding: 15px 2px;
     border: none;
-    // border-bottom: 1px solid $mainTextColor;
     text-decoration: dashed;
     background-color: inherit;
     outline: none;
@@ -53,13 +51,7 @@
     }
   }
 }
-// .input_checkbox {
-//   & label {
-//     & span {
-//       text-decoration: underline;
-//     }
-//   }
-// }
+
 .form_subTitle {
   padding: 100px 5px 100px 73px;
   max-width: 50%;
@@ -72,14 +64,12 @@
   }
 }
 
-// --------------------------------------------
 .agreement {
   display: block;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  //   font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -90,7 +80,6 @@
   }
 }
 
-/* Hide the browser's default checkbox */
 .agreement {
   line-height: 25px;
   & input {
@@ -101,8 +90,6 @@
     cursor: pointer;
   }
 }
-
-/* Create a custom checkbox */
 .checkmark {
   position: absolute;
   top: 0;
@@ -113,19 +100,16 @@
   background-color: $mainTextColor;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .agreement input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .agreement .checkmark:after {
   background: url("../images/checkbox.svg");
   width: 17px;
@@ -170,29 +154,6 @@
     left: 50%;
     transform: translate(-50%, 0);
   }
-
-  // .form_subTitle_elipse::after {
-  //   left: 39.09%;
-  //   right: 13.57%;
-  //   top: 36.57%;
-  //   bottom: 58.65%;
-  //   width: 352.17px;
-  //   height: 99.5px;
-  //   transform: matrix(0.99, -0.15, 0.15, 0.99, 0, 0);
-  //   width: 42vw;
-  //   height: 11.2vw;
-  // }
-  // .form_subTitle_elipse::before {
-  //   left: 38.44%;
-  //   right: 12.84%;
-  //   top: 38.41%;
-  //   bottom: 58.8%;
-  //   transform: matrix(1, -0.04, 0.1, 1, 0, 0);
-  //   width: 362.48px;
-  //   height: 100.29px;
-  //   width: 44vw;
-  //   height: 11.4vw;
-  // }
 }
 
 @media (max-width: 833px) {
